@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:conditional_list": {
+    "description": {
+      "identifier": "endless:select_50_56"
+    },
+    "early_out_scheme": "condition_success",
+    "conditional_features": [
+      {
+        "places_feature": "endless:select_50_53",
+        "condition": "v.ew_height <= 53"
+      },
+      {
+        "places_feature": "endless:select_54_56",
+        "condition": "1"
+      }
+    ]
+  }
+}

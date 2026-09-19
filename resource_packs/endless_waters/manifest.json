@@ -1,0 +1,12 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Endless Waters — Ocean Atmosphere",
+    "description": "Ocean water and island foliage colors. Uses vanilla textures throughout.",
+    "uuid": "61aebcce-03cc-41ed-87fd-40c2991fa93f",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 26, 50]
+  },
+  "modules": [{"type": "resources", "uuid": "ac0c65d2-d32e-46e0-b589-b7da23804e78", "version": [0, 1, 0]}],
+  "metadata": {"authors": ["zclar"], "license": "Apache-2.0"}
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:client_biome": {
+    "description": {"identifier": "endless:archipelago_ocean"},
+    "components": {
+      "minecraft:water_appearance": {"surface_color": "#2877A2", "surface_opacity": 0.75},
+      "minecraft:grass_appearance": {"color": "#86B956"},
+      "minecraft:foliage_appearance": {"color": "#65A946"}
+    }
+  }
+}

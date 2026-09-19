@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:conditional_list": {
+    "description": {
+      "identifier": "endless:terrain_column"
+    },
+    "early_out_scheme": "condition_success",
+    "conditional_features": [
+      {
+        "places_feature": "endless:select_28_85",
+        "condition": "v.ew_cx=math.floor(v.worldx/224);v.ew_cz=math.floor(v.worldz/224);v.ew_s=173;v.ew_dx=v.worldx-(v.ew_cx*224+112);v.ew_dz=v.worldz-(v.ew_cz*224+112);v.ew_radius=66+10*query.noise(v.ew_cx*7+v.ew_s,v.ew_cz*7+91);v.ew_d=math.sqrt(v.ew_dx*v.ew_dx+v.ew_dz*v.ew_dz)/v.ew_radius;v.ew_present=query.noise(v.ew_cx*13+37,v.ew_cz*13+v.ew_s)>-0.52;v.ew_present=(v.ew_cx==0 && v.ew_cz==0)?1:v.ew_present;v.ew_height=math.floor(math.clamp(31+v.ew_present*47*math.max(0,1-math.pow(v.ew_d,4))+3*query.noise(v.worldx/24+v.ew_s,v.worldz/24),28,85));return v.ew_present && v.ew_d<1;"
+      }
+    ]
+  }
+}
