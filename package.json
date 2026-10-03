@@ -1,0 +1,9 @@
+{
+  "name": "endless-waters",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "validate": "python3 tools/validate.py"
+  }
+}

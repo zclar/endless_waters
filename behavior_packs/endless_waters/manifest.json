@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Endless Waters \u2014 Depths",
+    "description": "Endless Overworld water with procedural shallow, ocean, deep-ocean, and trench depths.",
+    "uuid": "f64cd68d-5d41-4a25-b91b-36d5d8f33543",
+    "version": [
+      0,
+      2,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      50
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "2bc3df21-7c46-45b2-8c8d-bb3b2b8f3c0d",
+      "version": [
+        0,
+        2,
+        0
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "zclar"
+    ],
+    "license": "Apache-2.0"
+  }
+}
