@@ -1,4 +1,4 @@
-"""Build Endless Waters 0.4.0 from the tested procedural seabed generator."""
+"""Build Endless Waters with procedural oceans and adapted sea life."""
 from pathlib import Path
 import json
 import shutil
@@ -8,11 +8,14 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 from nbt import structure
+from sea_life import build as build_sea_life
+from diving_buildables import build as build_diving_buildables
+from visual_materials import build as build_visual_materials
 
 OUT = ROOT / 'dist'
 BP = ROOT / 'behavior_packs/endless_waters'
 RP = ROOT / 'resource_packs/endless_waters'
-VERSION = [0, 4, 0]
+VERSION = [0, 5, 0]
 
 
 def save(path, data):
@@ -243,7 +246,10 @@ def main():
                              'z': {'distribution': 'fixed_grid', 'extent': [0, 15], 'step_size': 1}}
         }
     })
-    # Preserve the installed pack identities so imports upgrade v0.2.1.
+    build_sea_life(BP, RP)
+    build_diving_buildables(BP, RP)
+    build_visual_materials(RP)
+    # Preserve installed pack identities so imports upgrade earlier releases.
     bp_id = 'f64cd68d-5d41-4a25-b91b-36d5d8f33543'
     rp_id = 'c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3'
     for pack, name, ident, module in [
@@ -254,14 +260,20 @@ def main():
             'format_version': 2,
             'header': {'name': name, 'uuid': ident, 'version': VERSION,
                        'min_engine_version': [1, 26, 50],
-                       'description': 'Procedural ice-free oceans, native seabeds and caves.'},
+                       'description': 'Ice-free oceans, sea life, craftable diving gear and ocean building blocks.'},
             'modules': [{'type': 'data' if pack == BP else 'resources',
                          'uuid': module, 'version': VERSION}]
         }
         if pack == BP:
             data['metadata'] = {'authors': ['zclar'], 'license': 'Apache-2.0'}
+        else:
+            data['capabilities'] = ['pbr']
         if pack == BP:
             data['dependencies'] = [{'uuid': rp_id, 'version': VERSION}]
+            data['dependencies'].append({'module_name': '@minecraft/server', 'version': '2.10.0'})
+            data['modules'].append({'type': 'script', 'language': 'javascript',
+                'uuid': '8a2840ed-b3ef-4228-b0c9-328637732457', 'version': VERSION,
+                'entry': 'scripts/diving_gear.js'})
         save(pack / 'manifest.json', data)
     archive = OUT / 'Endless_Waters.mcaddon'
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:

@@ -1,0 +1,11 @@
+entity.endless:jellyfish.name=Jellyfish
+item.spawn_egg.entity.endless:jellyfish.name=Jellyfish Spawn Egg
+entity.endless:seahorse.name=Seahorse
+item.spawn_egg.entity.endless:seahorse.name=Seahorse Spawn Egg
+tile.endless:driftwood_plank.name=Driftwood Planks
+tile.endless:sea_glass.name=Sea Glass
+tile.endless:polished_prismarine_bricks.name=Polished Prismarine Bricks
+tile.endless:pearl_lantern.name=Pearl Lantern
+item.endless:deep_sea_helmet.name=Deep-Sea Helmet
+item.endless:oxygen_tank.name=Oxygen Tank
+item.endless:flippers.name=Flippers

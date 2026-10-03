@@ -7,6 +7,8 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 from nbt import loads
+from validate_sea_life import validate as validate_sea_life
+from validate_diving import validate as validate_diving
 
 out = ROOT / 'dist'
 bp = ROOT / 'behavior_packs/endless_waters'
@@ -14,11 +16,12 @@ rp = ROOT / 'resource_packs/endless_waters'
 
 manifest = json.loads((bp / 'manifest.json').read_text())
 resource_manifest = json.loads((rp / 'manifest.json').read_text())
-assert manifest['header']['version'] == resource_manifest['header']['version'] == [0, 4, 0]
-assert json.loads((ROOT / 'package.json').read_text())['version'] == '0.4.0'
+assert manifest['header']['version'] == resource_manifest['header']['version'] == [0, 5, 0]
+assert json.loads((ROOT / 'package.json').read_text())['version'] == '0.5.0'
 assert manifest['header']['uuid'] == 'f64cd68d-5d41-4a25-b91b-36d5d8f33543'
 assert resource_manifest['header']['uuid'] == 'c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3'
-assert manifest['dependencies'] == [{'uuid': resource_manifest['header']['uuid'], 'version': [0, 4, 0]}]
+assert manifest['dependencies'] == [{'uuid': resource_manifest['header']['uuid'], 'version': [0, 5, 0]},
+                                    {'module_name': '@minecraft/server', 'version': '2.10.0'}]
 assert len(list((bp / 'structures/endless').glob('column_*.mcstructure'))) == 84
 
 for path in (bp / 'structures/endless').glob('column_*.mcstructure'):
@@ -92,5 +95,8 @@ with zipfile.ZipFile(out / 'Endless_Waters.mcaddon') as archive:
                 expected_entries.add(entry)
                 assert archive.read(entry) == path.read_bytes()
     assert set(archive.namelist()) == expected_entries, 'Unexpected files in release archive'
-    assert not any('/scripts/' in name or '/probe' in name for name in archive.namelist())
+    assert not any('/probe' in name for name in archive.namelist())
+    assert [n for n in archive.namelist() if '/scripts/' in n] == ['Endless_Waters_BP/scripts/diving_gear.js']
+validate_sea_life()
+validate_diving()
 print('Release validation passed: cave-preserving columns, feature graph, ice-free climates and archive.')

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.endless.jellyfish": {
+      "arrays": {
+        "textures": {
+          "Array.colors": [
+            "Texture.green",
+            "Texture.blue",
+            "Texture.pink",
+            "Texture.red",
+            "Texture.orange"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.colors[math.clamp(query.variant, 0, 4)]"
+      ]
+    }
+  }
+}

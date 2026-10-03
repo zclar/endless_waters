@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "endless:pearl_lantern"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " P ",
+      "PLP",
+      " P "
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:prismarine_crystals"
+      },
+      "L": {
+        "item": "minecraft:sea_lantern"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:prismarine_crystals"
+      }
+    ],
+    "result": {
+      "item": "endless:pearl_lantern",
+      "count": 1
+    }
+  }
+}

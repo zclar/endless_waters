@@ -5,7 +5,7 @@
     "uuid": "c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3",
     "version": [
       0,
-      4,
+      5,
       0
     ],
     "min_engine_version": [
@@ -13,7 +13,7 @@
       26,
       50
     ],
-    "description": "Procedural ice-free oceans, native seabeds and caves."
+    "description": "Ice-free oceans, sea life, craftable diving gear and ocean building blocks."
   },
   "modules": [
     {
@@ -21,9 +21,12 @@
       "uuid": "84c04ce8-1b59-4c59-ae4a-d24e0b6ca727",
       "version": [
         0,
-        4,
+        5,
         0
       ]
     }
+  ],
+  "capabilities": [
+    "pbr"
   ]
 }

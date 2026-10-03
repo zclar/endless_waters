@@ -1,0 +1,196 @@
+{
+  "version": "0.5.0",
+  "server": "1.26.52.3",
+  "seed": 987654321,
+  "player": {
+    "x": -2000,
+    "y": 63,
+    "z": 1200
+  },
+  "note": "Unmodified release spawn rules; GameTest used only to supply a simulated player. No creatures summoned.",
+  "samples": [
+    {
+      "seconds": 10,
+      "counts": {
+        "minecraft:player": 1,
+        "minecraft:tropicalfish": 19,
+        "minecraft:pufferfish": 3,
+        "minecraft:drowned": 5,
+        "minecraft:nautilus": 1,
+        "minecraft:dolphin": 3
+      }
+    },
+    {
+      "seconds": 20,
+      "counts": {
+        "minecraft:player": 1,
+        "minecraft:tropicalfish": 20,
+        "minecraft:pufferfish": 3,
+        "minecraft:dolphin": 3,
+        "minecraft:drowned": 5,
+        "minecraft:glow_squid": 2,
+        "minecraft:nautilus": 1
+      }
+    },
+    {
+      "seconds": 30,
+      "counts": {
+        "minecraft:player": 1,
+        "minecraft:tropicalfish": 20,
+        "endless:seahorse": 1,
+        "minecraft:nautilus": 1,
+        "minecraft:pufferfish": 3,
+        "minecraft:dolphin": 3,
+        "minecraft:drowned": 5,
+        "minecraft:glow_squid": 4
+      }
+    },
+    {
+      "seconds": 40,
+      "counts": {
+        "minecraft:tropicalfish": 20,
+        "minecraft:pufferfish": 3,
+        "minecraft:player": 1,
+        "endless:seahorse": 1,
+        "minecraft:drowned": 5,
+        "minecraft:glow_squid": 4,
+        "minecraft:nautilus": 1,
+        "minecraft:dolphin": 2,
+        "minecraft:zombie": 3
+      }
+    },
+    {
+      "seconds": 50,
+      "counts": {
+        "minecraft:pufferfish": 3,
+        "minecraft:tropicalfish": 18,
+        "minecraft:player": 1,
+        "minecraft:drowned": 5,
+        "endless:seahorse": 2,
+        "minecraft:glow_squid": 4,
+        "minecraft:nautilus": 1,
+        "minecraft:spider": 1,
+        "minecraft:zombie": 3
+      }
+    },
+    {
+      "seconds": 60,
+      "counts": {
+        "minecraft:tropicalfish": 20,
+        "minecraft:pufferfish": 3,
+        "minecraft:player": 1,
+        "minecraft:drowned": 6,
+        "minecraft:glow_squid": 5,
+        "endless:seahorse": 2,
+        "minecraft:squid": 3,
+        "minecraft:nautilus": 1,
+        "minecraft:skeleton": 2,
+        "minecraft:spider": 1,
+        "minecraft:zombie": 5
+      }
+    },
+    {
+      "seconds": 70,
+      "counts": {
+        "minecraft:tropicalfish": 20,
+        "minecraft:player": 1,
+        "minecraft:pufferfish": 3,
+        "minecraft:drowned": 6,
+        "endless:seahorse": 2,
+        "minecraft:glow_squid": 4,
+        "minecraft:squid": 3,
+        "minecraft:nautilus": 1,
+        "minecraft:skeleton": 2,
+        "minecraft:spider": 1,
+        "minecraft:zombie": 5
+      }
+    },
+    {
+      "seconds": 80,
+      "counts": {
+        "minecraft:tropicalfish": 20,
+        "minecraft:player": 1,
+        "minecraft:pufferfish": 3,
+        "minecraft:drowned": 6,
+        "endless:seahorse": 2,
+        "minecraft:nautilus": 1,
+        "minecraft:squid": 3,
+        "minecraft:glow_squid": 4,
+        "minecraft:skeleton": 4,
+        "minecraft:spider": 1,
+        "minecraft:zombie": 4
+      }
+    },
+    {
+      "seconds": 90,
+      "counts": {
+        "minecraft:tropicalfish": 20,
+        "minecraft:player": 1,
+        "minecraft:pufferfish": 2,
+        "endless:seahorse": 2,
+        "minecraft:drowned": 5,
+        "minecraft:glow_squid": 4,
+        "minecraft:squid": 3,
+        "minecraft:item": 1,
+        "minecraft:nautilus": 1,
+        "minecraft:skeleton": 4,
+        "minecraft:spider": 1,
+        "minecraft:zombie": 4
+      }
+    },
+    {
+      "seconds": 100,
+      "counts": {
+        "minecraft:pufferfish": 3,
+        "minecraft:tropicalfish": 19,
+        "minecraft:player": 1,
+        "minecraft:drowned": 5,
+        "endless:seahorse": 2,
+        "endless:jellyfish": 1,
+        "minecraft:nautilus": 1,
+        "minecraft:squid": 3,
+        "minecraft:glow_squid": 4,
+        "minecraft:item": 1,
+        "minecraft:skeleton": 4,
+        "minecraft:spider": 1,
+        "minecraft:zombie": 2
+      }
+    },
+    {
+      "seconds": 110,
+      "counts": {
+        "minecraft:tropicalfish": 20,
+        "minecraft:pufferfish": 3,
+        "minecraft:player": 1,
+        "endless:jellyfish": 1,
+        "minecraft:drowned": 6,
+        "minecraft:squid": 3,
+        "endless:seahorse": 3,
+        "minecraft:nautilus": 1,
+        "minecraft:glow_squid": 4,
+        "minecraft:item": 1,
+        "minecraft:skeleton": 4,
+        "minecraft:spider": 1,
+        "minecraft:zombie": 4
+      }
+    },
+    {
+      "seconds": 120,
+      "counts": {
+        "minecraft:tropicalfish": 18,
+        "minecraft:pufferfish": 3,
+        "minecraft:player": 1,
+        "endless:jellyfish": 1,
+        "minecraft:drowned": 5,
+        "minecraft:squid": 3,
+        "minecraft:glow_squid": 4,
+        "endless:seahorse": 3,
+        "minecraft:item": 1,
+        "minecraft:nautilus": 1,
+        "minecraft:skeleton": 3,
+        "minecraft:spider": 1,
+        "minecraft:zombie": 4
+      }
+    }
+  ]
+}

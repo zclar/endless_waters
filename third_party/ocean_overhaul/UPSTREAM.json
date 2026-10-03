@@ -1,0 +1,124 @@
+{
+  "repository": "https://github.com/VoX/ocean-overhaul",
+  "commit": "c92b8faddec30aa6cc3664b2a3727e2dfee64440",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "579d15783d4d5d7d52fdafca86f48ef17e66f8a69575af4ce7aad995fb904916"
+    },
+    {
+      "path": "README.md",
+      "sha256": "49899fd27d4e21285791037a8bb0ce8f7506c1afa65c1e8c88853f22260622c8"
+    },
+    {
+      "path": "src/main/java/me/tinyclaw/oceanoverhaul/client/JellyfishModel.java",
+      "sha256": "1926c727fefdfd7e9169482e4588addfd45cf58db1153dc9d3ff4a5de19b27c2"
+    },
+    {
+      "path": "src/main/java/me/tinyclaw/oceanoverhaul/client/JellyfishRenderer.java",
+      "sha256": "4ed8384025e99cdb37785eb6fbb26466c791db150afe2bc66f78cacd22a34da3"
+    },
+    {
+      "path": "src/main/java/me/tinyclaw/oceanoverhaul/client/SeahorseModel.java",
+      "sha256": "eae9fc25986dc023ac4d58aa921ff07b0bb35b44925a8121ef85e6c1984506dc"
+    },
+    {
+      "path": "src/main/java/me/tinyclaw/oceanoverhaul/client/SeahorseRenderer.java",
+      "sha256": "2e695de0af99551e06e8d066db7c96540946459b9a3e825847149dfb5b60363b"
+    },
+    {
+      "path": "src/main/java/me/tinyclaw/oceanoverhaul/entity/Jellyfish.java",
+      "sha256": "1527adf2305f97fbbaea874658cf8fac1c2b9314f06f362a3e6f2384dd1914f3"
+    },
+    {
+      "path": "src/main/java/me/tinyclaw/oceanoverhaul/entity/Seahorse.java",
+      "sha256": "4e184394762cb2db11469cf0e83aca6e6ffcdc52ec5cf903929f6451120dad87"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/jellyfish_blue.png",
+      "sha256": "5833692c30537a6dc083ccbe4f7d4545b5b247189053f2cc2695e3c057fed91b"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/jellyfish_green.png",
+      "sha256": "4c979c307e0e8b4dc2d173aacf4c4881f9bef52f33298c3262e7dfbcce5b5e84"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/jellyfish_orange.png",
+      "sha256": "a217e9b38434b5fe98b3557f807ceaad70e13e212ed37852f6ab0d3aa992cd76"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/jellyfish_pink.png",
+      "sha256": "25a8cb19144e74c29248048c3196d767a5f43b44154414b89d93d105ebeb6e4b"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/jellyfish_red.png",
+      "sha256": "64f187085a3980dc7fc41328232a12bb8dbaae8c348eaefc48cda99d6948c289"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/seahorse_orange.png",
+      "sha256": "7c6f8ac9e9d8cf836fc5c785a931efc87660ffa0346ff2ac5a8141cc039ff9b6"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/seahorse_purple.png",
+      "sha256": "8c56e22919575561bf8fb0a6817eb21c4c519bb15cf40e6a4c480faa7114ab20"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/seahorse_red.png",
+      "sha256": "9a6b2cd309742037bd0de0c0ba801fa771d62c16c3069dabc436a31840edaebe"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/seahorse_teal.png",
+      "sha256": "4955d20c289c0c46f79d95c13cae9475c22bdb80278ecc343df45876168abea3"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/entity/seahorse_yellow.png",
+      "sha256": "f681de43c8c670dbc331804a716584bfab6e454fa41cceb683372dbb067814f3"
+    },
+    {
+      "path": "src/main/resources/fabric.mod.json",
+      "sha256": "9e511fbbcee7422dd2e98dca26a7a43b13af72a93493b9c8bd1cfcf9461baf2c"
+    },
+    {
+      "path": "src/main/java/me/tinyclaw/oceanoverhaul/OceanOverhaul.java",
+      "sha256": "26b60556c63e2e1e10e2adc70343115e0c951a3a272f9292ed1a765cb436d79a"
+    },
+    {
+      "path": "src/main/java/me/tinyclaw/oceanoverhaul/gametest/DivingKitGameTest.java",
+      "sha256": "f289e6a45e858a896b841991f784297698b821c3f1cab07ddda3d180bc07f553"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/block/driftwood_plank.png",
+      "sha256": "bb70b59edbca74f2645fe29139fe548019e0aaa3b5885908803fe20f5d3b5f3d"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/block/pearl_lantern.png",
+      "sha256": "798bfa22ba210d5de18d6be82280ca615f116b0f8b30fc973557da90b0be61ef"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/block/polished_prismarine_bricks.png",
+      "sha256": "eed4dc88276b9ab1300d15d8af04384b4b84dd2c5c4bdfa79f996baaa09b6901"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/block/sea_glass.png",
+      "sha256": "adcfce2c4d1ab54a7f515c52e0382731a478c7b46ed2f0fd73bf31d837f1a8bb"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/item/deep_sea_helmet.png",
+      "sha256": "a10559c8dc48f3dbe2fb26a034b07854bf15dc1799499291d3c9f9588c99622b"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/item/flippers.png",
+      "sha256": "81b8577e505bea6d0dac116e123e1ed67fa18a7613fe423f5bb65239060f1223"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/item/oxygen_tank.png",
+      "sha256": "26d67c490c32f446081cad53ddba5cbb403044bec83bd58b7faf6d827662601b"
+    },
+    {
+      "path": "src/main/resources/assets/oceanoverhaul/textures/models/armor/diving_layer_1.png",
+      "sha256": "c15539558bd886147761fac6676f3a7f8e6f9b4769b74b34bc35182e17562c36"
+    }
+  ],
+  "note": "Selected unmodified source files and textures; no upstream scripts or code executed."
+}

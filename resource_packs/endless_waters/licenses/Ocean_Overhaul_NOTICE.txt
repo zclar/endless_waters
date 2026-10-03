@@ -1,0 +1,8 @@
+Jellyfish/seahorse models, textures, animation designs, diving-kit designs,
+equipment textures and four decorative-block textures adapted from
+Ocean Overhaul by tinyclaw / VoX. Copyright (c) 2026 tinyclaw / VoX.
+https://github.com/VoX/ocean-overhaul
+Source commit: c92b8faddec30aa6cc3664b2a3727e2dfee64440
+Licensed under MIT; see Ocean_Overhaul_MIT.txt.
+Bedrock behavior, geometry conversion and packaging adapted for Endless Waters.
+This is an unofficial adaptation, not the original Java mod.

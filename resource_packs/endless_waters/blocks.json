@@ -1,0 +1,19 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "endless:driftwood_plank": {
+    "sound": "wood"
+  },
+  "endless:sea_glass": {
+    "sound": "glass"
+  },
+  "endless:polished_prismarine_bricks": {
+    "sound": "stone"
+  },
+  "endless:pearl_lantern": {
+    "sound": "glass"
+  }
+}

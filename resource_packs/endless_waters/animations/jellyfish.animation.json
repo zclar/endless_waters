@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.endless.jellyfish.swim": {
+      "loop": true,
+      "bones": {
+        "bell": {
+          "position": [
+            0,
+            "-math.cos(query.life_time * 171.887) * 0.5",
+            0
+          ]
+        },
+        "tentacle_0": {
+          "rotation": [
+            "-math.cos(query.life_time * 114.592 + 0.0) * 14.324",
+            0,
+            0
+          ]
+        },
+        "tentacle_1": {
+          "rotation": [
+            "-math.cos(query.life_time * 114.592 + 57.296) * 14.324",
+            0,
+            0
+          ]
+        },
+        "tentacle_2": {
+          "rotation": [
+            "-math.cos(query.life_time * 114.592 + 114.592) * 14.324",
+            0,
+            0
+          ]
+        },
+        "tentacle_3": {
+          "rotation": [
+            "-math.cos(query.life_time * 114.592 + 171.888) * 14.324",
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

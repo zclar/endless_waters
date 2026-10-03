@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.endless.seahorse.swim": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "-math.sin(query.life_time * 114.592) * 3.438",
+            0,
+            0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "-11.459 - math.sin(query.life_time * 171.887) * 5.73",
+            0,
+            0
+          ]
+        },
+        "fin": {
+          "rotation": [
+            0,
+            "math.cos(query.life_time * 1031.324) * 28.648",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

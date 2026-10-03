@@ -5,7 +5,7 @@
     "uuid": "f64cd68d-5d41-4a25-b91b-36d5d8f33543",
     "version": [
       0,
-      4,
+      5,
       0
     ],
     "min_engine_version": [
@@ -13,7 +13,7 @@
       26,
       50
     ],
-    "description": "Procedural ice-free oceans, native seabeds and caves."
+    "description": "Ice-free oceans, sea life, craftable diving gear and ocean building blocks."
   },
   "modules": [
     {
@@ -21,9 +21,20 @@
       "uuid": "2bc3df21-7c46-45b2-8c8d-bb3b2b8f3c0d",
       "version": [
         0,
-        4,
+        5,
         0
       ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "8a2840ed-b3ef-4228-b0c9-328637732457",
+      "version": [
+        0,
+        5,
+        0
+      ],
+      "entry": "scripts/diving_gear.js"
     }
   ],
   "metadata": {
@@ -37,9 +48,13 @@
       "uuid": "c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3",
       "version": [
         0,
-        4,
+        5,
         0
       ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.10.0"
     }
   ]
 }

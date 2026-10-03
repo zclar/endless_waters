@@ -1,0 +1,15 @@
+{
+  "resource_pack_name": "endless_waters",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "endless_deep_sea_helmet": {
+      "textures": "textures/items/endless/deep_sea_helmet"
+    },
+    "endless_oxygen_tank": {
+      "textures": "textures/items/endless/oxygen_tank"
+    },
+    "endless_flippers": {
+      "textures": "textures/items/endless/flippers"
+    }
+  }
+}

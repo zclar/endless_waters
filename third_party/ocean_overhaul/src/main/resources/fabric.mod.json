@@ -1,0 +1,51 @@
+{
+	"schemaVersion": 1,
+	"id": "oceanoverhaul",
+	"version": "${version}",
+	"name": "Ocean Overhaul",
+	"description": "Adds 41 ocean-themed blocks (decorative prismarine, pearl, and sea glass sets, a full driftwood wood set, and the deep-ocean Abyssal Trench's glowing plankton, abyssal vents, and giant clams), the Tidal tool + armor sets, a deep-sea diving kit (Deep-Sea Helmet, Oxygen Tank, Flippers), the loyalty-throw Harpoon, a stockable Aquarium, Reef Fish + Jellyfish + Seahorse buckets, ocean foods, Megalodon Tooth + Abyssal Fang + Heart of the Kraken drops, seven naturally-spawning sea creatures (the Megalodon and Kraken bosses, the hostile Abyssal Lurker, Reef Fish, Jellyfish, the bucketable color-variant Seahorse, and the breedable beach-dwelling Shore Crab), and ambient bioluminescent plankton blooms with glowing disturbance trails, a crafted-only shipwreck decor set (anchor, ship’s wheel, climbable rope, tattered sail), spreading Living Abyssal Coral, pearl-growing giant clams, plus a dedicated Ocean Overhaul creative tab.",
+	"authors": [
+		"tinyclaw"
+	],
+	"contact": {
+		"homepage": "https://github.com/VoX/ocean-overhaul",
+		"sources": "https://github.com/VoX/ocean-overhaul"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.tinyclaw.oceanoverhaul.OceanOverhaul"
+		],
+		"client": [
+			"me.tinyclaw.oceanoverhaul.client.OceanOverhaulClient"
+		],
+		"fabric-gametest": [
+			"me.tinyclaw.oceanoverhaul.gametest.MegalodonGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.ReefLifeGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.GearGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.DepthsGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.BlockGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.RecipeGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.ItemGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.MobGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.WorldgenGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.HarpoonGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.DivingKitGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.AquariumGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.KrakenGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.PlanktonGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.GiantClamGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.ShoreCrabGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.SpreadingCoralGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.ShipwreckDecorGameTest",
+			"me.tinyclaw.oceanoverhaul.gametest.SeahorseGameTest"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

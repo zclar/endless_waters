@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "endless:flippers"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "K K",
+      "I I",
+      "K K"
+    ],
+    "key": {
+      "K": {
+        "item": "minecraft:dried_kelp"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:dried_kelp"
+      }
+    ],
+    "result": {
+      "item": "endless:flippers",
+      "count": 1
+    }
+  }
+}

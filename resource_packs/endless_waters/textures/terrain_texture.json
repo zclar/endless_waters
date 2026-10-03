@@ -1,0 +1,20 @@
+{
+  "resource_pack_name": "endless_waters",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "endless_driftwood_plank": {
+      "textures": "textures/blocks/endless/driftwood_plank"
+    },
+    "endless_sea_glass": {
+      "textures": "textures/blocks/endless/sea_glass"
+    },
+    "endless_polished_prismarine_bricks": {
+      "textures": "textures/blocks/endless/polished_prismarine_bricks"
+    },
+    "endless_pearl_lantern": {
+      "textures": "textures/blocks/endless/pearl_lantern"
+    }
+  }
+}

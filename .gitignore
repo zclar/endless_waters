@@ -2,3 +2,7 @@ dist/
 __pycache__/
 .DS_Store
 experiments/seabed/output/
+
+# Local third-party intake, extracted archives and review reports. Licensed
+# assets selected for release live explicitly under third_party/ instead.
+/structures/

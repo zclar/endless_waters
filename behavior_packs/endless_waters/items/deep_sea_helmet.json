@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "endless:deep_sea_helmet",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "item.endless:deep_sea_helmet.name"
+      },
+      "minecraft:icon": {
+        "textures": {
+          "default": "endless_deep_sea_helmet"
+        }
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:wearable": {
+        "slot": "slot.armor.head",
+        "protection": 1
+      },
+      "minecraft:durability": {
+        "max_durability": 143
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "minecraft:iron_ingot"
+            ],
+            "repair_amount": 50
+          }
+        ]
+      }
+    }
+  }
+}

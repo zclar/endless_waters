@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "endless:jellyfish",
+      "materials": {
+        "default": "entity_alphablend"
+      },
+      "textures": {
+        "green": "textures/entity/endless/jellyfish_green",
+        "blue": "textures/entity/endless/jellyfish_blue",
+        "pink": "textures/entity/endless/jellyfish_pink",
+        "red": "textures/entity/endless/jellyfish_red",
+        "orange": "textures/entity/endless/jellyfish_orange"
+      },
+      "geometry": {
+        "default": "geometry.endless.jellyfish"
+      },
+      "animations": {
+        "swim": "animation.endless.jellyfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.endless.jellyfish"
+      ],
+      "spawn_egg": {
+        "base_color": "#5DDBCA",
+        "overlay_color": "#EF8DDD"
+      }
+    }
+  }
+}

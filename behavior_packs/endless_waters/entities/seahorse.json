@@ -1,0 +1,274 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "endless:seahorse",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "spawn_category": "water_ambient"
+    },
+    "component_groups": {
+      "endless:color_0": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "endless:color_1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "endless:color_2": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "endless:color_3": {
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
+      "endless:color_4": {
+        "minecraft:variant": {
+          "value": 4
+        }
+      },
+      "endless:wild": {
+        "minecraft:despawn": {
+          "despawn_from_distance": {
+            "min_distance": 48,
+            "max_distance": 64
+          }
+        }
+      },
+      "endless:pet": {
+        "minecraft:persistent": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "seahorse",
+          "aquatic",
+          "mob"
+        ]
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:health": {
+        "value": 3,
+        "max": 3
+      },
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.7
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:movement": {
+        "value": 0.09
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.09
+      },
+      "minecraft:movement.sway": {
+        "sway_amplitude": 0
+      },
+      "minecraft:navigation.generic": {
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": false,
+        "can_path_over_water": false,
+        "can_sink": false,
+        "is_amphibious": false
+      },
+      "minecraft:breathable": {
+        "breathes_air": false,
+        "breathes_water": true,
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:behavior.random_swim": {
+        "priority": 2,
+        "speed_multiplier": 1,
+        "interval": 2,
+        "xz_dist": 6,
+        "y_dist": 3
+      },
+      "minecraft:behavior.swim_wander": {
+        "priority": 3,
+        "interval": 0.2,
+        "look_ahead": 2
+      },
+      "minecraft:behavior.swim_idle": {
+        "priority": 4
+      },
+      "minecraft:nameable": {
+        "default_trigger": {
+          "event": "endless:keep",
+          "target": "self"
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/seahorse.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "endless:wild"
+              ]
+            }
+          },
+          {
+            "randomize": [
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "endless:color_0"
+                  ]
+                }
+              },
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "endless:color_1"
+                  ]
+                }
+              },
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "endless:color_2"
+                  ]
+                }
+              },
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "endless:color_3"
+                  ]
+                }
+              },
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "endless:color_4"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "endless:keep": {
+        "remove": {
+          "component_groups": [
+            "endless:wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "endless:pet"
+          ]
+        }
+      },
+      "endless:color_0": {
+        "remove": {
+          "component_groups": [
+            "endless:color_0",
+            "endless:color_1",
+            "endless:color_2",
+            "endless:color_3",
+            "endless:color_4"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "endless:color_0"
+          ]
+        }
+      },
+      "endless:color_1": {
+        "remove": {
+          "component_groups": [
+            "endless:color_0",
+            "endless:color_1",
+            "endless:color_2",
+            "endless:color_3",
+            "endless:color_4"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "endless:color_1"
+          ]
+        }
+      },
+      "endless:color_2": {
+        "remove": {
+          "component_groups": [
+            "endless:color_0",
+            "endless:color_1",
+            "endless:color_2",
+            "endless:color_3",
+            "endless:color_4"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "endless:color_2"
+          ]
+        }
+      },
+      "endless:color_3": {
+        "remove": {
+          "component_groups": [
+            "endless:color_0",
+            "endless:color_1",
+            "endless:color_2",
+            "endless:color_3",
+            "endless:color_4"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "endless:color_3"
+          ]
+        }
+      },
+      "endless:color_4": {
+        "remove": {
+          "component_groups": [
+            "endless:color_0",
+            "endless:color_1",
+            "endless:color_2",
+            "endless:color_3",
+            "endless:color_4"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "endless:color_4"
+          ]
+        }
+      }
+    }
+  }
+}

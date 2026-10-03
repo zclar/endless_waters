@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "endless:seahorse",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "yellow": "textures/entity/endless/seahorse_yellow",
+        "orange": "textures/entity/endless/seahorse_orange",
+        "red": "textures/entity/endless/seahorse_red",
+        "teal": "textures/entity/endless/seahorse_teal",
+        "purple": "textures/entity/endless/seahorse_purple"
+      },
+      "geometry": {
+        "default": "geometry.endless.seahorse"
+      },
+      "animations": {
+        "swim": "animation.endless.seahorse.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.endless.seahorse"
+      ],
+      "spawn_egg": {
+        "base_color": "#ECC350",
+        "overlay_color": "#A76837"
+      }
+    }
+  }
+}

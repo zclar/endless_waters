@@ -1,0 +1,51 @@
+{
+  "version": "0.5.0",
+  "server": "1.26.52.3",
+  "seed": 987654321,
+  "records": [
+    {
+      "phase": "swimming",
+      "species": [
+        {
+          "species": "jellyfish",
+          "spawned": 20,
+          "randomColors": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "species": "seahorse",
+          "spawned": 20,
+          "randomColors": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "pets": 40,
+      "moved": 40,
+      "underwaterSurvival": true
+    },
+    {
+      "phase": "dry_land",
+      "suffocationPassed": true
+    },
+    {
+      "phase": "loot",
+      "drops": 14,
+      "onlySlimeBalls": true
+    },
+    {
+      "phase": "reload",
+      "pets": 40,
+      "colorsPreserved": true
+    }
+  ]
+}
