@@ -10,7 +10,7 @@
     "pattern": [
       "III",
       "G G",
-      " P "
+      " A "
     ],
     "key": {
       "I": {
@@ -19,8 +19,8 @@
       "G": {
         "item": "endless:sea_glass"
       },
-      "P": {
-        "item": "minecraft:prismarine_shard"
+      "A": {
+        "item": "minecraft:amethyst_shard"
       }
     },
     "unlock": [

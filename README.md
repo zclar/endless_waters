@@ -2,7 +2,7 @@
 
 ## ⬇️ [Download Endless Waters for Bedrock (.mcaddon)](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Endless_Waters.mcaddon)
 
-**Version 0.5.0 — sea life, diving gear and ocean building blocks.** On your phone, tap the link above,
+**Version 0.5.1 — sea life, diving gear and ocean building blocks.** On your phone, tap the link above,
 then open **Endless_Waters.mcaddon** with Minecraft. The file contains both packs.
 
 ## Install
@@ -48,10 +48,10 @@ ingredients. The recipe book shows their layouts after unlocking them.
 
 | Addition | Ingredients | Use |
 | --- | --- | --- |
-| Deep-Sea Helmet | 5 iron ingots, 2 Sea Glass, 1 prismarine shard | Night vision while your head is underwater |
+| Deep-Sea Helmet | 5 iron ingots, 2 Sea Glass, 1 amethyst shard | Night vision while your head is underwater |
 | Oxygen Tank | 7 iron ingots, 1 Sea Glass | Water breathing while worn |
 | Flippers | 4 dried kelp, 2 iron ingots | 1.5× underwater movement attribute |
-| 8 Sea Glass | 8 glass, 1 prismarine shard | Transparent building block |
+| 8 Sea Glass | 7 glass, 1 ink sac, 1 amethyst shard | Transparent building block |
 | 3 Driftwood Planks | 3 oak planks, 1 dried kelp | Wooden building block |
 | 4 Polished Prismarine Bricks | 4 prismarine bricks | Decorative stone |
 | Pearl Lantern | 4 prismarine crystals, 1 sea lantern | Light level 15 |
@@ -62,9 +62,10 @@ lingers for up to 15 seconds after removal to avoid repeated night-vision
 flashing; breathing expires within five seconds. Stronger potion effects are
 preserved. Repair the gear with iron ingots in an anvil.
 
-Prismarine shards come from guardians and elder guardians at ocean monuments,
-not from breaking prismarine blocks. This generator does not guarantee vanilla
-monument preservation, so access to those ingredients depends on your world.
+Amethyst shards come from underground geodes; squid provide ink sacs. The suit
+needs no guardian drops or ocean monument. Polished Prismarine Bricks and the
+Pearl Lantern still use prismarine ingredients, so those optional decorations
+may be hard to craft if a monument does not survive world generation.
 No custom ore or loot ingredient is required. Gear bonuses use a small stable
 Script API routine; it does not edit terrain.
 
@@ -110,7 +111,7 @@ material support alone does not solve that mismatch. See the
 ## Tested
 
 The v0.4.0 terrain checks below still apply: all **294 generation/biome files**
-are byte-for-byte unchanged in v0.5.0. Creature, gear and building-block checks are documented in
+are byte-for-byte unchanged in v0.5.1. Creature, gear and building-block checks are documented in
 [the sea-life test notes](experiments/sea_life/README.md).
 
 Bedrock Dedicated Server **1.26.52.3**: two reproduced floating-portal sites

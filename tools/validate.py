@@ -16,11 +16,11 @@ rp = ROOT / 'resource_packs/endless_waters'
 
 manifest = json.loads((bp / 'manifest.json').read_text())
 resource_manifest = json.loads((rp / 'manifest.json').read_text())
-assert manifest['header']['version'] == resource_manifest['header']['version'] == [0, 5, 0]
-assert json.loads((ROOT / 'package.json').read_text())['version'] == '0.5.0'
+assert manifest['header']['version'] == resource_manifest['header']['version'] == [0, 5, 1]
+assert json.loads((ROOT / 'package.json').read_text())['version'] == '0.5.1'
 assert manifest['header']['uuid'] == 'f64cd68d-5d41-4a25-b91b-36d5d8f33543'
 assert resource_manifest['header']['uuid'] == 'c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3'
-assert manifest['dependencies'] == [{'uuid': resource_manifest['header']['uuid'], 'version': [0, 5, 0]},
+assert manifest['dependencies'] == [{'uuid': resource_manifest['header']['uuid'], 'version': [0, 5, 1]},
                                     {'module_name': '@minecraft/server', 'version': '2.10.0'}]
 assert len(list((bp / 'structures/endless').glob('column_*.mcstructure'))) == 84
 

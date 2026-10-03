@@ -1,6 +1,7 @@
 """Check survival recipe dependencies, equipment assets and visual-pack isolation."""
 from pathlib import Path
 import json
+from collections import Counter
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -37,6 +38,16 @@ def validate():
         return set().union(*(vanilla_leaves(v, visiting | {item}) for v in recipes[item]))
     for item in recipes:
         assert vanilla_leaves(item, set())
+    suit = ['endless:deep_sea_helmet', 'endless:oxygen_tank', 'endless:flippers']
+    assert all(not any('prismarine' in ingredient or ingredient == 'minecraft:sea_lantern'
+                       for ingredient in vanilla_leaves(item, set())) for item in suit)
+    sea_glass = read(bp / 'recipes/sea_glass.json')['minecraft:recipe_shaped']
+    assert sea_glass['pattern'] == ['GGG', 'GAI', 'GGG']
+    assert Counter(sea_glass['key'][symbol]['item'] for row in sea_glass['pattern'] for symbol in row) == Counter({
+        'minecraft:glass': 7, 'minecraft:amethyst_shard': 1, 'minecraft:ink_sac': 1})
+    assert sea_glass['result']['count'] == 8
+    helmet = read(bp / 'recipes/deep_sea_helmet.json')['minecraft:recipe_shaped']
+    assert 'minecraft:amethyst_shard' in {v['item'] for v in helmet['key'].values()}
 
     atlas = read(rp / 'textures/terrain_texture.json')['texture_data']
     item_atlas = read(rp / 'textures/item_texture.json')['texture_data']

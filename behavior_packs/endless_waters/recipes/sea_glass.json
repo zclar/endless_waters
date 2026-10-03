@@ -9,15 +9,18 @@
     ],
     "pattern": [
       "GGG",
-      "GPG",
+      "GAI",
       "GGG"
     ],
     "key": {
       "G": {
         "item": "minecraft:glass"
       },
-      "P": {
-        "item": "minecraft:prismarine_shard"
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "I": {
+        "item": "minecraft:ink_sac"
       }
     },
     "unlock": [

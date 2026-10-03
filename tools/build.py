@@ -15,7 +15,7 @@ from visual_materials import build as build_visual_materials
 OUT = ROOT / 'dist'
 BP = ROOT / 'behavior_packs/endless_waters'
 RP = ROOT / 'resource_packs/endless_waters'
-VERSION = [0, 5, 0]
+VERSION = [0, 5, 1]
 
 
 def save(path, data):
