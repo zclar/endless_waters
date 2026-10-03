@@ -1,0 +1,18 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "endless:low_surface"
+    },
+    "places_block": "minecraft:sand",
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false,
+    "may_replace": [
+      "minecraft:grass_block",
+      "minecraft:dirt",
+      "minecraft:coarse_dirt",
+      "minecraft:podzol",
+      "minecraft:mycelium"
+    ]
+  }
+}

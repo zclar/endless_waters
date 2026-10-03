@@ -1,0 +1,19 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:conditional_list": {
+    "description": {
+      "identifier": "endless:exposed_only"
+    },
+    "early_out_scheme": "condition_success",
+    "conditional_features": [
+      {
+        "places_feature": "endless:height_selector",
+        "condition": "query.above_top_solid(variable.worldx,variable.worldz)>62"
+      },
+      {
+        "places_feature": "endless:flood_low",
+        "condition": "1"
+      }
+    ]
+  }
+}

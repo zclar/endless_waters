@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "endless:water"
+    },
+    "places_block": "minecraft:water",
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false,
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

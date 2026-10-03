@@ -1,13 +1,12 @@
 {
-  "format_version": "1.21.40",
+  "format_version": "1.26.10",
   "minecraft:aggregate_feature": {
     "description": {
       "identifier": "endless:reshape_49"
     },
     "features": [
       "endless:column_49",
-      "endless:clear_lower",
-      "endless:clear_upper"
+      "endless:clear_above"
     ],
     "early_out": "none"
   }

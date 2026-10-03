@@ -1,0 +1,22 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "endless:air_column"
+    },
+    "places_feature": "endless:air",
+    "distribution": {
+      "iterations": "v.endless_clear_count=math.max(0,math.min(320,query.heightmap(variable.worldx,variable.worldz))-63);return v.endless_clear_count;",
+      "x": 0,
+      "z": 0,
+      "y": {
+        "distribution": "fixed_grid",
+        "step_size": 1,
+        "extent": [
+          0,
+          "v.endless_clear_count-1"
+        ]
+      }
+    }
+  }
+}

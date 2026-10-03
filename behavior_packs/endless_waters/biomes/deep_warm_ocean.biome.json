@@ -17,10 +17,10 @@
         "builder": {
           "type": "minecraft:overworld",
           "sea_floor_depth": 3,
-          "sea_floor_material": "minecraft:sandstone",
+          "sea_floor_material": "minecraft:sand",
           "foundation_material": "minecraft:stone",
-          "mid_material": "minecraft:sandstone",
-          "top_material": "minecraft:sandstone",
+          "mid_material": "minecraft:dirt",
+          "top_material": "minecraft:grass_block",
           "sea_material": "minecraft:water"
         }
       },
@@ -44,14 +44,7 @@
           {
             "dimension": "minecraft:overworld",
             "targets": [
-              "minecraft:deep_warm_ocean",
-              "minecraft:desert_hills",
-              "minecraft:desert_mutated",
-              "minecraft:jungle_hills",
-              "minecraft:mesa_plateau",
-              "minecraft:mesa_plateau_stone",
-              "minecraft:savanna",
-              "minecraft:savanna_plateau"
+              "minecraft:deep_warm_ocean"
             ],
             "amount": 1.0,
             "noise_frequency_scale": 1.0

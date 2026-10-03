@@ -1,0 +1,13 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "endless:flood_low"
+    },
+    "features": [
+      "endless:low_water_start",
+      "endless:low_surface_start"
+    ],
+    "early_out": "none"
+  }
+}

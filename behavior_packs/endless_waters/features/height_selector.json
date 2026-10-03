@@ -1,0 +1,247 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:conditional_list": {
+    "description": {
+      "identifier": "endless:height_selector"
+    },
+    "early_out_scheme": "condition_success",
+    "conditional_features": [
+      {
+        "places_feature": "endless:reshape_1",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 2"
+      },
+      {
+        "places_feature": "endless:reshape_2",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 3"
+      },
+      {
+        "places_feature": "endless:reshape_3",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 4"
+      },
+      {
+        "places_feature": "endless:reshape_4",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 5"
+      },
+      {
+        "places_feature": "endless:reshape_5",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 6"
+      },
+      {
+        "places_feature": "endless:reshape_6",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 7"
+      },
+      {
+        "places_feature": "endless:reshape_7",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 8"
+      },
+      {
+        "places_feature": "endless:reshape_8",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 9"
+      },
+      {
+        "places_feature": "endless:reshape_9",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 10"
+      },
+      {
+        "places_feature": "endless:reshape_10",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 11"
+      },
+      {
+        "places_feature": "endless:reshape_11",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 12"
+      },
+      {
+        "places_feature": "endless:reshape_12",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 13"
+      },
+      {
+        "places_feature": "endless:reshape_13",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 14"
+      },
+      {
+        "places_feature": "endless:reshape_14",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 15"
+      },
+      {
+        "places_feature": "endless:reshape_15",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 16"
+      },
+      {
+        "places_feature": "endless:reshape_16",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 17"
+      },
+      {
+        "places_feature": "endless:reshape_17",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 18"
+      },
+      {
+        "places_feature": "endless:reshape_18",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 19"
+      },
+      {
+        "places_feature": "endless:reshape_19",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 20"
+      },
+      {
+        "places_feature": "endless:reshape_20",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 21"
+      },
+      {
+        "places_feature": "endless:reshape_21",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 22"
+      },
+      {
+        "places_feature": "endless:reshape_22",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 23"
+      },
+      {
+        "places_feature": "endless:reshape_23",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 24"
+      },
+      {
+        "places_feature": "endless:reshape_24",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 25"
+      },
+      {
+        "places_feature": "endless:reshape_25",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 26"
+      },
+      {
+        "places_feature": "endless:reshape_26",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 27"
+      },
+      {
+        "places_feature": "endless:reshape_27",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 28"
+      },
+      {
+        "places_feature": "endless:reshape_28",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 29"
+      },
+      {
+        "places_feature": "endless:reshape_29",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 30"
+      },
+      {
+        "places_feature": "endless:reshape_30",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 31"
+      },
+      {
+        "places_feature": "endless:reshape_31",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 32"
+      },
+      {
+        "places_feature": "endless:reshape_32",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 33"
+      },
+      {
+        "places_feature": "endless:reshape_33",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 34"
+      },
+      {
+        "places_feature": "endless:reshape_34",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 35"
+      },
+      {
+        "places_feature": "endless:reshape_35",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 36"
+      },
+      {
+        "places_feature": "endless:reshape_36",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 37"
+      },
+      {
+        "places_feature": "endless:reshape_37",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 38"
+      },
+      {
+        "places_feature": "endless:reshape_38",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 39"
+      },
+      {
+        "places_feature": "endless:reshape_39",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 40"
+      },
+      {
+        "places_feature": "endless:reshape_40",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 41"
+      },
+      {
+        "places_feature": "endless:reshape_41",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 42"
+      },
+      {
+        "places_feature": "endless:reshape_42",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 43"
+      },
+      {
+        "places_feature": "endless:reshape_43",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 44"
+      },
+      {
+        "places_feature": "endless:reshape_44",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 45"
+      },
+      {
+        "places_feature": "endless:reshape_45",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 46"
+      },
+      {
+        "places_feature": "endless:reshape_46",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 47"
+      },
+      {
+        "places_feature": "endless:reshape_47",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 48"
+      },
+      {
+        "places_feature": "endless:reshape_48",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 49"
+      },
+      {
+        "places_feature": "endless:reshape_49",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 50"
+      },
+      {
+        "places_feature": "endless:reshape_50",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 51"
+      },
+      {
+        "places_feature": "endless:reshape_51",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 52"
+      },
+      {
+        "places_feature": "endless:reshape_52",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 53"
+      },
+      {
+        "places_feature": "endless:reshape_53",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 54"
+      },
+      {
+        "places_feature": "endless:reshape_54",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 55"
+      },
+      {
+        "places_feature": "endless:reshape_55",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 56"
+      },
+      {
+        "places_feature": "endless:reshape_56",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 57"
+      },
+      {
+        "places_feature": "endless:reshape_57",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 58"
+      },
+      {
+        "places_feature": "endless:reshape_58",
+        "condition": "(1+58*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-62))+40)) < 59"
+      },
+      {
+        "places_feature": "endless:reshape_59",
+        "condition": "1"
+      }
+    ]
+  }
+}

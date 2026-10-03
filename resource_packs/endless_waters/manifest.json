@@ -2,18 +2,18 @@
   "format_version": 2,
   "header": {
     "name": "Endless Waters \u2014 Ocean Appearance",
-    "description": "Vanilla ocean water and fog for the ice-free ocean biome.",
     "uuid": "c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3",
     "version": [
       0,
-      2,
-      1
+      3,
+      0
     ],
     "min_engine_version": [
       1,
       26,
       50
-    ]
+    ],
+    "description": "Procedural ice-free oceans, native seabeds and caves."
   },
   "modules": [
     {
@@ -21,8 +21,8 @@
       "uuid": "84c04ce8-1b59-4c59-ae4a-d24e0b6ca727",
       "version": [
         0,
-        2,
-        1
+        3,
+        0
       ]
     }
   ]

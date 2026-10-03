@@ -1,0 +1,22 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "endless:low_water_column"
+    },
+    "places_feature": "endless:water",
+    "distribution": {
+      "iterations": "math.max(0,63-v.endless_low_y)",
+      "x": 0,
+      "z": 0,
+      "y": {
+        "distribution": "fixed_grid",
+        "step_size": 1,
+        "extent": [
+          0,
+          "math.max(0,62-v.endless_low_y)"
+        ]
+      }
+    }
+  }
+}

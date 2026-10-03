@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "endless:low_surface_start"
+    },
+    "places_feature": "endless:low_surface",
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "z": 0,
+      "y": "math.max(0,query.above_top_solid(variable.worldx,variable.worldz)-1)"
+    }
+  }
+}

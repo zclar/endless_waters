@@ -1,0 +1,19 @@
+{
+  "server": "1.26.52.3",
+  "seeds": [
+    987654321,
+    42
+  ],
+  "sampled_columns": 2048,
+  "surface_failures": 0,
+  "above_water_blocks": 0,
+  "ice_blocks": 0,
+  "underwater_grass_blocks": 0,
+  "underwater_logs": 0,
+  "control_reef_floor_and_vegetation_match": true,
+  "control_seed_cave_air": 10985,
+  "preview_control_seed_cave_air": 10934,
+  "preview_sha256": "53e481ac245d1f4ab7608e34bd13c5a834c17bdbd2db560648efa8ce99e95544",
+  "phone_tested": false,
+  "visually_reviewed_in_game": false
+}
