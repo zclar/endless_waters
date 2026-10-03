@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "endless:clear_upper"
+    },
+    "places_feature": "endless:air_upper",
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": 191,
+      "z": 0
+    }
+  }
+}

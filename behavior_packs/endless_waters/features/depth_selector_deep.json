@@ -1,0 +1,127 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:conditional_list": {
+    "description": {
+      "identifier": "endless:depth_selector_deep"
+    },
+    "early_out_scheme": "condition_success",
+    "conditional_features": [
+      {
+        "places_feature": "endless:land_31",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.034482759"
+      },
+      {
+        "places_feature": "endless:land_32",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.068965517"
+      },
+      {
+        "places_feature": "endless:land_33",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.103448276"
+      },
+      {
+        "places_feature": "endless:land_34",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.137931034"
+      },
+      {
+        "places_feature": "endless:land_35",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.172413793"
+      },
+      {
+        "places_feature": "endless:land_36",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.206896552"
+      },
+      {
+        "places_feature": "endless:land_37",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.241379310"
+      },
+      {
+        "places_feature": "endless:land_38",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.275862069"
+      },
+      {
+        "places_feature": "endless:land_39",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.310344828"
+      },
+      {
+        "places_feature": "endless:land_40",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.344827586"
+      },
+      {
+        "places_feature": "endless:land_41",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.379310345"
+      },
+      {
+        "places_feature": "endless:land_42",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.413793103"
+      },
+      {
+        "places_feature": "endless:land_43",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.448275862"
+      },
+      {
+        "places_feature": "endless:land_44",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.482758621"
+      },
+      {
+        "places_feature": "endless:land_45",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.517241379"
+      },
+      {
+        "places_feature": "endless:land_46",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.551724138"
+      },
+      {
+        "places_feature": "endless:land_47",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.586206897"
+      },
+      {
+        "places_feature": "endless:land_48",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.620689655"
+      },
+      {
+        "places_feature": "endless:land_49",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.655172414"
+      },
+      {
+        "places_feature": "endless:land_50",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.689655172"
+      },
+      {
+        "places_feature": "endless:land_51",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.724137931"
+      },
+      {
+        "places_feature": "endless:land_52",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.758620690"
+      },
+      {
+        "places_feature": "endless:land_53",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.793103448"
+      },
+      {
+        "places_feature": "endless:land_54",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.827586207"
+      },
+      {
+        "places_feature": "endless:land_55",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.862068966"
+      },
+      {
+        "places_feature": "endless:land_56",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.896551724"
+      },
+      {
+        "places_feature": "endless:land_57",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.931034483"
+      },
+      {
+        "places_feature": "endless:land_58",
+        "condition": "(query.noise(variable.worldx/192,variable.worldz/192)+1)/2 < 0.965517241"
+      },
+      {
+        "places_feature": "endless:land_59",
+        "condition": "1"
+      }
+    ]
+  }
+}

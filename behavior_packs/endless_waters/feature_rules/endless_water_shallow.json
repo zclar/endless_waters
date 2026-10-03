@@ -2,18 +2,25 @@
   "format_version": "1.21.40",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "endless:endless_water",
-      "places_feature": "endless:depth_selector"
+      "identifier": "endless:endless_water_shallow",
+      "places_feature": "endless:depth_selector_shallow"
     },
     "conditions": {
-      "placement_pass": "final_pass",
-      "minecraft:biome_filter": [
-        {
-          "test": "has_biome_tag",
-          "operator": "==",
-          "value": "overworld"
-        }
-      ]
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": {
+        "all_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "overworld"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "deep"
+          }
+        ]
+      }
     },
     "distribution": {
       "iterations": 256,
@@ -26,7 +33,7 @@
         ],
         "step_size": 1
       },
-      "y": 0,
+      "y": 62,
       "z": {
         "distribution": "fixed_grid",
         "extent": [

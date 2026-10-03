@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "endless:downshift_36"
+    },
+    "places_feature": "endless:reshape_36",
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": -62,
+      "z": 0
+    }
+  }
+}

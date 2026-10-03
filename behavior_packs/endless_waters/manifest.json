@@ -2,12 +2,12 @@
   "format_version": 2,
   "header": {
     "name": "Endless Waters \u2014 Depths",
-    "description": "Endless Overworld water with procedural shallow, ocean, deep-ocean, and trench depths.",
+    "description": "Ice-free warm and lukewarm oceans with shallow and deep variants.",
     "uuid": "f64cd68d-5d41-4a25-b91b-36d5d8f33543",
     "version": [
       0,
       2,
-      0
+      1
     ],
     "min_engine_version": [
       1,
@@ -22,7 +22,17 @@
       "version": [
         0,
         2,
-        0
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3",
+      "version": [
+        0,
+        2,
+        1
       ]
     }
   ],

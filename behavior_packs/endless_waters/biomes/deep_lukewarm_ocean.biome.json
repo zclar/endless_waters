@@ -1,0 +1,56 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "minecraft:deep_lukewarm_ocean"
+    },
+    "components": {
+      "minecraft:climate": {
+        "temperature": 0.5,
+        "downfall": 0.5,
+        "snow_accumulation": [
+          0.0,
+          0.0
+        ]
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "sea_floor_depth": 3,
+          "sea_floor_material": "minecraft:sandstone",
+          "foundation_material": "minecraft:stone",
+          "mid_material": "minecraft:sandstone",
+          "top_material": "minecraft:sandstone",
+          "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "deep_ocean"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "overworld",
+          "ocean",
+          "monster",
+          "fast_fishing",
+          "high_seas",
+          "temperate_ocean",
+          "lukewarm",
+          "deep"
+        ]
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:overworld",
+            "targets": [
+              "minecraft:deep_lukewarm_ocean"
+            ],
+            "amount": 1.0,
+            "noise_frequency_scale": 1.0
+          }
+        ]
+      }
+    }
+  }
+}
