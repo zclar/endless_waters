@@ -1,8 +1,10 @@
 # Endless Waters
 
-An intentionally simple Minecraft Bedrock add-on: the Overworld is endless water with procedurally varied seabed depths and no exposed land.
+## ⬇️ [Download for Minecraft Bedrock (.mcpack)](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Endless_Waters.mcpack)
 
-[Download Endless_Waters.mcpack](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Endless_Waters.mcpack)
+**On your phone:** tap the download link above, then open **Endless_Waters.mcpack** with Minecraft. Once it imports, enable **Endless Waters — Depths** in your new world's **Behavior Packs**.
+
+An intentionally simple Minecraft Bedrock add-on: the Overworld is endless water with procedurally varied seabed depths and no exposed land.
 
 ## What it does
 
