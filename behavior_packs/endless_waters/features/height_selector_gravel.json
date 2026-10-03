@@ -1,0 +1,179 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:conditional_list": {
+    "description": {
+      "identifier": "endless:height_selector_gravel"
+    },
+    "early_out_scheme": "condition_success",
+    "conditional_features": [
+      {
+        "places_feature": "endless:reshape_gravel_18",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 19"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_19",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 20"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_20",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 21"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_21",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 22"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_22",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 23"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_23",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 24"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_24",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 25"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_25",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 26"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_26",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 27"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_27",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 28"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_28",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 29"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_29",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 30"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_30",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 31"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_31",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 32"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_32",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 33"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_33",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 34"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_34",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 35"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_35",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 36"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_36",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 37"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_37",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 38"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_38",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 39"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_39",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 40"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_40",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 41"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_41",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 42"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_42",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 43"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_43",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 44"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_44",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 45"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_45",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 46"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_46",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 47"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_47",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 48"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_48",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 49"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_49",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 50"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_50",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 51"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_51",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 52"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_52",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 53"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_53",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 54"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_54",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 55"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_55",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 56"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_56",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 57"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_57",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 58"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_58",
+        "condition": "((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))>0 ? 18+41*(math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))/((math.max(0,query.heightmap(variable.worldx,variable.worldz)-63))+10) : 18+0.5*(math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz)))) < 59"
+      },
+      {
+        "places_feature": "endless:reshape_gravel_59",
+        "condition": "1"
+      }
+    ]
+  }
+}

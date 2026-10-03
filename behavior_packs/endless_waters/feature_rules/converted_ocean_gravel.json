@@ -1,0 +1,53 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "endless:converted_ocean_gravel",
+      "places_feature": "endless:to_floor_gravel"
+    },
+    "conditions": {
+      "placement_pass": "before_surface_pass",
+      "minecraft:biome_filter": {
+        "all_of": [
+          {
+            "test": "has_biome_tag",
+            "value": "overworld"
+          },
+          {
+            "none_of": [
+              {
+                "test": "has_biome_tag",
+                "value": "warm"
+              },
+              {
+                "test": "has_biome_tag",
+                "value": "lukewarm"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "distribution": {
+      "iterations": 256,
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1
+      },
+      "y": 62,
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1
+      }
+    }
+  }
+}

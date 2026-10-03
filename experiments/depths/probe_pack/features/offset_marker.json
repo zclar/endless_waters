@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "probe:offset_marker"
+    },
+    "places_feature": "probe:marker",
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": -125,
+      "z": 0
+    }
+  }
+}

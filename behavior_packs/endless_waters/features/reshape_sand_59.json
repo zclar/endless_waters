@@ -1,0 +1,13 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "endless:reshape_sand_59"
+    },
+    "features": [
+      "endless:column_sand_59",
+      "endless:clear_above"
+    ],
+    "early_out": "none"
+  }
+}

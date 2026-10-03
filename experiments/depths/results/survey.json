@@ -1,0 +1,307 @@
+{
+  "seed": 987654321,
+  "server": "1.26.52.3",
+  "version": "0.4.0",
+  "fixturesEnabled": true,
+  "samples": [
+    {
+      "name": "forest",
+      "x": 0,
+      "z": 0,
+      "generationMs": 7600,
+      "columns": 256,
+      "surfaceFailures": 0,
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 2879,
+      "caveWater": 32,
+      "caveLava": 122,
+      "caveHash": 49009914,
+      "ores": 64,
+      "plants": {
+        "minecraft:kelp": 509,
+        "minecraft:seagrass": 61
+      },
+      "biomes": {
+        "endless:converted_deep_ocean": 232,
+        "endless:converted_deep_lukewarm_ocean": 24
+      },
+      "materials": {
+        "minecraft:gravel": 228,
+        "minecraft:sand": 24,
+        "minecraft:magma": 4
+      },
+      "depth": {
+        "min": 18,
+        "max": 29,
+        "mean": 27.2734375,
+        "atLeast30": 0,
+        "below18": 0
+      },
+      "fixtureMarker": "minecraft:diamond_block"
+    },
+    {
+      "name": "high_forest",
+      "x": 4096,
+      "z": 4096,
+      "generationMs": 10708,
+      "columns": 256,
+      "surfaceFailures": 0,
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 91,
+      "caveWater": 0,
+      "caveLava": 0,
+      "caveHash": 3635896724,
+      "ores": 100,
+      "plants": {
+        "minecraft:seagrass": 45
+      },
+      "biomes": {
+        "endless:converted_deep_ocean": 256
+      },
+      "materials": {
+        "minecraft:gravel": 253,
+        "minecraft:magma": 3
+      },
+      "depth": {
+        "min": 46,
+        "max": 51,
+        "mean": 49.58984375,
+        "atLeast30": 256,
+        "below18": 0
+      },
+      "fixtureMarker": "minecraft:diamond_block"
+    },
+    {
+      "name": "frozen_ocean",
+      "x": 992,
+      "z": 1056,
+      "generationMs": 7058,
+      "columns": 256,
+      "surfaceFailures": 0,
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 696,
+      "caveWater": 8,
+      "caveLava": 0,
+      "caveHash": 3675551327,
+      "ores": 106,
+      "plants": {
+        "minecraft:kelp": 96,
+        "minecraft:seagrass": 63
+      },
+      "biomes": {
+        "minecraft:lukewarm_ocean": 33,
+        "endless:converted_lukewarm_ocean": 223
+      },
+      "materials": {
+        "minecraft:sand": 252,
+        "minecraft:stone": 4
+      },
+      "depth": {
+        "min": 18,
+        "max": 38,
+        "mean": 27.8359375,
+        "atLeast30": 80,
+        "below18": 0
+      },
+      "fixtureMarker": "minecraft:diamond_block"
+    },
+    {
+      "name": "frozen_peaks",
+      "x": 928,
+      "z": 864,
+      "generationMs": 18453,
+      "columns": 256,
+      "surfaceFailures": 0,
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 7268,
+      "caveWater": 0,
+      "caveLava": 0,
+      "caveHash": 3626719417,
+      "ores": 58,
+      "plants": {
+        "minecraft:seagrass": 39
+      },
+      "biomes": {
+        "endless:converted_deep_ocean": 256
+      },
+      "materials": {
+        "minecraft:sculk_vein": 101,
+        "minecraft:sculk": 139,
+        "minecraft:gravel": 15,
+        "minecraft:sculk_catalyst": 1
+      },
+      "depth": {
+        "min": 24,
+        "max": 55,
+        "mean": 51.31640625,
+        "atLeast30": 244,
+        "below18": 0
+      },
+      "fixtureMarker": "minecraft:diamond_block"
+    },
+    {
+      "name": "warm_ocean",
+      "x": -2016,
+      "z": 1184,
+      "generationMs": 7720,
+      "columns": 256,
+      "surfaceFailures": 0,
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 0,
+      "caveWater": 0,
+      "caveLava": 0,
+      "caveHash": 946445765,
+      "ores": 86,
+      "plants": {
+        "minecraft:horn_coral_block": 95,
+        "minecraft:dead_horn_coral_block": 10,
+        "minecraft:tube_coral_wall_fan": 6,
+        "minecraft:seagrass": 78,
+        "minecraft:horn_coral_wall_fan": 7,
+        "minecraft:tube_coral_fan": 2,
+        "minecraft:bubble_coral_wall_fan": 4,
+        "minecraft:brain_coral_wall_fan": 4,
+        "minecraft:fire_coral_wall_fan": 2,
+        "minecraft:sea_pickle": 5,
+        "minecraft:tube_coral_block": 14,
+        "minecraft:brain_coral_fan": 1,
+        "minecraft:fire_coral_fan": 1,
+        "minecraft:brain_coral_block": 5
+      },
+      "biomes": {
+        "minecraft:warm_ocean": 256
+      },
+      "materials": {
+        "minecraft:sand": 253,
+        "minecraft:andesite": 1,
+        "minecraft:granite": 2
+      },
+      "depth": {
+        "min": 19,
+        "max": 25,
+        "mean": 24.78515625,
+        "atLeast30": 0,
+        "below18": 0
+      },
+      "fixtureMarker": "minecraft:diamond_block"
+    },
+    {
+      "name": "west",
+      "x": -4096,
+      "z": -4096,
+      "generationMs": 9752,
+      "columns": 256,
+      "surfaceFailures": 0,
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 244,
+      "caveWater": 0,
+      "caveLava": 0,
+      "caveHash": 2926498683,
+      "ores": 153,
+      "plants": {
+        "minecraft:seagrass": 72
+      },
+      "biomes": {
+        "minecraft:dripstone_caves": 256
+      },
+      "materials": {
+        "minecraft:gravel": 256
+      },
+      "depth": {
+        "min": 49,
+        "max": 51,
+        "mean": 50.16796875,
+        "atLeast30": 256,
+        "below18": 0
+      },
+      "fixtureMarker": "minecraft:diamond_block"
+    },
+    {
+      "name": "east",
+      "x": 2048,
+      "z": 0,
+      "generationMs": 6559,
+      "columns": 256,
+      "surfaceFailures": 0,
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 3843,
+      "caveWater": 3185,
+      "caveLava": 9,
+      "caveHash": 1890712685,
+      "ores": 53,
+      "plants": {
+        "minecraft:seagrass": 99
+      },
+      "biomes": {
+        "minecraft:lukewarm_ocean": 256
+      },
+      "materials": {
+        "minecraft:sand": 256
+      },
+      "depth": {
+        "min": 20,
+        "max": 22,
+        "mean": 20.97265625,
+        "atLeast30": 0,
+        "below18": 0
+      },
+      "fixtureMarker": "minecraft:diamond_block"
+    },
+    {
+      "name": "north",
+      "x": 0,
+      "z": 4096,
+      "generationMs": 6078,
+      "columns": 256,
+      "surfaceFailures": 0,
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 6,
+      "caveWater": 0,
+      "caveLava": 0,
+      "caveHash": 3463271023,
+      "ores": 167,
+      "plants": {
+        "minecraft:seagrass": 39,
+        "minecraft:kelp": 137
+      },
+      "biomes": {
+        "minecraft:lukewarm_ocean": 256
+      },
+      "materials": {
+        "minecraft:sand": 256
+      },
+      "depth": {
+        "min": 25,
+        "max": 25,
+        "mean": 25,
+        "atLeast30": 0,
+        "below18": 0
+      },
+      "fixtureMarker": "minecraft:diamond_block"
+    }
+  ]
+}

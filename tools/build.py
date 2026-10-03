@@ -1,4 +1,4 @@
-"""Build Endless Waters 0.3.0 from the tested procedural seabed generator."""
+"""Build Endless Waters 0.4.0 from the tested procedural seabed generator."""
 from pathlib import Path
 import json
 import shutil
@@ -12,7 +12,7 @@ from nbt import structure
 OUT = ROOT / 'dist'
 BP = ROOT / 'behavior_packs/endless_waters'
 RP = ROOT / 'resource_packs/endless_waters'
-VERSION = [0, 3, 0]
+VERSION = [0, 4, 0]
 
 
 def save(path, data):
@@ -92,14 +92,18 @@ def main():
             group = target
         elif target == 'deep_frozen_ocean':
             group = 'deep_cold_ocean'
-        elif target in ['desert_hills', 'desert_mutated', 'jungle_hills', 'savanna', 'savanna_plateau', 'mesa_plateau', 'mesa_plateau_stone']:
-            # Bedrock defines deep warm ocean but does not normally select it.
-            # Give it real procedural regions rather than an unused JSON file.
-            group = 'deep_warm_ocean'
-        elif target == 'warm_ocean' or target.startswith(('desert', 'jungle', 'bamboo', 'savanna', 'mesa')):
-            group = 'warm_ocean'
-        else:
+        elif 'ocean' in target:
+            group = 'warm_ocean' if target == 'warm_ocean' else 'lukewarm_ocean'
+        elif target in ['beach', 'cold_beach', 'stone_beach', 'river', 'frozen_river', 'mushroom_island_shore']:
             group = 'lukewarm_ocean'
+        elif target == 'desert':
+            group = 'warm_ocean'
+        elif target.startswith(('desert', 'jungle', 'bamboo', 'savanna', 'mesa')):
+            group = 'deep_warm_ocean'
+        elif target.startswith('birch') or target in ['flower_forest', 'cherry_grove', 'meadow', 'swampland', 'swampland_mutated', 'mangrove_swamp']:
+            group = 'deep_lukewarm_ocean'
+        else:
+            group = 'deep_ocean'
         groups[group].append(target)
     for name, biome_targets in groups.items(): ocean_biome(name, biome_targets)
 
@@ -109,7 +113,8 @@ def main():
         data = json.loads(path.read_text())
         components = data['minecraft:biome']['components']
         builder = components['minecraft:surface_builder']['builder']
-        builder.update(top_material='minecraft:grass_block',
+        builder.update(sea_floor_depth=7 if path.stem.startswith('deep_') or 'warm' not in path.stem else 3,
+                       top_material='minecraft:grass_block',
                        mid_material='minecraft:dirt',
                        sea_floor_material=('minecraft:sand' if 'warm' in path.stem
                                            else 'minecraft:gravel'))
@@ -128,7 +133,7 @@ def main():
             cc = converted['minecraft:biome']['components']
             # Dry depressions can begin below sea level. Give them ocean soil
             # from the surface pass itself, including ledges below overhangs.
-            cc['minecraft:surface_builder']['builder']['top_material'] = 'minecraft:sand'
+            cc['minecraft:surface_builder']['builder']['top_material'] = builder['sea_floor_material']
             cc['minecraft:replace_biomes']['replacements'][0]['targets'] = land
             cc['minecraft:tags']['tags'].append('endless_converted_land')
             save(BP / 'biomes' / ('converted_' + path.name), converted)
@@ -136,26 +141,29 @@ def main():
             client['minecraft:client_biome']['description']['identifier'] = identifier
             save(RP / 'biomes' / ('converted_' + path.name.replace('.biome.', '.client_biome.')), client)
 
-    # Select depth using the seed-dependent original terrain. The shoreline
-    # tends toward shallow water; former hills become broad underwater basins.
-    # One formula across all converted biomes avoids depth jumps at their edges.
-    height = 'math.max(0,query.heightmap(variable.worldx,variable.worldz)-62)'
-    depth = f'(1+58*({height})/(({height})+40))'
-    choices = []
-    for d in range(1, 60):
-        floor = 62 - d
-        blocks = [None if y < floor - 3 else 'sandstone' if y == floor - 3
-                  else 'sand' if y <= floor else 'water' for y in range(63)]
-        (BP / f'structures/endless/column_{d}.mcstructure').write_bytes(
-            structure((1, 63, 1), blocks))
-        feature(f'column_{d}', 'structure_template_feature',
-                structure_name=f'endless:column_{d}', adjustment_radius=0,
-                facing_direction='north', constraints={})
-        feature(f'reshape_{d}', 'aggregate_feature',
-                features=[f'endless:column_{d}', 'endless:clear_above'],
-                early_out='none')
-        choices.append({'places_feature': f'endless:reshape_{d}',
-                        'condition': '1' if d == 59 else f'{depth} < {d+1}'})
+    # Follow vanilla contours: deepen shallow underwater floors smoothly,
+    # retain floors already >=36 blocks deep, and turn continents into basins.
+    # The formulas join at the old shoreline without a flat minimum-depth shelf.
+    height = 'math.max(0,query.heightmap(variable.worldx,variable.worldz)-63)'
+    old_depth = 'math.max(0,63-query.above_top_solid(variable.worldx,variable.worldz))'
+    depth = f'(({height})>0 ? 18+41*({height})/(({height})+10) : 18+0.5*({old_depth}))'
+    for material in ['sand', 'gravel']:
+        choices = []
+        for d in range(18, 60):
+            floor = 62 - d
+            foundation = 'sandstone' if material == 'sand' else 'stone'
+            blocks = [None if y < floor - 3 else foundation if y == floor - 3
+                      else material if y <= floor else 'water' for y in range(63)]
+            name = f'column_{material}_{d}'
+            (BP / f'structures/endless/{name}.mcstructure').write_bytes(structure((1, 63, 1), blocks))
+            feature(name, 'structure_template_feature', structure_name=f'endless:{name}',
+                    adjustment_radius=0, facing_direction='north', constraints={})
+            feature(f'reshape_{material}_{d}', 'aggregate_feature',
+                    features=[f'endless:{name}', 'endless:clear_above'], early_out='none')
+            choices.append({'places_feature': f'endless:reshape_{material}_{d}',
+                            'condition': '1' if d == 59 else f'{depth} < {d+1}'})
+        feature(f'height_selector_{material}', 'conditional_list',
+                early_out_scheme='condition_success', conditional_features=choices)
     feature('air', 'single_block_feature', places_block='minecraft:air',
             enforce_placement_rules=False, enforce_survivability_rules=False)
     # Clear only as high as the old surface; avoid rewriting hundreds of
@@ -168,8 +176,6 @@ def main():
                 'x': 0, 'z': 0,
                 'y': {'distribution': 'fixed_grid', 'step_size': 1,
                       'extent': [0, 'v.endless_clear_count-1']}})
-    feature('height_selector', 'conditional_list', early_out_scheme='condition_success',
-            conditional_features=choices)
     # A low surface is not necessarily wet: inland depressions may contain
     # air below sea level. Fill only that air above their highest solid block.
     feature('water', 'single_block_feature', places_block='minecraft:water',
@@ -191,24 +197,46 @@ def main():
                           'y': 'math.max(0,query.above_top_solid(variable.worldx,variable.worldz)-1)'})
     feature('flood_low', 'aggregate_feature',
             features=['endless:low_water_start', 'endless:low_surface_start'], early_out='none')
-    # Keep every already-submerged floor, including rivers through continents.
-    # This also avoids filling a shallow lake over a deeper native cave mouth.
-    feature('exposed_only', 'conditional_list', early_out_scheme='condition_success',
-            conditional_features=[{'places_feature': 'endless:height_selector',
-                                   'condition': 'query.above_top_solid(variable.worldx,variable.worldz)>62'},
-                                  {'places_feature': 'endless:flood_low', 'condition': '1'}])
-    feature('to_floor', 'scatter_feature', places_feature='endless:exposed_only',
-            distribution={'iterations': 1, 'x': 0, 'y': -62, 'z': 0})
-    save(BP / 'feature_rules/converted_ocean.json', {
+    warm_filter = {'any_of': [{'test': 'has_biome_tag', 'value': 'warm'},
+                              {'test': 'has_biome_tag', 'value': 'lukewarm'}]}
+    for material in ['sand', 'gravel']:
+        feature(f'deepen_{material}', 'conditional_list', early_out_scheme='condition_success',
+                conditional_features=[{'places_feature': f'endless:height_selector_{material}',
+                                       'condition': 'query.above_top_solid(variable.worldx,variable.worldz)>27'},
+                                      {'places_feature': 'endless:flood_low', 'condition': '1'}])
+        feature(f'to_floor_{material}', 'scatter_feature', places_feature=f'endless:deepen_{material}',
+                distribution={'iterations': 1, 'x': 0, 'y': -62, 'z': 0})
+        save(BP / f'feature_rules/converted_ocean_{material}.json', {
+            'format_version': '1.26.10', 'minecraft:feature_rules': {
+                'description': {'identifier': f'endless:converted_ocean_{material}',
+                                'places_feature': f'endless:to_floor_{material}'},
+                'conditions': {'placement_pass': 'before_surface_pass',
+                               'minecraft:biome_filter': {'all_of': [
+                                   {'test': 'has_biome_tag', 'value': 'overworld'},
+                                   warm_filter if material == 'sand' else {'none_of': warm_filter['any_of']}
+                               ]}},
+                # Sample the surface biome, then offset to the template origin.
+                'distribution': {'iterations': 256, 'coordinate_eval_order': 'xzy',
+                                 'x': {'distribution': 'fixed_grid', 'extent': [0, 15], 'step_size': 1},
+                                 'y': 62,
+                                 'z': {'distribution': 'fixed_grid', 'extent': [0, 15], 'step_size': 1}}
+            }
+        })
+    # Legacy structures and shore plants can be placed after terrain shaping.
+    # Only newly generated chunks are cleaned; player builds are never scanned.
+    # Legacy structures do not reliably update the Molang heightmap. Scan
+    # the full above-water range using compiled block placement, without
+    # loading hundreds of full-height structure templates for empty columns.
+    feature('final_clear', 'scatter_feature', places_feature='endless:air',
+            distribution={'iterations': 257, 'x': 0, 'z': 0,
+                          'y': {'distribution': 'fixed_grid', 'step_size': 1, 'extent': [0,256]}})
+    feature('finish_origin', 'scatter_feature', places_feature='endless:final_clear',
+            distribution={'iterations': 1, 'x': 0, 'y': 1, 'z': 0})
+    save(BP / 'feature_rules/finish_ocean.json', {
         'format_version': '1.26.10', 'minecraft:feature_rules': {
-            'description': {'identifier': 'endless:converted_ocean',
-                            'places_feature': 'endless:to_floor'},
-            'conditions': {'placement_pass': 'before_surface_pass',
-                           'minecraft:biome_filter': {'test': 'has_biome_tag',
-                                                     'operator': '==',
-                                                     'value': 'overworld'}},
-            # Evaluate the SURFACE biome. At Y=0, cave biomes can prevent this
-            # rule from firing and leave entire patches of original land.
+            'description': {'identifier': 'endless:finish_ocean', 'places_feature': 'endless:finish_origin'},
+            'conditions': {'placement_pass': 'final_pass',
+                           'minecraft:biome_filter': {'test': 'has_biome_tag', 'value': 'overworld'}},
             'distribution': {'iterations': 256, 'coordinate_eval_order': 'xzy',
                              'x': {'distribution': 'fixed_grid', 'extent': [0, 15], 'step_size': 1},
                              'y': 62,
@@ -233,7 +261,7 @@ def main():
         if pack == BP:
             data['metadata'] = {'authors': ['zclar'], 'license': 'Apache-2.0'}
         if pack == BP:
-            data['dependencies'] = [{'uuid': rp_id, 'version': [0, 3, 0]}]
+            data['dependencies'] = [{'uuid': rp_id, 'version': VERSION}]
         save(pack / 'manifest.json', data)
     archive = OUT / 'Endless_Waters.mcaddon'
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:

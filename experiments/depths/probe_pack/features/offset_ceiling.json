@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "probe:offset_ceiling"
+    },
+    "places_feature": "probe:ceiling",
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": 257,
+      "z": 0
+    }
+  }
+}

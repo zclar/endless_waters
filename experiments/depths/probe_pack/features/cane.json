@@ -1,0 +1,11 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "probe:cane"
+    },
+    "places_block": "minecraft:reeds",
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "endless:finish_ocean",
+      "places_feature": "endless:finish_origin"
+    },
+    "conditions": {
+      "placement_pass": "final_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "value": "overworld"
+      }
+    },
+    "distribution": {
+      "iterations": 256,
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1
+      },
+      "y": 62,
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1
+      }
+    }
+  }
+}

@@ -14,22 +14,25 @@ rp = ROOT / 'resource_packs/endless_waters'
 
 manifest = json.loads((bp / 'manifest.json').read_text())
 resource_manifest = json.loads((rp / 'manifest.json').read_text())
-assert manifest['header']['version'] == resource_manifest['header']['version'] == [0, 3, 0]
+assert manifest['header']['version'] == resource_manifest['header']['version'] == [0, 4, 0]
+assert json.loads((ROOT / 'package.json').read_text())['version'] == '0.4.0'
 assert manifest['header']['uuid'] == 'f64cd68d-5d41-4a25-b91b-36d5d8f33543'
 assert resource_manifest['header']['uuid'] == 'c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3'
-assert manifest['dependencies'] == [{'uuid': resource_manifest['header']['uuid'], 'version': [0, 3, 0]}]
-assert len(list((bp / 'structures/endless').glob('column_*.mcstructure'))) == 59
+assert manifest['dependencies'] == [{'uuid': resource_manifest['header']['uuid'], 'version': [0, 4, 0]}]
+assert len(list((bp / 'structures/endless').glob('column_*.mcstructure'))) == 84
 
 for path in (bp / 'structures/endless').glob('column_*.mcstructure'):
     data = loads(path.read_bytes())
     depth = int(path.stem.split('_')[-1])
+    material = path.stem.split('_')[-2]
+    assert 18 <= depth <= 59 and material in ['sand', 'gravel']
     floor = 62 - depth
     palette = data['structure']['palette']['default']['block_palette']
     column = [palette[i]['name'] if i >= 0 else None
               for i in data['structure']['block_indices'][0]]
     assert data['size'] == [1, 63, 1]
     assert all(b is None for b in column[:floor - 3]), path
-    assert column[floor] == 'minecraft:sand', path
+    assert column[floor] == 'minecraft:' + material, path
     assert column[floor + 1:] == ['minecraft:water'] * depth, path
     assert not any('ice' in b or 'snow' in b for b in column if b), path
 
@@ -47,11 +50,18 @@ for path in (bp / 'features').glob('*.json'):
         assert 'distribution' in body, path
 assert references <= definitions.keys(), references - definitions.keys()
 
-rule = json.loads((bp / 'feature_rules/converted_ocean.json').read_text())['minecraft:feature_rules']
-assert rule['distribution']['y'] == 62, 'Must sample the surface biome, not a cave biome'
-assert rule['conditions']['placement_pass'] == 'before_surface_pass', 'Allow native ocean vegetation afterward'
-assert definitions['endless:to_floor']['distribution']['y'] == -62
-assert definitions['endless:exposed_only']['conditional_features'][0]['condition'].endswith('>62')
+for material in ['sand', 'gravel']:
+    rule = json.loads((bp / f'feature_rules/converted_ocean_{material}.json').read_text())['minecraft:feature_rules']
+    assert rule['distribution']['y'] == 62, 'Must sample the surface biome, not a cave biome'
+    assert rule['conditions']['placement_pass'] == 'before_surface_pass'
+    assert definitions[f'endless:to_floor_{material}']['distribution']['y'] == -62
+    assert definitions[f'endless:deepen_{material}']['conditional_features'][0]['condition'].endswith('>27')
+finish = json.loads((bp / 'feature_rules/finish_ocean.json').read_text())['minecraft:feature_rules']
+assert finish['conditions']['placement_pass'] == 'final_pass'
+assert finish['distribution']['y'] == 62
+assert definitions['endless:finish_origin']['distribution']['y'] == 1
+assert definitions['endless:final_clear']['distribution']['iterations'] == 257
+assert definitions['endless:final_clear']['distribution']['y']['extent'] == [0,256]
 assert definitions['endless:clear_above']['distribution']['y'] == 63
 assert definitions['endless:air_column']['distribution']['y']['extent'][0] == 0
 
@@ -64,7 +74,7 @@ for path in (bp / 'biomes').glob('*.json'):
     assert 'frozen' not in components['minecraft:tags']['tags']
     assert components['minecraft:surface_builder']['builder']['type'] == 'minecraft:overworld'
     if data['description']['identifier'].startswith('endless:converted_'):
-        assert components['minecraft:surface_builder']['builder']['top_material'] == 'minecraft:sand'
+        assert components['minecraft:surface_builder']['builder']['top_material'] == components['minecraft:surface_builder']['builder']['sea_floor_material']
     targets += components['minecraft:replace_biomes']['replacements'][0]['targets']
     client = rp / 'biomes' / path.name.replace('.biome.', '.client_biome.')
     assert json.loads(client.read_text())['minecraft:client_biome']['description'] == data['description']
@@ -74,8 +84,13 @@ assert {t.removeprefix('minecraft:') for t in targets} == expected
 
 with zipfile.ZipFile(out / 'Endless_Waters.mcaddon') as archive:
     assert archive.testzip() is None
+    expected_entries = set()
     for pack, prefix in [(bp, 'Endless_Waters_BP'), (rp, 'Endless_Waters_RP')]:
         for path in pack.rglob('*'):
             if path.is_file():
-                assert archive.read(prefix + '/' + path.relative_to(pack).as_posix()) == path.read_bytes()
+                entry = prefix + '/' + path.relative_to(pack).as_posix()
+                expected_entries.add(entry)
+                assert archive.read(entry) == path.read_bytes()
+    assert set(archive.namelist()) == expected_entries, 'Unexpected files in release archive'
+    assert not any('/scripts/' in name or '/probe' in name for name in archive.namelist())
 print('Release validation passed: cave-preserving columns, feature graph, ice-free climates and archive.')

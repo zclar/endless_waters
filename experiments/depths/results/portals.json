@@ -1,0 +1,210 @@
+{
+  "seed": 987654321,
+  "server": "1.26.52.3",
+  "beforeVersion": "0.3.0",
+  "afterVersion": "0.4.0",
+  "before": [
+    {
+      "name": "portal_near",
+      "x": 184,
+      "z": 72,
+      "generationMs": 5603,
+      "columns": 1024,
+      "surfaceFailures": 0,
+      "aboveTypes": {},
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 3433,
+      "caveWater": 8,
+      "caveLava": 37,
+      "caveHash": 2780747931,
+      "ores": 636,
+      "plants": {
+        "minecraft:seagrass": 225,
+        "minecraft:kelp": 57
+      },
+      "biomes": {
+        "endless:converted_lukewarm_ocean": 1024
+      },
+      "materials": {
+        "minecraft:sand": 1024
+      }
+    },
+    {
+      "name": "portal_high",
+      "x": 4168,
+      "z": 3864,
+      "generationMs": 7258,
+      "columns": 1024,
+      "surfaceFailures": 0,
+      "aboveTypes": {
+        "minecraft:chest": 1,
+        "minecraft:netherrack": 29,
+        "minecraft:magma": 18,
+        "minecraft:stone_brick_stairs": 2,
+        "minecraft:obsidian": 6,
+        "minecraft:crying_obsidian": 3,
+        "minecraft:stone_brick_slab": 3,
+        "minecraft:gold_block": 2
+      },
+      "aboveWater": 64,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 920,
+      "caveWater": 0,
+      "caveLava": 0,
+      "caveHash": 3317877963,
+      "ores": 486,
+      "plants": {
+        "minecraft:seagrass": 329,
+        "minecraft:kelp": 405
+      },
+      "biomes": {
+        "endless:converted_lukewarm_ocean": 1024
+      },
+      "materials": {
+        "minecraft:sand": 1024
+      }
+    },
+    {
+      "name": "portal_negative",
+      "x": -4184,
+      "z": -4136,
+      "generationMs": 10797,
+      "columns": 1024,
+      "surfaceFailures": 0,
+      "aboveTypes": {
+        "minecraft:water": 36,
+        "minecraft:netherrack": 53,
+        "minecraft:obsidian": 17,
+        "minecraft:mossy_stone_brick_stairs": 3,
+        "minecraft:cracked_stone_bricks": 7,
+        "minecraft:stone_brick_stairs": 9,
+        "minecraft:stone_bricks": 16,
+        "minecraft:stone_brick_slab": 8,
+        "minecraft:normal_stone_slab": 1,
+        "minecraft:lava": 2,
+        "minecraft:magma": 3,
+        "minecraft:iron_bars": 22,
+        "minecraft:chiseled_stone_bricks": 2,
+        "minecraft:mossy_stone_bricks": 2,
+        "minecraft:mossy_stone_brick_slab": 1,
+        "minecraft:gold_block": 2,
+        "minecraft:crying_obsidian": 2,
+        "minecraft:stone_brick_double_slab": 1
+      },
+      "aboveWater": 187,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 1090,
+      "caveWater": 49,
+      "caveLava": 133,
+      "caveHash": 442778640,
+      "ores": 479,
+      "plants": {
+        "minecraft:seagrass": 256,
+        "minecraft:kelp": 531
+      },
+      "biomes": {
+        "minecraft:dripstone_caves": 1024
+      },
+      "materials": {
+        "minecraft:sand": 1018,
+        "minecraft:magma": 6
+      }
+    },
+    {
+      "name": "portal_coast",
+      "x": 760,
+      "z": 952,
+      "generationMs": 12058,
+      "columns": 1024,
+      "surfaceFailures": 0,
+      "aboveTypes": {},
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 453,
+      "caveWater": 0,
+      "caveLava": 101,
+      "caveHash": 1981957605,
+      "ores": 441,
+      "plants": {
+        "minecraft:seagrass": 176,
+        "minecraft:kelp": 237
+      },
+      "biomes": {
+        "endless:converted_lukewarm_ocean": 1024
+      },
+      "materials": {
+        "minecraft:sand": 993,
+        "minecraft:magma": 31
+      }
+    }
+  ],
+  "after": [
+    {
+      "name": "portal_high",
+      "x": 4168,
+      "z": 3864,
+      "generationMs": 8804,
+      "columns": 1024,
+      "surfaceFailures": 0,
+      "aboveTypes": {},
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 920,
+      "caveWater": 0,
+      "caveLava": 0,
+      "caveHash": 3317877963,
+      "ores": 486,
+      "plants": {
+        "minecraft:seagrass": 228,
+        "minecraft:kelp": 1122
+      },
+      "biomes": {
+        "endless:converted_deep_ocean": 1024
+      },
+      "materials": {
+        "minecraft:gravel": 1008,
+        "minecraft:magma": 16
+      }
+    },
+    {
+      "name": "portal_negative",
+      "x": -4184,
+      "z": -4136,
+      "generationMs": 17008,
+      "columns": 1024,
+      "surfaceFailures": 0,
+      "aboveTypes": {},
+      "aboveWater": 0,
+      "ice": 0,
+      "underwaterGrass": 0,
+      "underwaterLogs": 0,
+      "caveAir": 1144,
+      "caveWater": 0,
+      "caveLava": 133,
+      "caveHash": 1937978182,
+      "ores": 479,
+      "plants": {
+        "minecraft:kelp": 781,
+        "minecraft:seagrass": 200
+      },
+      "biomes": {
+        "minecraft:dripstone_caves": 1024
+      },
+      "materials": {
+        "minecraft:gravel": 1015,
+        "minecraft:magma": 9
+      }
+    }
+  ]
+}
