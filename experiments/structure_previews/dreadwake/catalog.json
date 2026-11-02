@@ -9,7 +9,7 @@
   "status": "review only; not integrated into Endless Waters",
   "variants": {
     "new": {
-      "solid_blocks": 18087,
+      "solid_blocks": 17342,
       "actual_block_bounds": [
         [
           3,
@@ -21,10 +21,10 @@
         ],
         [
           0,
-          107
+          110
         ]
       ],
-      "palette_entries": 65,
+      "palette_entries": 42,
       "planned_pillagers": 12,
       "crew_positions": [
         [
@@ -101,7 +101,7 @@
             76,
             58
           ],
-          "sha256": "f8119ca07e45a3566bb05c7e299cabd4ff9735cc06814f7d6c3669f72e388d63"
+          "sha256": "c84cca4c48484cf0076a3bd8e185949e4ae34a0407dc4f4eb6fbeb38c145d404"
         },
         {
           "file": "templates/new/dreadwake_new_1.mcstructure",
@@ -115,19 +115,19 @@
             76,
             58
           ],
-          "sha256": "4a5a14825ae23278e5f2a1ec8d4bc5c4f5f4f67d1a3ac168f2f8ba4d01e5aee5"
+          "sha256": "0eef28ca428ecb1e69745fd75bb3ba132f00f632d6252ece774c098b56294584"
         }
       ],
       "rooms": {
-        "cargo_and_berths": [
+        "unfurnished_lower_hold": [
           5,
           8
         ],
-        "gun_deck_galley_workshop": [
+        "unfurnished_gun_deck": [
           10,
           13
         ],
-        "main_deck_captains_cabin": [
+        "main_deck_empty_cabin": [
           15,
           20
         ],
@@ -138,7 +138,7 @@
       }
     },
     "tattered": {
-      "solid_blocks": 17466,
+      "solid_blocks": 16721,
       "actual_block_bounds": [
         [
           3,
@@ -150,10 +150,10 @@
         ],
         [
           0,
-          107
+          110
         ]
       ],
-      "palette_entries": 68,
+      "palette_entries": 44,
       "planned_pillagers": 8,
       "crew_positions": [
         [
@@ -210,7 +210,7 @@
             76,
             58
           ],
-          "sha256": "717ae2167f683cbe7f528b086f707e69e4f2cc6ecbfb30184af7b3682ef3de77"
+          "sha256": "516d74cf49d9cd19031060a3b11071d96063b279d831eca3dce6d4314424dbd3"
         },
         {
           "file": "templates/tattered/dreadwake_tattered_1.mcstructure",
@@ -224,19 +224,19 @@
             76,
             58
           ],
-          "sha256": "191933f27a3fd43e8913f377ace3075f873784ed1fee06b96f55f79183781b43"
+          "sha256": "0991f416f7415d0be4512f4a0f3f773de7e439c11ecc0727e85ee275c132a9c7"
         }
       ],
       "rooms": {
-        "cargo_and_berths": [
+        "unfurnished_lower_hold": [
           5,
           8
         ],
-        "gun_deck_galley_workshop": [
+        "unfurnished_gun_deck": [
           10,
           13
         ],
-        "main_deck_captains_cabin": [
+        "main_deck_empty_cabin": [
           15,
           20
         ],
@@ -247,7 +247,7 @@
       }
     },
     "abandoned": {
-      "solid_blocks": 15640,
+      "solid_blocks": 14858,
       "actual_block_bounds": [
         [
           3,
@@ -259,10 +259,10 @@
         ],
         [
           0,
-          107
+          110
         ]
       ],
-      "palette_entries": 70,
+      "palette_entries": 45,
       "planned_pillagers": 0,
       "crew_positions": [],
       "parts": [
@@ -278,7 +278,7 @@
             76,
             58
           ],
-          "sha256": "9fb582d3fa8786c75109d74111e9f58b8606007d3334789755f3764df82827d1"
+          "sha256": "5f030775ff9c9b8248f9ed9fa5c29334f778d1bbadb085fe0562c11abf93b9fc"
         },
         {
           "file": "templates/abandoned/dreadwake_abandoned_1.mcstructure",
@@ -292,19 +292,19 @@
             76,
             58
           ],
-          "sha256": "df53e5c928f72ab2c0d6910beb4275cf9ef9111bf2fbbe34fb88eb8f2f2785c0"
+          "sha256": "94508377754730bd19c7395ba7dbaf73682106159bd5a77cb09eeb4f6b89a9fc"
         }
       ],
       "rooms": {
-        "cargo_and_berths": [
+        "unfurnished_lower_hold": [
           5,
           8
         ],
-        "gun_deck_galley_workshop": [
+        "unfurnished_gun_deck": [
           10,
           13
         ],
-        "main_deck_captains_cabin": [
+        "main_deck_empty_cabin": [
           15,
           20
         ],

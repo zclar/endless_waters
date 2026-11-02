@@ -2,22 +2,25 @@
   "scope": "static block layouts and files; not engine or multiplayer validation",
   "variants": {
     "new": {
-      "solid_blocks": 18087,
+      "solid_blocks": 17342,
       "dry_hull": true,
       "crew_positions_clear": true,
-      "nbt_matches_layout": true
+      "nbt_matches_layout": true,
+      "interior_furnishings_removed": true
     },
     "tattered": {
-      "solid_blocks": 17466,
+      "solid_blocks": 16721,
       "dry_hull": true,
       "crew_positions_clear": true,
-      "nbt_matches_layout": true
+      "nbt_matches_layout": true,
+      "interior_furnishings_removed": true
     },
     "abandoned": {
-      "solid_blocks": 15640,
+      "solid_blocks": 14858,
       "dry_hull": true,
       "crew_positions_clear": true,
-      "nbt_matches_layout": true
+      "nbt_matches_layout": true,
+      "interior_furnishings_removed": true
     }
   },
   "main_addon_sha256": "adc57b8352127157cc3908f0bbe936c4232b414093c6b498ca5154aa4a94297e"

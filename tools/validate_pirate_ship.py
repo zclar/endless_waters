@@ -82,7 +82,18 @@ def validate():
                     assert p['name'] == 'minecraft:' + expected.name
                     assert p['states'] == dict(expected.states)
                     count += expected != AIR
-        assert count == info['solid_blocks'] and count > 15000
+        assert count == info['solid_blocks'] and count > 14000
+        # Furnishing is reserved for the owner; only exterior cargo remains.
+        removed_fittings = {'chest', 'bed', 'bookshelf', 'lectern', 'cartography_table',
+                            'crafting_table', 'smithing_table', 'fletching_table',
+                            'furnace', 'smoker', 'brewing_stand', 'cauldron',
+                            'cake', 'candle', 'hay_block', 'anvil', 'web'}
+        for (x, y, z), block in ship.blocks.items():
+            assert block.name not in removed_fittings, ('Interior furnishing remains', block)
+            if block.name == 'barrel':
+                assert y >= 15 and z < 85, 'Interior storage remains'
+            if y <= 20:
+                assert not block.name.endswith('_wool'), 'Decorative bunk remains'
         for x, y, z in ship.crew:
             assert ship.blocks.get((x, y - 1, z), AIR) != AIR
             assert ship.blocks.get((x, y, z), AIR) == AIR
@@ -96,7 +107,8 @@ def validate():
             actual = ship.blocks[(x, y, z)]
             assert palette_block['name'] == actual.name and palette_block['states'] == dict(actual.states)
         report['variants'][variant] = {'solid_blocks': count, 'dry_hull': True,
-                                        'crew_positions_clear': True, 'nbt_matches_layout': True}
+                                        'crew_positions_clear': True, 'nbt_matches_layout': True,
+                                        'interior_furnishings_removed': True}
     # No release update is part of a design review.
     addon = ROOT / 'dist/Endless_Waters.mcaddon'
     committed = subprocess.check_output(['git', 'show', 'HEAD:dist/Endless_Waters.mcaddon'], cwd=ROOT)

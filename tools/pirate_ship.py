@@ -3,7 +3,6 @@
 No world-generation hooks and no dependency on downloaded structure code.
 Coordinates: X across the beam, Z bow to stern, Y up. Water surface is Y=8.
 """
-from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 import hashlib
@@ -90,9 +89,6 @@ class Ship:
 
     def barrel(self, x, y, z):
         self.put(x, y, z, b('barrel', facing_direction=1, open_bit=False))
-
-    def chest(self, x, y, z, facing=2):
-        self.put(x, y, z, b('chest', facing_direction=facing))
 
     def rail(self, z0, z1, y, width_fn):
         for z in range(z0, z1 + 1):
@@ -251,25 +247,7 @@ def cabin(s):
     for x in [14, 34]:
         s.box(x, 18, 104, x, 22, 104, FENCE)
         s.lantern(x, 21, 105)
-    # Furniture: chart desk, chairs, book cabinets, bed and private treasure alcove.
-    s.box(21, 15, 93, 27, 15, 96, FENCE)
-    s.box(21, 16, 93, 27, 16, 96, slab('dark_oak', True))
-    for x in range(22, 27):
-        s.put(x, 17, 94, b('white_carpet'))
-    for z in [89, 91, 98, 100]:
-        s.put(15, 15, z, b('bookshelf'))
-        s.put(15, 16, z, b('bookshelf'))
-    s.put(24, 15, 98, stair('dark_oak', 2))
-    s.box(29, 15, 97, 31, 15, 100, b('red_wool'))
-    s.box(29, 15, 101, 31, 15, 101, b('white_wool'))
-    for x in [28, 32]:
-        s.box(x, 15, 97, x, 18, 101, FENCE)
-    s.box(28, 19, 97, 32, 19, 101, slab('dark_oak'))
-    s.chest(17, 15, 101)
-    s.chest(18, 15, 101)
-    s.put(17, 15, 88, b('cartography_table'))
-    s.put(31, 15, 88, b('lectern', direction=0, powered_bit=False))
-    s.box(23, 15, 87, 25, 15, 91, b('red_carpet'))
+    # Keep cabin lighting and the shell; the owner will furnish the room.
     for x in [18, 30]:
         s.lantern(x, 19, 91)
         s.lantern(x, 19, 99)
@@ -281,7 +259,7 @@ def cabin(s):
     s.put(24, 22, 93, b('composter'))
 
 
-def interiors(s):
+def deck_structure(s):
     # Longitudinal beams, support posts, deckhead lanterns and clear center aisles.
     for z in range(28, 101, 8):
         for level in [5, 10]:
@@ -291,46 +269,6 @@ def interiors(s):
                 s.box(x, level, z, x, level + 2, z, b('stripped_spruce_log', pillar_axis='y'))
             if 32 <= z <= 96:
                 s.lantern(CENTER + 3, level + 2, z)
-    # Crew berths below the forecastle: decorative stacked wool bunks.
-    for side in [-1, 1]:
-        for z in [39, 44, 49, 54]:
-            x = CENTER + side * 6
-            for y in [5, 7]:
-                s.box(x - 1, y, z, x + 1, y, z + 2, slab('spruce', True))
-                s.box(x - 1, y, z + 3, x + 1, y, z + 3, b('white_wool'))
-                s.box(x - 1, y + 1, z, x + 1, y + 1, z + 2, b('red_carpet'))
-            for zz in [z, z + 3]:
-                s.box(x - 2, 5, zz, x - 2, 8, zz, FENCE)
-    # Lower hold: cargo stacks with walkable aisles and a brig at the stern.
-    for x, z, tall in [(18, 63, 2), (29, 64, 3), (17, 72, 3), (30, 73, 2), (18, 81, 2), (29, 83, 3)]:
-        for xx in range(x, x + 3):
-            for zz in range(z, z + 3):
-                for y in range(5, 5 + tall):
-                    s.barrel(xx, y, zz)
-        s.put(x, 5 + tall, z, slab('spruce'))
-    s.box(18, 5, 91, 30, 7, 91, b('iron_bars'))
-    s.box(23, 5, 91, 25, 6, 91, AIR)
-    s.box(18, 5, 96, 20, 5, 99, slab())
-    s.put(29, 5, 98, b('cauldron', cauldron_liquid='water', fill_level=0))
-    # Galley and mess below forecastle; two tables, benches and pantry.
-    for x in [19, 28]:
-        s.box(x, 10, 27, x, 10, 31, FENCE)
-        s.box(x - 1, 11, 27, x + 1, 11, 31, slab('oak', True))
-        for dx in [-2, 2]:
-            s.box(x + dx, 10, 27, x + dx, 10, 31, slab('spruce'))
-    for x in range(21, 28):
-        s.put(x, 10, 24, b('furnace', facing_direction=3) if x % 2 else b('smoker', facing_direction=3))
-    s.box(22, 11, 24, 26, 11, 24, slab('stone_brick'))
-    for z in [33, 35]:
-        s.barrel(17, 10, z)
-        s.barrel(31, 10, z)
-    # Workshop behind the gun deck.
-    for i, name in enumerate(['crafting_table', 'smithing_table', 'fletching_table', 'cartography_table']):
-        s.put(17 + i * 2, 10, 97, b(name))
-    s.put(29, 10, 97, b('anvil', damage='undamaged', direction=0))
-    for x in [18, 30]:
-        s.chest(x, 10, 93)
-        s.barrel(x, 10, 95)
     # Two stairs link all three main decks. Keep the full headroom open.
     for x0, z0 in [(23, 59), (23, 86)]:
         for floor in [4, 9]:
@@ -361,8 +299,8 @@ def interiors(s):
                 s.put(x, 16, z, stair('oak', 0 if x < 32 else 1))
         if z in [67, 70, 72]:
             s.box(31, 16, z, 33, 16, z, slab('oak'))
-    s.zones = {'cargo_and_berths': [5, 8], 'gun_deck_galley_workshop': [10, 13],
-               'main_deck_captains_cabin': [15, 20], 'quarterdeck': [22, 25]}
+    s.zones = {'unfurnished_lower_hold': [5, 8], 'unfurnished_gun_deck': [10, 13],
+               'main_deck_empty_cabin': [15, 20], 'quarterdeck': [22, 25]}
 
 
 def sail(s, mast_z, top, bottom, half_width, color, seed):
@@ -506,7 +444,7 @@ def age(s):
         s.line((12, 15, 65), (17, 16, 76), BEAM)
         s.line((30, 15, 41), (38, 18, 53), b('spruce_log', pillar_axis='z'))
         # Moss on exposed boards and rotted cabin windows; sparse hanging growth.
-        for x, z in [(17, 39), (33, 43), (16, 74), (29, 78), (21, 89), (31, 99)]:
+        for x, z in [(17, 39), (33, 43), (16, 74), (29, 78)]:
             for dx in range(-2, 3):
                 for dz in range(-3, 4):
                     pos = (x + dx, 15, z + dz)
@@ -515,15 +453,10 @@ def age(s):
         for pos, block in list(s.blocks.items()):
             if block.name == 'light_blue_stained_glass' and rng.random() < .45:
                 s.blocks[pos] = AIR
-        for x, y, z in [(16, 18, 88), (31, 18, 99), (18, 7, 94), (29, 12, 95), (23, 19, 102)]:
-            s.put(x, y, z, b('web'))
         for z in [90, 94, 99, 103]:
             for y in range(12, 15):
                 # Attach each vine to the actual curved hull, facing west.
                 s.put(CENTER + hull_width(z, y) + 1, y, z, b('vine', vine_direction_bits=2))
-        # Fallen crates at the breach; the cabin remains accessible.
-        s.barrel(16, 10, 68)
-        s.barrel(17, 10, 69)
 
 
 def build_ship(variant):
@@ -531,9 +464,9 @@ def build_ship(variant):
     hull(s)
     platforms(s)
     cabin(s)
-    interiors(s)
+    deck_structure(s)
     rig(s)
-    finish_furnishings(s)
+    ship_hardware(s)
     age(s)
     secure_attachments(s)
     positions = [(20, 15, 42), (28, 15, 44), (21, 15, 71), (27, 15, 76),
@@ -543,31 +476,24 @@ def build_ship(variant):
     return s
 
 
-def finish_furnishings(s):
-    """Small functional work areas and provisions inside the accepted design."""
-    # Supported tableware and a pantry sideboard in the galley.
-    s.put(19, 12, 28, b('cake', bite_counter=0))
-    s.put(28, 12, 30, b('cake', bite_counter=2 if s.variant != 'new' else 0))
-    s.put(31, 10, 32, b('cauldron', cauldron_liquid='water', fill_level=6))
-    s.put(17, 10, 32, b('crafting_table'))
-    s.put(17, 11, 32, b('brewing_stand'))
-    # Captain's drinks cabinet and an independent navigation-supply chest.
-    s.barrel(31, 15, 91)
-    s.barrel(32, 15, 91)
-    s.put(31, 16, 91, b('brewing_stand'))
-    s.chest(32, 15, 89, facing=4)
-    # The chart table has candle clusters and a desk book rather than empty trim.
-    for x, z in [(21, 93), (27, 96)]:
-        s.put(x, 17, z, b('candle', candles=1, lit=s.variant != 'abandoned'))
-    s.chest(29, 5, 99)
-    # Grain sacks among the cargo stacks; retain the selected loot barrels.
-    for x, y, z in [(31, 5, 65), (31, 6, 65), (30, 5, 66), (19, 5, 83), (20, 5, 83)]:
-        s.put(x, y, z, b('hay_block', pillar_axis='y'))
-    # Shelving in the workshop and a small anvil stand on the main deck.
-    s.box(29, 12, 94, 31, 12, 96, slab('dark_oak', True))
-    s.barrel(30, 13, 95)
-    s.put(17, 15, 78, b('smithing_table'))
-    s.put(17, 16, 78, b('anvil', damage='undamaged', direction=0))
+def ship_hardware(s):
+    """Exterior working-ship details, leaving the interior available to build in."""
+    # Sternpost and a broad wooden rudder below the gallery, joined to the hull.
+    s.box(CENTER, 1, 106, CENTER, 10, 106, b('stripped_dark_oak_log', pillar_axis='y'))
+    for y in range(1, 10):
+        tip = 109 if y in [1, 9] else 110
+        s.box(CENTER, y, 107, CENTER, y, tip, HULL)
+    for y in [3, 7]:
+        s.box(CENTER, y, 106, CENTER, y, 109, b('polished_blackstone'))
+    # Paired mooring bitts on the forecastle and quarterdeck, clear of stairs.
+    for z, y in [(26, 19), (99, 22)]:
+        for x in [17, 31]:
+            for zz in [z, z + 2]:
+                s.put(x, y, zz, b('stripped_dark_oak_log', pillar_axis='y'))
+            s.box(x, y + 1, z - 1, x, y + 1, z + 3, BEAM)
+    # A vanilla bell can be rung on the forecastle, next to the bow access.
+    s.put(24, 19, 28, b('stripped_dark_oak_log', pillar_axis='y'))
+    s.put(24, 20, 28, b('bell'))
 
 
 def secure_attachments(s):

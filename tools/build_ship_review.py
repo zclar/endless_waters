@@ -8,56 +8,17 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-import random
 import shutil
 import zipfile
 from bedrock_world import read_level, write_level
-from pirate_ship import ROOT, VARIANTS, SIZE, AIR, build_ship, encode_piece
+from pirate_ship import ROOT, VARIANTS, SIZE, build_ship, encode_piece
 
 REVIEW = ROOT / 'experiments/ship_review'
-WORLD = 'Dreadwake Shipyard'
+WORLD = 'Dreadwake Shipyard - Build Edition'
 PACK_ID = '0ed1764c-c80a-48fa-8e1d-d417df3d9aea'
 MODULE_ID = '94751ecf-b27b-47c3-8f63-2057c0242114'
 DATA_ID = '53306d6a-de17-4f16-8a4b-6c6827ce091c'
 ORIGINS = {'new': [0, -60, 0], 'tattered': [96, -60, 0], 'abandoned': [192, -60, 0]}
-
-
-def provisions(variant):
-    rng = random.Random({'new': 1706, 'tattered': 2791, 'abandoned': 8842}[variant])
-    roles = [
-        ([17, 15, 101], 'captain'), ([32, 15, 89], 'navigation'),
-        ([18, 10, 93], 'armory'), ([30, 10, 93], 'workshop'),
-        ([17, 10, 33], 'pantry'), ([31, 10, 35], 'pantry'),
-        ([18, 6, 63], 'cargo'), ([29, 7, 64], 'cargo'),
-        ([17, 7, 72], 'cargo'), ([30, 6, 73], 'cargo'),
-        ([18, 6, 81], 'cargo'), ([29, 7, 83], 'cargo'),
-        ([29, 5, 99], 'hidden'),
-    ]
-    choices = {
-        'captain': [('emerald', 3, 7), ('gold_ingot', 2, 5), ('amethyst_shard', 2, 5), ('diamond', 1, 1)],
-        'navigation': [('compass', 1, 1), ('spyglass', 1, 1), ('paper', 5, 12), ('book', 1, 3)],
-        'armory': [('crossbow', 1, 1), ('arrow', 12, 24), ('iron_ingot', 2, 5), ('gunpowder', 3, 8)],
-        'workshop': [('iron_ingot', 2, 6), ('copper_ingot', 3, 8), ('coal', 4, 10), ('iron_axe', 1, 1)],
-        'pantry': [('cooked_cod', 3, 8), ('bread', 3, 6), ('dried_kelp', 4, 10), ('carrot', 2, 5)],
-        'cargo': [('spruce_planks', 6, 14), ('string', 3, 8), ('coal', 2, 5), ('iron_nugget', 3, 8)],
-        'hidden': [('emerald', 1, 3), ('gold_nugget', 4, 9), ('amethyst_shard', 1, 3)],
-    }
-    loot = []
-    for index, (position, role) in enumerate(roles):
-        if variant == 'abandoned' and index not in [0, 1, 3, 8, 12]:
-            continue
-        items = []
-        for name, lo, hi in choices[role]:
-            if variant != 'new' and name == 'diamond':
-                continue
-            amount = rng.randint(lo, hi)
-            if variant != 'new':
-                amount = max(1, amount // 2)
-            if variant == 'abandoned' and name in ['iron_axe', 'coal']:
-                name = 'bone' if name == 'iron_axe' else 'rotten_flesh'
-            items.append({'name': name, 'amount': amount})
-        loot.append({'position': position, 'role': role, 'items': items})
-    return loot
 
 
 def prepare(server, world_name):
@@ -82,16 +43,18 @@ def prepare(server, world_name):
         ids = {block: i for i, block in enumerate(palette)}
         for index, (z0, z1) in enumerate([(0, 58), (58, 116)]):
             (pack / f'structures/dreadwake/{variant}_{index}.mcstructure').write_bytes(encode_piece(ship, z0, z1))
-        loot = provisions(variant)
-        for container in loot:
-            assert ship.blocks[tuple(container['position'])].name in ['chest', 'barrel'], container
-        data[variant] = {'origin': ORIGINS[variant], 'crew': ship.crew, 'loot': loot,
+        data[variant] = {'origin': ORIGINS[variant], 'crew': ship.crew,
                          'palette': [{'name': b.name, 'states': dict(b.states)} for b in palette],
                          'blocks': [[*p, ids[b]] for p, b in ship.blocks.items()],
                          'size': SIZE}
-    (pack / 'scripts/data.js').write_text('export const SHIPS = ' + json.dumps(data, separators=(',', ':')) + ';\n')
+    serialized = json.dumps(data, separators=(',', ':'))
+    build_id = hashlib.sha256(serialized.encode() + (REVIEW / 'build_world.js').read_bytes()).hexdigest()
+    (pack / 'scripts/data.js').write_text('export const SHIPS = ' + serialized + ';\n' +
+                                        'export const BUILD_ID = ' + json.dumps(build_id) + ';\n')
     shutil.copy2(REVIEW / 'build_world.js', pack / 'scripts/main.js')
-    (REVIEW / 'contents.json').write_text(json.dumps({v: {k: d[k] for k in ['origin', 'crew', 'loot']} for v, d in data.items()}, indent=2) + '\n')
+    contents = {'build_id': build_id, 'interiors': 'unfurnished', 'loot': [],
+                'variants': {v: {k: d[k] for k in ['origin', 'crew']} for v, d in data.items()}}
+    (REVIEW / 'contents.json').write_text(json.dumps(contents, indent=2) + '\n')
     world = server / 'worlds' / world_name
     if not (world / 'level.dat').exists():
         world.mkdir(parents=True, exist_ok=True)
@@ -113,13 +76,16 @@ def prepare(server, world_name):
 
 def package(server, world_name):
     world = server / 'worlds' / world_name
+    build_id = json.loads((REVIEW / 'contents.json').read_text())['build_id']
     reports = []
     for log in sorted(server.glob('ContentLog*.txt')):
         for line in log.read_text(errors='replace').splitlines():
             if 'DREADWAKE_REPORT ' in line:
-                reports.append(json.loads(line.split('DREADWAKE_REPORT ', 1)[1]))
-    assert any(r['phase'] == 'built' and r['passed'] for r in reports), 'Missing successful build report'
-    assert reports[-1]['phase'] == 'reload' and reports[-1]['passed'], 'Missing successful reload report'
+                report = json.loads(line.split('DREADWAKE_REPORT ', 1)[1])
+                if report.get('buildId') == build_id:
+                    reports.append(report)
+    assert len(reports) >= 2 and reports[-2]['phase'] == 'built' and reports[-2]['passed'], 'Missing successful current build report'
+    assert reports[-1]['phase'] == 'reload' and reports[-1]['passed'], 'Missing successful current reload report'
     version, name, metadata = read_level(world / 'level.dat')
     assert metadata['Generator'] == (3, 2)
     metadata.update({'LevelName': (8, WORLD), 'GameType': (3, 1), 'ForceGameType': (1, 0),
@@ -161,6 +127,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('action', choices=['prepare', 'package'])
     parser.add_argument('--server-dir', type=Path, required=True)
-    parser.add_argument('--world', default='dreadwake-review')
+    parser.add_argument('--world', default='dreadwake-review-shell')
     args = parser.parse_args()
     (prepare if args.action == 'prepare' else package)(args.server_dir, args.world)

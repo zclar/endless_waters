@@ -1,13 +1,13 @@
-# The Dreadwake — pirate galleon, first review
+# The Dreadwake — pirate galleon, build edition
 
 **Preview only. This ship has not been added to the Endless Waters addon or
 world generation.** Review the design before integration.
 
 **Now playable:** [download the separate flat shipyard world](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Shipyard.mcworld)
-with furnished interiors, stocked loot and actual pillager crews.
+with cleared interiors for your own builds and actual pillager crews.
 [Instructions and coordinates](../../ship_review/README.md).
 
-An original block-built galleon, **108 blocks long**, up to **43 blocks across
+An original block-built galleon, **111 blocks long** including its rudder, up to **43 blocks across
 the sails**, with a **31-block hull beam**. The new and tattered versions are
 74 blocks tall from keel to masthead; the abandoned version has broken upper
 masts and is 65 blocks tall. The padded export envelope is 49 × 76 × 116.
@@ -24,7 +24,7 @@ an image viewer. No Minecraft import is needed for these previews.
 
 | New | Tattered | Abandoned |
 | --- | --- | --- |
-| Complete sails, bright trim, stocked cargo areas; 12 planned pillagers | Torn and patched sails, repaired rails, weathered planking; 8 planned pillagers | Broken upper masts, hanging sail remnants, breached decking, moss, cobwebs and broken cabin windows; no crew |
+| Complete sails, bright trim, open interiors; 12 planned pillagers | Torn and patched sails, repaired rails, weathered planking; 8 planned pillagers | Broken upper masts, hanging sail remnants, breached decking, moss and broken cabin windows; no crew |
 | [Full-size bow view](new.png) | [Full-size bow view](tattered.png) | [Full-size bow view](abandoned.png) |
 | [Full-size stern view](new_stern.png) | [Full-size stern view](tattered_stern.png) | [Full-size stern view](abandoned_stern.png) |
 
@@ -36,12 +36,13 @@ an image viewer. No Minecraft import is needed for these previews.
 
 ## Inside the ship
 
-- Cargo hold with stacked barrels, crew bunks and an aft brig.
-- Gun deck with twelve decorative cannons, galley, mess tables and workshop.
+- Open lower hold with structural beams and lighting, ready to furnish.
+- Open gun deck with twelve decorative cannons and stairs between decks.
 - Main deck with a cargo grating, capstan, stowed dinghy and boarding ladders.
-- Captain's cabin with chart desk, bookcases, canopy bunk and storage.
+- Empty captain's cabin with windows, lighting and access to the stern gallery.
 - Raised forecastle and quarterdeck, stern gallery, decorative wheel,
   anchors, figurehead, crow's nests and climbable mast ladders.
+- Stern rudder, mooring bitts on the raised decks, and a ringable vanilla bell.
 
 | Interior section | Gun deck |
 | --- | --- |
@@ -59,11 +60,11 @@ fences and several furniture blocks have approximate geometry. Materials use
 approximate colors rather than Minecraft textures. The water plane is a visual
 reference, and the viewer's crew markers represent planned pillager positions.
 
-The furnishings, cannons, wheel and rigging are vanilla-block assemblies;
-decorative bunks are not usable bed blocks. The playable review world also has
-two functional beds per ship and selected containers stocked with vanilla loot.
-Cannons do not fire. Standalone preview templates omit the review world's loot
-and crew assembly. No third-party structure assets are used.
+The cannons, rudder, wheel and rigging are decorative vanilla-block assemblies;
+the ship does not sail and cannons do not fire. Interior furniture, beds, storage,
+room fittings and loot have been removed so you can decorate. Exterior cargo
+barrels remain empty. Standalone preview templates omit the review world's crew
+assembly. No third-party structure assets are used.
 
 ## Validation and remaining work
 
@@ -73,7 +74,7 @@ waterline in a voxel flood test, and the main addon download is unchanged.
 Each variant is exported as two pieces within the 64-block horizontal limits.
 
 The playable shipyard's [engine validation](../../ship_review/validation.json)
-covers structure loading, dry interiors, crew equipment, loot and persistence
+covers structure loading, dry and clear interiors, empty deck barrels, crew equipment and persistence
 across a restart. World-generation placement, complete survival pathfinding,
 phone graphics and multiplayer still need further testing. The interactive
 viewer is an additional inspection tool; it is not a Bedrock simulator.

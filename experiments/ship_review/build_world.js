@@ -1,6 +1,6 @@
 // Runs only on the isolated local BDS world; never packaged with the download.
-import {world, system, BlockPermutation, ItemStack, SignSide} from '@minecraft/server';
-import {SHIPS} from './data.js';
+import {world, system, BlockPermutation, SignSide} from '@minecraft/server';
+import {SHIPS, BUILD_ID} from './data.js';
 
 const pause = ticks => new Promise(resolve => system.runTimeout(resolve, ticks));
 const check = (condition, message) => {if (!condition) throw Error(message);};
@@ -58,22 +58,7 @@ async function dock(data,variant) {
     // A short side boarding ramp connects the tank rim to the existing ladder.
     fill([x+41,-52,56],[x+50,-52,58],'spruce_planks');
 }
-function furnish(data,variant) {
-    for(const target of data.loot) {
-        const p=position(data.origin,target.position),block=dimension.getBlock(p);
-        const container=block.getComponent('minecraft:inventory')?.container;
-        check(container,'Missing loot container '+variant+' '+JSON.stringify(target));
-        for(let i=0;i<container.size;i++)container.setItem(i,undefined);
-        target.items.forEach((item,i)=>container.setItem(i*2,new ItemStack('minecraft:'+item.name,item.amount)));
-    }
-    // Functional beds supplement the decorative stacked crew bunks.
-    // Vanilla bed blocks default to red; both halves are set explicitly.
-    for(const [x,y,z] of [[22,5,31],[26,5,31]]) {
-        for(const [dz,head] of [[0,false],[1,true]]) {
-            dimension.getBlock(position(data.origin,[x,y,z+dz])).setPermutation(
-                BlockPermutation.resolve('minecraft:bed',{direction:0,head_piece_bit:head,occupied_bit:false}));
-        }
-    }
+function spawnCrew(data,variant) {
     data.crew.forEach((p,index)=>{
         const location=position(data.origin,p);
         location.x+=.5;location.z+=.5;
@@ -89,16 +74,28 @@ async function inspect(phase) {
     const variants={};
     for(const [variant,data] of Object.entries(SHIPS)) {
         const mismatch=[];
-        let checked=0;
+        let checked=0,interiorAir=0,emptyBarrels=0;
         for(const [x,y,z,id] of data.blocks) {
             const expected=data.palette[id];
-            // Air is checked separately for flooding; these are all real ship blocks.
-            if(expected.name==='air')continue;
+            // Explicit interior air must stay clear, including the old bed/loot locations.
+            if(expected.name==='air') {
+                if((y>=5 && y<=13) || (y>=15 && y<=20 && z>=86 && z<=103 && x>=14 && x<=34)) {
+                    check(dimension.getBlock(position(data.origin,[x,y,z])).typeId==='minecraft:air',
+                          'Interior obstructed '+variant+' '+[x,y,z]);
+                    interiorAir++;
+                }
+                continue;
+            }
             const actual=dimension.getBlock(position(data.origin,[x,y,z]));
             const canonical=BlockPermutation.resolve('minecraft:'+expected.name,expected.states);
             if(actual.typeId!==canonical.type.id) {
                 if(mismatch.length<30)mismatch.push({p:[x,y,z],expected:expected.name,actual:actual.typeId,
                     below:dimension.getBlock(position(data.origin,[x,y-1,z])).permutation.getAllStates()});
+            }
+            if(expected.name==='barrel') {
+                const container=actual.getComponent('minecraft:inventory')?.container;
+                check(container && container.emptySlotsCount===container.size,'Deck barrel contains loot '+variant);
+                emptyBarrels++;
             }
             checked++;
             if(checked%700===0)await pause(1);
@@ -112,17 +109,6 @@ async function inspect(phase) {
                 dry++;
             }
         }
-        let filled=0,stacks=0;
-        for(const target of data.loot) {
-            const container=dimension.getBlock(position(data.origin,target.position)).getComponent('minecraft:inventory')?.container;
-            check(container,'Container missing after load');
-            for(let i=0;i<target.items.length;i++) {
-                const item=container.getItem(i*2),want=target.items[i];
-                check(item?.typeId==='minecraft:'+want.name && item.amount===want.amount,'Loot mismatch '+variant+' '+target.role);
-                stacks++;
-            }
-            filled++;
-        }
         const crew=dimension.getEntities({tags:['dreadwake_'+variant],type:'minecraft:pillager'});
         check(crew.length===data.crew.length,'Crew count '+variant+': '+crew.length);
         for(const mob of crew) {
@@ -130,12 +116,13 @@ async function inspect(phase) {
             check(mob.location.y>=-56,'Crew fell below the lowest deck '+mob.nameTag);
         }
         for(let i=0;i<crew.length;i++)check(dimension.runCommand(`testfor @e[type=pillager,tag=dreadwake_${variant}_${i},hasitem={item=crossbow,location=slot.weapon.mainhand}]`).successCount>0,'Crew unarmed '+variant+' '+i);
-        variants[variant]={checkedBlocks:checked,dryHoldCells:dry,filledContainers:filled,lootStacks:stacks,pillagers:crew.length};
+        variants[variant]={checkedBlocks:checked,dryHoldCells:dry,clearInteriorCells:interiorAir,
+                           emptyDeckBarrels:emptyBarrels,pillagers:crew.length};
         console.warn('DREADWAKE_VARIANT '+JSON.stringify({phase,variant,...variants[variant]}));
     }
     check(dimension.getBlock({x:260,y:-61,z:0})?.typeId==='minecraft:grass_block' ||
           dimension.getBlock({x:55,y:-61,z:0})?.typeId==='minecraft:grass_block','World not flat grass');
-    console.warn('DREADWAKE_REPORT '+JSON.stringify({phase,passed:true,variants}));
+    console.warn('DREADWAKE_REPORT '+JSON.stringify({buildId:BUILD_ID,phase,passed:true,variants}));
 }
 
 world.afterEvents.worldLoad.subscribe(()=>system.run(async()=>{
@@ -152,6 +139,8 @@ world.afterEvents.worldLoad.subscribe(()=>system.run(async()=>{
         }
         await loadAreas();
         if(world.getDynamicProperty('dreadwake:built')) {
+            check(world.getDynamicProperty('dreadwake:built')===BUILD_ID,
+                  'Different layout already built here; prepare a fresh world folder');
             await pause(80);
             await inspect('reload');
             console.warn('DREADWAKE_RELOAD_READY');
@@ -168,15 +157,15 @@ world.afterEvents.worldLoad.subscribe(()=>system.run(async()=>{
         fill([-8,-52,-14],[248,-52,-3],'spruce_planks');
         for(const [variant,data] of Object.entries(SHIPS)) {
             await dock(data,variant);
-            furnish(data,variant);
+            spawnCrew(data,variant);
             console.warn('DREADWAKE_PLACED '+variant);
         }
-        sign({x:118,y:-51,z:-12},'DREADWAKE SHIPYARD\nCreative review world\nFly into each ship\nLoot is in containers');
+        sign({x:118,y:-51,z:-12},'DREADWAKE SHIPYARD\nBUILD EDITION\nInteriors cleared\nMake them your own');
         sign({x:122,y:-51,z:-12},'NEW | TATTERED | EMPTY\n12 crew | 8 crew | 0\nSurvival = hostile crew\nKeep Normal difficulty');
         world.setDefaultSpawnLocation({x:120,y:-51,z:-10});
         await pause(120);
         await inspect('built');
-        world.setDynamicProperty('dreadwake:built',true);
+        world.setDynamicProperty('dreadwake:built',BUILD_ID);
         // Remove detached decoration drops only in this isolated construction world.
         for(const item of dimension.getEntities({type:'minecraft:item'}))item.remove();
         console.warn('DREADWAKE_READY');

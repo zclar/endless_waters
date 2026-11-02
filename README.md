@@ -7,9 +7,10 @@ then open **Endless_Waters.mcaddon** with Minecraft. The file contains both pack
 
 ## ⛵ [Download the pirate-ship review world (.mcworld)](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Shipyard.mcworld)
 
-**Dreadwake Shipyard:** a separate flat Creative world with new, tattered and
-abandoned ships, furnished interiors, vanilla loot and pillager crews. Open the
-file with Minecraft, then select **Dreadwake Shipyard** in your Worlds list.
+**Dreadwake Shipyard - Build Edition:** a separate flat Creative world with new,
+tattered and abandoned ships, cleared interiors for your own builds, and pillager
+crews. Includes a stern rudder, mooring posts and a deck bell. Open the file with
+Minecraft, then select **Dreadwake Shipyard - Build Edition** in your Worlds list.
 Requires Bedrock **26.60+**. No addon setup is needed.
 [World details and ship coordinates](experiments/ship_review/README.md).
 

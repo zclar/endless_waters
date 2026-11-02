@@ -1,920 +1,133 @@
 {
-  "new": {
-    "origin": [
-      0,
-      -60,
-      0
-    ],
-    "crew": [
-      [
-        20,
-        15,
-        42
+  "build_id": "7a130e2c5c29d7ebd10c6c0e47b949d85f4ea0b90f2cbddf20b34222580960d8",
+  "interiors": "unfurnished",
+  "loot": [],
+  "variants": {
+    "new": {
+      "origin": [
+        0,
+        -60,
+        0
       ],
-      [
-        28,
-        15,
-        44
-      ],
-      [
-        21,
-        15,
-        71
-      ],
-      [
-        27,
-        15,
-        76
-      ],
-      [
-        20,
-        19,
-        24
-      ],
-      [
-        28,
-        19,
-        25
-      ],
-      [
-        20,
-        22,
-        88
-      ],
-      [
-        27,
-        22,
-        99
-      ],
-      [
-        20,
-        15,
-        90
-      ],
-      [
-        24,
-        10,
-        41
-      ],
-      [
-        24,
-        10,
-        74
-      ],
-      [
-        24,
-        10,
-        95
+      "crew": [
+        [
+          20,
+          15,
+          42
+        ],
+        [
+          28,
+          15,
+          44
+        ],
+        [
+          21,
+          15,
+          71
+        ],
+        [
+          27,
+          15,
+          76
+        ],
+        [
+          20,
+          19,
+          24
+        ],
+        [
+          28,
+          19,
+          25
+        ],
+        [
+          20,
+          22,
+          88
+        ],
+        [
+          27,
+          22,
+          99
+        ],
+        [
+          20,
+          15,
+          90
+        ],
+        [
+          24,
+          10,
+          41
+        ],
+        [
+          24,
+          10,
+          74
+        ],
+        [
+          24,
+          10,
+          95
+        ]
       ]
-    ],
-    "loot": [
-      {
-        "position": [
-          17,
+    },
+    "tattered": {
+      "origin": [
+        96,
+        -60,
+        0
+      ],
+      "crew": [
+        [
+          20,
           15,
-          101
+          42
         ],
-        "role": "captain",
-        "items": [
-          {
-            "name": "emerald",
-            "amount": 6
-          },
-          {
-            "name": "gold_ingot",
-            "amount": 5
-          },
-          {
-            "name": "amethyst_shard",
-            "amount": 2
-          },
-          {
-            "name": "diamond",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "position": [
-          32,
+        [
+          28,
           15,
-          89
+          44
         ],
-        "role": "navigation",
-        "items": [
-          {
-            "name": "compass",
-            "amount": 1
-          },
-          {
-            "name": "spyglass",
-            "amount": 1
-          },
-          {
-            "name": "paper",
-            "amount": 12
-          },
-          {
-            "name": "book",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "position": [
-          18,
-          10,
-          93
+        [
+          21,
+          15,
+          71
         ],
-        "role": "armory",
-        "items": [
-          {
-            "name": "crossbow",
-            "amount": 1
-          },
-          {
-            "name": "arrow",
-            "amount": 20
-          },
-          {
-            "name": "iron_ingot",
-            "amount": 4
-          },
-          {
-            "name": "gunpowder",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "position": [
-          30,
-          10,
-          93
+        [
+          27,
+          15,
+          76
         ],
-        "role": "workshop",
-        "items": [
-          {
-            "name": "iron_ingot",
-            "amount": 3
-          },
-          {
-            "name": "copper_ingot",
-            "amount": 8
-          },
-          {
-            "name": "coal",
-            "amount": 8
-          },
-          {
-            "name": "iron_axe",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "position": [
-          17,
-          10,
-          33
+        [
+          20,
+          19,
+          24
         ],
-        "role": "pantry",
-        "items": [
-          {
-            "name": "cooked_cod",
-            "amount": 7
-          },
-          {
-            "name": "bread",
-            "amount": 3
-          },
-          {
-            "name": "dried_kelp",
-            "amount": 7
-          },
-          {
-            "name": "carrot",
-            "amount": 4
-          }
-        ]
-      },
-      {
-        "position": [
-          31,
-          10,
-          35
+        [
+          28,
+          19,
+          25
         ],
-        "role": "pantry",
-        "items": [
-          {
-            "name": "cooked_cod",
-            "amount": 6
-          },
-          {
-            "name": "bread",
-            "amount": 6
-          },
-          {
-            "name": "dried_kelp",
-            "amount": 10
-          },
-          {
-            "name": "carrot",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "position": [
-          18,
-          6,
-          63
+        [
+          20,
+          22,
+          88
         ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 7
-          },
-          {
-            "name": "string",
-            "amount": 3
-          },
-          {
-            "name": "coal",
-            "amount": 4
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 6
-          }
-        ]
-      },
-      {
-        "position": [
-          29,
-          7,
-          64
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 11
-          },
-          {
-            "name": "string",
-            "amount": 4
-          },
-          {
-            "name": "coal",
-            "amount": 3
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 5
-          }
-        ]
-      },
-      {
-        "position": [
-          17,
-          7,
-          72
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 9
-          },
-          {
-            "name": "string",
-            "amount": 5
-          },
-          {
-            "name": "coal",
-            "amount": 4
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 7
-          }
-        ]
-      },
-      {
-        "position": [
-          30,
-          6,
-          73
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 11
-          },
-          {
-            "name": "string",
-            "amount": 7
-          },
-          {
-            "name": "coal",
-            "amount": 4
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "position": [
-          18,
-          6,
-          81
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 14
-          },
-          {
-            "name": "string",
-            "amount": 6
-          },
-          {
-            "name": "coal",
-            "amount": 3
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 4
-          }
-        ]
-      },
-      {
-        "position": [
-          29,
-          7,
-          83
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 8
-          },
-          {
-            "name": "string",
-            "amount": 8
-          },
-          {
-            "name": "coal",
-            "amount": 4
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "position": [
-          29,
-          5,
+        [
+          27,
+          22,
           99
-        ],
-        "role": "hidden",
-        "items": [
-          {
-            "name": "emerald",
-            "amount": 2
-          },
-          {
-            "name": "gold_nugget",
-            "amount": 7
-          },
-          {
-            "name": "amethyst_shard",
-            "amount": 1
-          }
         ]
-      }
-    ]
-  },
-  "tattered": {
-    "origin": [
-      96,
-      -60,
-      0
-    ],
-    "crew": [
-      [
-        20,
-        15,
-        42
-      ],
-      [
-        28,
-        15,
-        44
-      ],
-      [
-        21,
-        15,
-        71
-      ],
-      [
-        27,
-        15,
-        76
-      ],
-      [
-        20,
-        19,
-        24
-      ],
-      [
-        28,
-        19,
-        25
-      ],
-      [
-        20,
-        22,
-        88
-      ],
-      [
-        27,
-        22,
-        99
       ]
-    ],
-    "loot": [
-      {
-        "position": [
-          17,
-          15,
-          101
-        ],
-        "role": "captain",
-        "items": [
-          {
-            "name": "emerald",
-            "amount": 3
-          },
-          {
-            "name": "gold_ingot",
-            "amount": 2
-          },
-          {
-            "name": "amethyst_shard",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "position": [
-          32,
-          15,
-          89
-        ],
-        "role": "navigation",
-        "items": [
-          {
-            "name": "compass",
-            "amount": 1
-          },
-          {
-            "name": "spyglass",
-            "amount": 1
-          },
-          {
-            "name": "paper",
-            "amount": 3
-          },
-          {
-            "name": "book",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "position": [
-          18,
-          10,
-          93
-        ],
-        "role": "armory",
-        "items": [
-          {
-            "name": "crossbow",
-            "amount": 1
-          },
-          {
-            "name": "arrow",
-            "amount": 9
-          },
-          {
-            "name": "iron_ingot",
-            "amount": 2
-          },
-          {
-            "name": "gunpowder",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "position": [
-          30,
-          10,
-          93
-        ],
-        "role": "workshop",
-        "items": [
-          {
-            "name": "iron_ingot",
-            "amount": 2
-          },
-          {
-            "name": "copper_ingot",
-            "amount": 2
-          },
-          {
-            "name": "coal",
-            "amount": 4
-          },
-          {
-            "name": "iron_axe",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "position": [
-          17,
-          10,
-          33
-        ],
-        "role": "pantry",
-        "items": [
-          {
-            "name": "cooked_cod",
-            "amount": 3
-          },
-          {
-            "name": "bread",
-            "amount": 2
-          },
-          {
-            "name": "dried_kelp",
-            "amount": 4
-          },
-          {
-            "name": "carrot",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "position": [
-          31,
-          10,
-          35
-        ],
-        "role": "pantry",
-        "items": [
-          {
-            "name": "cooked_cod",
-            "amount": 4
-          },
-          {
-            "name": "bread",
-            "amount": 3
-          },
-          {
-            "name": "dried_kelp",
-            "amount": 4
-          },
-          {
-            "name": "carrot",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "position": [
-          18,
-          6,
-          63
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 6
-          },
-          {
-            "name": "string",
-            "amount": 3
-          },
-          {
-            "name": "coal",
-            "amount": 2
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "position": [
-          29,
-          7,
-          64
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 4
-          },
-          {
-            "name": "string",
-            "amount": 2
-          },
-          {
-            "name": "coal",
-            "amount": 1
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "position": [
-          17,
-          7,
-          72
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 7
-          },
-          {
-            "name": "string",
-            "amount": 1
-          },
-          {
-            "name": "coal",
-            "amount": 2
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "position": [
-          30,
-          6,
-          73
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 5
-          },
-          {
-            "name": "string",
-            "amount": 2
-          },
-          {
-            "name": "coal",
-            "amount": 1
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "position": [
-          18,
-          6,
-          81
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 7
-          },
-          {
-            "name": "string",
-            "amount": 4
-          },
-          {
-            "name": "coal",
-            "amount": 2
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "position": [
-          29,
-          7,
-          83
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 3
-          },
-          {
-            "name": "string",
-            "amount": 1
-          },
-          {
-            "name": "coal",
-            "amount": 2
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "position": [
-          29,
-          5,
-          99
-        ],
-        "role": "hidden",
-        "items": [
-          {
-            "name": "emerald",
-            "amount": 1
-          },
-          {
-            "name": "gold_nugget",
-            "amount": 3
-          },
-          {
-            "name": "amethyst_shard",
-            "amount": 1
-          }
-        ]
-      }
-    ]
-  },
-  "abandoned": {
-    "origin": [
-      192,
-      -60,
-      0
-    ],
-    "crew": [],
-    "loot": [
-      {
-        "position": [
-          17,
-          15,
-          101
-        ],
-        "role": "captain",
-        "items": [
-          {
-            "name": "emerald",
-            "amount": 1
-          },
-          {
-            "name": "gold_ingot",
-            "amount": 1
-          },
-          {
-            "name": "amethyst_shard",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "position": [
-          32,
-          15,
-          89
-        ],
-        "role": "navigation",
-        "items": [
-          {
-            "name": "compass",
-            "amount": 1
-          },
-          {
-            "name": "spyglass",
-            "amount": 1
-          },
-          {
-            "name": "paper",
-            "amount": 5
-          },
-          {
-            "name": "book",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "position": [
-          30,
-          10,
-          93
-        ],
-        "role": "workshop",
-        "items": [
-          {
-            "name": "iron_ingot",
-            "amount": 1
-          },
-          {
-            "name": "copper_ingot",
-            "amount": 2
-          },
-          {
-            "name": "rotten_flesh",
-            "amount": 2
-          },
-          {
-            "name": "bone",
-            "amount": 1
-          }
-        ]
-      },
-      {
-        "position": [
-          17,
-          7,
-          72
-        ],
-        "role": "cargo",
-        "items": [
-          {
-            "name": "spruce_planks",
-            "amount": 6
-          },
-          {
-            "name": "string",
-            "amount": 1
-          },
-          {
-            "name": "rotten_flesh",
-            "amount": 2
-          },
-          {
-            "name": "iron_nugget",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "position": [
-          29,
-          5,
-          99
-        ],
-        "role": "hidden",
-        "items": [
-          {
-            "name": "emerald",
-            "amount": 1
-          },
-          {
-            "name": "gold_nugget",
-            "amount": 3
-          },
-          {
-            "name": "amethyst_shard",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    },
+    "abandoned": {
+      "origin": [
+        192,
+        -60,
+        0
+      ],
+      "crew": []
+    }
   }
 }
