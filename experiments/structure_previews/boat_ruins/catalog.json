@@ -1,0 +1,1093 @@
+[
+  {
+    "file": "boat_ruins_mod-main/src/main/resources/data/boat_ruins_mod/structure/decayed_shipwreck.nbt",
+    "sha256": "81b05041677e05e81852a04631eef282f8379dd48ab245f07346ca7a3baf38e4",
+    "size": [
+      45,
+      45,
+      10
+    ],
+    "solid_blocks": 1016,
+    "palette": [
+      {
+        "Properties": {
+          "axis": "x"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Properties": {
+          "axis": "y"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Properties": {
+          "axis": "z"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Name": "minecraft:mangrove_planks"
+      },
+      {
+        "Properties": {
+          "axis": "y"
+        },
+        "Name": "minecraft:mangrove_wood"
+      },
+      {
+        "Properties": {
+          "axis": "z"
+        },
+        "Name": "minecraft:mangrove_wood"
+      },
+      {
+        "Name": "minecraft:raw_iron_block"
+      },
+      {
+        "Name": "minecraft:iron_ore"
+      },
+      {
+        "Name": "minecraft:gold_ore"
+      },
+      {
+        "Name": "minecraft:raw_gold_block"
+      },
+      {
+        "Name": "minecraft:diamond_ore"
+      },
+      {
+        "Name": "minecraft:emerald_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_gold_ore"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false"
+        },
+        "Name": "minecraft:waxed_oxidized_copper_grate"
+      },
+      {
+        "Properties": {
+          "axis": "x"
+        },
+        "Name": "minecraft:mangrove_wood"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false"
+        },
+        "Name": "minecraft:waxed_weathered_copper_grate"
+      },
+      {
+        "Name": "minecraft:lodestone"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "south"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "bottom",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_left",
+          "facing": "east"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "north"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "hinge": "left",
+          "half": "lower",
+          "powered": "false",
+          "facing": "east",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "hinge": "right",
+          "half": "lower",
+          "powered": "false",
+          "facing": "west",
+          "open": "false"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "half": "bottom",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "north"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "hinge": "left",
+          "half": "upper",
+          "powered": "false",
+          "facing": "east",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "hinge": "right",
+          "half": "upper",
+          "powered": "false",
+          "facing": "west",
+          "open": "false"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "in_wall": "false",
+          "powered": "false",
+          "facing": "south",
+          "open": "false"
+        },
+        "Name": "minecraft:acacia_fence_gate"
+      },
+      {
+        "Properties": {
+          "in_wall": "false",
+          "powered": "false",
+          "facing": "north",
+          "open": "false"
+        },
+        "Name": "minecraft:acacia_fence_gate"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "south",
+          "open": "false"
+        },
+        "Name": "minecraft:mangrove_trapdoor"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "north",
+          "open": "false"
+        },
+        "Name": "minecraft:mangrove_trapdoor"
+      },
+      {
+        "Properties": {
+          "hinge": "right",
+          "half": "lower",
+          "powered": "false",
+          "facing": "west",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "hinge": "right",
+          "half": "upper",
+          "powered": "false",
+          "facing": "west",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_right",
+          "facing": "east"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_left",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "east": "true",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "false",
+          "west": "false"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "true",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "true",
+          "west": "false"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "true",
+          "waterlogged": "false",
+          "south": "false",
+          "north": "true",
+          "west": "false"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "true",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "false",
+          "west": "true"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "false",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "false",
+          "west": "true"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "false",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "true",
+          "west": "true"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "false",
+          "waterlogged": "false",
+          "south": "false",
+          "north": "true",
+          "west": "true"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false",
+          "facing": "west",
+          "type": "single"
+        },
+        "Name": "minecraft:chest"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false",
+          "facing": "south",
+          "type": "single"
+        },
+        "Name": "minecraft:chest"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "south"
+        },
+        "Name": "minecraft:birch_shelf"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "north"
+        },
+        "Name": "minecraft:birch_shelf"
+      }
+    ]
+  },
+  {
+    "file": "boat_ruins_mod-main/src/main/resources/data/boat_ruins_mod/structure/intact_shipwreck.nbt",
+    "sha256": "3890418c8cf1fa68dc85f0b17d9e00ae82b9e7f59082ad1574ed83fe88928d2a",
+    "size": [
+      45,
+      45,
+      10
+    ],
+    "solid_blocks": 1475,
+    "palette": [
+      {
+        "Properties": {
+          "axis": "x"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Properties": {
+          "axis": "y"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Properties": {
+          "axis": "z"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Name": "minecraft:mangrove_planks"
+      },
+      {
+        "Properties": {
+          "axis": "y"
+        },
+        "Name": "minecraft:mangrove_wood"
+      },
+      {
+        "Properties": {
+          "axis": "z"
+        },
+        "Name": "minecraft:mangrove_wood"
+      },
+      {
+        "Name": "minecraft:raw_iron_block"
+      },
+      {
+        "Name": "minecraft:iron_ore"
+      },
+      {
+        "Name": "minecraft:gold_ore"
+      },
+      {
+        "Name": "minecraft:raw_gold_block"
+      },
+      {
+        "Name": "minecraft:diamond_ore"
+      },
+      {
+        "Name": "minecraft:emerald_ore"
+      },
+      {
+        "Name": "minecraft:fletching_table"
+      },
+      {
+        "Name": "minecraft:cartography_table"
+      },
+      {
+        "Properties": {
+          "facing": "south"
+        },
+        "Name": "minecraft:loom"
+      },
+      {
+        "Name": "minecraft:smithing_table"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_gold_ore"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false"
+        },
+        "Name": "minecraft:waxed_oxidized_copper_grate"
+      },
+      {
+        "Properties": {
+          "axis": "x"
+        },
+        "Name": "minecraft:mangrove_wood"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false"
+        },
+        "Name": "minecraft:waxed_weathered_copper_grate"
+      },
+      {
+        "Name": "minecraft:lodestone"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "south"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "bottom",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_left",
+          "facing": "east"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "north"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_left",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_right",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "hinge": "left",
+          "half": "lower",
+          "powered": "false",
+          "facing": "east",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "hinge": "right",
+          "half": "lower",
+          "powered": "false",
+          "facing": "west",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "facing": "west"
+        },
+        "Name": "minecraft:anvil"
+      },
+      {
+        "Properties": {
+          "face": "floor",
+          "facing": "south"
+        },
+        "Name": "minecraft:grindstone"
+      },
+      {
+        "Properties": {
+          "half": "bottom",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "north"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "hinge": "left",
+          "half": "upper",
+          "powered": "false",
+          "facing": "east",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "hinge": "right",
+          "half": "upper",
+          "powered": "false",
+          "facing": "west",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "in_wall": "false",
+          "powered": "false",
+          "facing": "south",
+          "open": "false"
+        },
+        "Name": "minecraft:acacia_fence_gate"
+      },
+      {
+        "Properties": {
+          "in_wall": "false",
+          "powered": "false",
+          "facing": "north",
+          "open": "false"
+        },
+        "Name": "minecraft:acacia_fence_gate"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "south",
+          "open": "false"
+        },
+        "Name": "minecraft:mangrove_trapdoor"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "north",
+          "open": "false"
+        },
+        "Name": "minecraft:mangrove_trapdoor"
+      },
+      {
+        "Properties": {
+          "half": "bottom",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "east"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_right",
+          "facing": "east"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "east": "true",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "false",
+          "west": "false"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "true",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "true",
+          "west": "false"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "true",
+          "waterlogged": "false",
+          "south": "false",
+          "north": "true",
+          "west": "false"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "true",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "false",
+          "west": "true"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "false",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "false",
+          "west": "true"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "false",
+          "waterlogged": "false",
+          "south": "true",
+          "north": "true",
+          "west": "true"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "east": "false",
+          "waterlogged": "false",
+          "south": "false",
+          "north": "true",
+          "west": "true"
+        },
+        "Name": "minecraft:mangrove_fence"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false",
+          "facing": "west",
+          "type": "single"
+        },
+        "Name": "minecraft:chest"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false",
+          "facing": "south",
+          "type": "single"
+        },
+        "Name": "minecraft:chest"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "south"
+        },
+        "Name": "minecraft:acacia_shelf"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "north"
+        },
+        "Name": "minecraft:acacia_shelf"
+      },
+      {
+        "Properties": {
+          "lit": "false",
+          "facing": "north"
+        },
+        "Name": "minecraft:blast_furnace"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "south"
+        },
+        "Name": "minecraft:birch_shelf"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "north"
+        },
+        "Name": "minecraft:birch_shelf"
+      }
+    ]
+  },
+  {
+    "file": "boat_ruins_mod-main/src/main/resources/data/boat_ruins_mod/structure/looted_shipwreck.nbt",
+    "sha256": "2e479080075ac93faf8fa2bcd910259e785575df915b671e595a125c9e4e9295",
+    "size": [
+      45,
+      45,
+      10
+    ],
+    "solid_blocks": 1255,
+    "palette": [
+      {
+        "Properties": {
+          "axis": "x"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Properties": {
+          "axis": "y"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Properties": {
+          "axis": "z"
+        },
+        "Name": "minecraft:mangrove_log"
+      },
+      {
+        "Name": "minecraft:mangrove_planks"
+      },
+      {
+        "Properties": {
+          "axis": "y"
+        },
+        "Name": "minecraft:mangrove_wood"
+      },
+      {
+        "Properties": {
+          "axis": "z"
+        },
+        "Name": "minecraft:mangrove_wood"
+      },
+      {
+        "Name": "minecraft:raw_iron_block"
+      },
+      {
+        "Name": "minecraft:iron_ore"
+      },
+      {
+        "Name": "minecraft:gold_ore"
+      },
+      {
+        "Name": "minecraft:raw_gold_block"
+      },
+      {
+        "Name": "minecraft:diamond_ore"
+      },
+      {
+        "Name": "minecraft:emerald_ore"
+      },
+      {
+        "Name": "minecraft:fletching_table"
+      },
+      {
+        "Name": "minecraft:cartography_table"
+      },
+      {
+        "Properties": {
+          "facing": "south"
+        },
+        "Name": "minecraft:loom"
+      },
+      {
+        "Name": "minecraft:smithing_table"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_gold_ore"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false"
+        },
+        "Name": "minecraft:waxed_oxidized_copper_grate"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "south"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "bottom",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_left",
+          "facing": "east"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "north"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_left",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "shape": "outer_right",
+          "facing": "west"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "hinge": "left",
+          "half": "lower",
+          "powered": "false",
+          "facing": "east",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "hinge": "right",
+          "half": "lower",
+          "powered": "false",
+          "facing": "west",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "facing": "west"
+        },
+        "Name": "minecraft:anvil"
+      },
+      {
+        "Properties": {
+          "face": "floor",
+          "facing": "south"
+        },
+        "Name": "minecraft:grindstone"
+      },
+      {
+        "Properties": {
+          "half": "bottom",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "north"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "hinge": "left",
+          "half": "upper",
+          "powered": "false",
+          "facing": "east",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "hinge": "right",
+          "half": "upper",
+          "powered": "false",
+          "facing": "west",
+          "open": "true"
+        },
+        "Name": "minecraft:mangrove_door"
+      },
+      {
+        "Properties": {
+          "in_wall": "false",
+          "powered": "false",
+          "facing": "south",
+          "open": "false"
+        },
+        "Name": "minecraft:acacia_fence_gate"
+      },
+      {
+        "Properties": {
+          "in_wall": "false",
+          "powered": "false",
+          "facing": "north",
+          "open": "false"
+        },
+        "Name": "minecraft:acacia_fence_gate"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "south",
+          "open": "false"
+        },
+        "Name": "minecraft:mangrove_trapdoor"
+      },
+      {
+        "Properties": {
+          "half": "top",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "north",
+          "open": "false"
+        },
+        "Name": "minecraft:mangrove_trapdoor"
+      },
+      {
+        "Properties": {
+          "half": "bottom",
+          "waterlogged": "false",
+          "shape": "straight",
+          "facing": "east"
+        },
+        "Name": "minecraft:mangrove_stairs"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false",
+          "facing": "west",
+          "type": "single"
+        },
+        "Name": "minecraft:chest"
+      },
+      {
+        "Properties": {
+          "waterlogged": "false",
+          "facing": "south",
+          "type": "single"
+        },
+        "Name": "minecraft:chest"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "south"
+        },
+        "Name": "minecraft:acacia_shelf"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "north"
+        },
+        "Name": "minecraft:acacia_shelf"
+      },
+      {
+        "Properties": {
+          "lit": "false",
+          "facing": "north"
+        },
+        "Name": "minecraft:blast_furnace"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "south"
+        },
+        "Name": "minecraft:birch_shelf"
+      },
+      {
+        "Properties": {
+          "side_chain": "unconnected",
+          "waterlogged": "false",
+          "powered": "false",
+          "facing": "north"
+        },
+        "Name": "minecraft:birch_shelf"
+      }
+    ]
+  }
+]
