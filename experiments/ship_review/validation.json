@@ -1,0 +1,71 @@
+{
+  "bedrock_version": "1.26.61.1",
+  "minimum_client": [
+    1,
+    26,
+    60,
+    0,
+    0
+  ],
+  "checks": [
+    {
+      "phase": "built",
+      "passed": true,
+      "variants": {
+        "new": {
+          "checkedBlocks": 18087,
+          "dryHoldCells": 6510,
+          "filledContainers": 13,
+          "lootStacks": 51,
+          "pillagers": 12
+        },
+        "tattered": {
+          "checkedBlocks": 17466,
+          "dryHoldCells": 6510,
+          "filledContainers": 13,
+          "lootStacks": 50,
+          "pillagers": 8
+        },
+        "abandoned": {
+          "checkedBlocks": 15640,
+          "dryHoldCells": 6517,
+          "filledContainers": 5,
+          "lootStacks": 18,
+          "pillagers": 0
+        }
+      }
+    },
+    {
+      "phase": "reload",
+      "passed": true,
+      "variants": {
+        "new": {
+          "checkedBlocks": 18087,
+          "dryHoldCells": 6510,
+          "filledContainers": 13,
+          "lootStacks": 51,
+          "pillagers": 12
+        },
+        "tattered": {
+          "checkedBlocks": 17466,
+          "dryHoldCells": 6510,
+          "filledContainers": 13,
+          "lootStacks": 50,
+          "pillagers": 8
+        },
+        "abandoned": {
+          "checkedBlocks": 15640,
+          "dryHoldCells": 6517,
+          "filledContainers": 5,
+          "lootStacks": 18,
+          "pillagers": 0
+        }
+      }
+    }
+  ],
+  "archive_bytes": 140405,
+  "archive_sha256": "8d4b104da5465a54ec9565facb98d25d02fb88d5e0369ef9b594a14924291fe2",
+  "runtime_packs_included": false,
+  "world_generator": "flat",
+  "game_mode": "creative"
+}

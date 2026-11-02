@@ -5,6 +5,14 @@
 **Version 0.5.2 — starting boat, sea life and diving gear.** On your phone, tap the link above,
 then open **Endless_Waters.mcaddon** with Minecraft. The file contains both packs.
 
+## ⛵ [Download the pirate-ship review world (.mcworld)](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Shipyard.mcworld)
+
+**Dreadwake Shipyard:** a separate flat Creative world with new, tattered and
+abandoned ships, furnished interiors, vanilla loot and pillager crews. Open the
+file with Minecraft, then select **Dreadwake Shipyard** in your Worlds list.
+Requires Bedrock **26.60+**. No addon setup is needed.
+[World details and ship coordinates](experiments/ship_review/README.md).
+
 ## Install
 
 1. Import the download into Minecraft Bedrock **26.50 or newer**.
@@ -41,9 +49,10 @@ villages, wrecks, crashed submarines, underwater bases and ancient ruins; none
 are included yet. [Research candidates](experiments/structure_candidates.md)
 are tracked separately.
 
-**Pirate ship design review:** [see the new, tattered and abandoned Dreadwake](experiments/structure_previews/dreadwake/README.md),
-or [download its pictures and offline viewer](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Ship_Previews.zip).
-These are previews; the ships are not included in the addon yet.
+**Pirate ship review:** [explore the playable shipyard](experiments/ship_review/README.md),
+[see the pictures](experiments/structure_previews/dreadwake/README.md), or
+[download pictures and the offline viewer](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Ship_Previews.zip).
+The ships are not included in the ocean addon yet.
 
 ## New sea life
 

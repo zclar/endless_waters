@@ -3,6 +3,10 @@
 **Preview only. This ship has not been added to the Endless Waters addon or
 world generation.** Review the design before integration.
 
+**Now playable:** [download the separate flat shipyard world](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Shipyard.mcworld)
+with furnished interiors, stocked loot and actual pillager crews.
+[Instructions and coordinates](../../ship_review/README.md).
+
 An original block-built galleon, **108 blocks long**, up to **43 blocks across
 the sails**, with a **31-block hull beam**. The new and tattered versions are
 74 blocks tall from keel to masthead; the abandoned version has broken upper
@@ -56,8 +60,10 @@ approximate colors rather than Minecraft textures. The water plane is a visual
 reference, and the viewer's crew markers represent planned pillager positions.
 
 The furnishings, cannons, wheel and rigging are vanilla-block assemblies;
-decorative bunks are not usable bed blocks. Cannons do not fire. Barrels and
-chests have no assigned loot yet. No third-party structure assets are used.
+decorative bunks are not usable bed blocks. The playable review world also has
+two functional beds per ship and selected containers stocked with vanilla loot.
+Cannons do not fire. Standalone preview templates omit the review world's loot
+and crew assembly. No third-party structure assets are used.
 
 ## Validation and remaining work
 
@@ -66,11 +72,11 @@ layout, all crew positions have floor/headroom, the hull is sealed below the
 waterline in a voxel flood test, and the main addon download is unchanged.
 Each variant is exported as two pieces within the 64-block horizontal limits.
 
-Bedrock loading, block-state compatibility, pathfinding, ladder attachment,
-mob persistence, loot and generation placement still need engine tests after
-the design is accepted. The official server download timed out during this
-review, so no successful in-game test is claimed. The interactive viewer is
-an additional inspection tool; it is not a Bedrock simulator.
+The playable shipyard's [engine validation](../../ship_review/validation.json)
+covers structure loading, dry interiors, crew equipment, loot and persistence
+across a restart. World-generation placement, complete survival pathfinding,
+phone graphics and multiplayer still need further testing. The interactive
+viewer is an additional inspection tool; it is not a Bedrock simulator.
 
 Rebuild from the repository root:
 

@@ -9,7 +9,7 @@
   "status": "review only; not integrated into Endless Waters",
   "variants": {
     "new": {
-      "solid_blocks": 18066,
+      "solid_blocks": 18087,
       "actual_block_bounds": [
         [
           3,
@@ -24,7 +24,7 @@
           107
         ]
       ],
-      "palette_entries": 57,
+      "palette_entries": 65,
       "planned_pillagers": 12,
       "crew_positions": [
         [
@@ -101,7 +101,7 @@
             76,
             58
           ],
-          "sha256": "c4167fa0e254fceb14ff0f0c8ee6188131acd27294cd98a4008721697b4509bf"
+          "sha256": "f8119ca07e45a3566bb05c7e299cabd4ff9735cc06814f7d6c3669f72e388d63"
         },
         {
           "file": "templates/new/dreadwake_new_1.mcstructure",
@@ -115,7 +115,7 @@
             76,
             58
           ],
-          "sha256": "f2420f2ef5e0d8656d678761ee3b377bafad49f1ddc04a09ede298c700c1d5c6"
+          "sha256": "4a5a14825ae23278e5f2a1ec8d4bc5c4f5f4f67d1a3ac168f2f8ba4d01e5aee5"
         }
       ],
       "rooms": {
@@ -138,7 +138,7 @@
       }
     },
     "tattered": {
-      "solid_blocks": 17445,
+      "solid_blocks": 17466,
       "actual_block_bounds": [
         [
           3,
@@ -153,7 +153,7 @@
           107
         ]
       ],
-      "palette_entries": 59,
+      "palette_entries": 68,
       "planned_pillagers": 8,
       "crew_positions": [
         [
@@ -210,7 +210,7 @@
             76,
             58
           ],
-          "sha256": "56ca5c6ced88278745458a35af6170d1b4f6a16d87c28e20502a6048290d2235"
+          "sha256": "717ae2167f683cbe7f528b086f707e69e4f2cc6ecbfb30184af7b3682ef3de77"
         },
         {
           "file": "templates/tattered/dreadwake_tattered_1.mcstructure",
@@ -224,7 +224,7 @@
             76,
             58
           ],
-          "sha256": "022b3f15c51f195a3b9421fbcc32992dd581ad316453002e8c465c80f889df08"
+          "sha256": "191933f27a3fd43e8913f377ace3075f873784ed1fee06b96f55f79183781b43"
         }
       ],
       "rooms": {
@@ -247,7 +247,7 @@
       }
     },
     "abandoned": {
-      "solid_blocks": 15623,
+      "solid_blocks": 15640,
       "actual_block_bounds": [
         [
           3,
@@ -262,7 +262,7 @@
           107
         ]
       ],
-      "palette_entries": 61,
+      "palette_entries": 70,
       "planned_pillagers": 0,
       "crew_positions": [],
       "parts": [
@@ -278,7 +278,7 @@
             76,
             58
           ],
-          "sha256": "02284fd22c32358ef96cb644066a455d97494bee83ca6a24c085dbe0c6a73ca0"
+          "sha256": "9fb582d3fa8786c75109d74111e9f58b8606007d3334789755f3764df82827d1"
         },
         {
           "file": "templates/abandoned/dreadwake_abandoned_1.mcstructure",
@@ -292,7 +292,7 @@
             76,
             58
           ],
-          "sha256": "eae33891477aebf879eb96d045d369d501584f72beb9e6457e9feb9420a26a03"
+          "sha256": "df53e5c928f72ab2c0d6910beb4275cf9ef9111bf2fbbe34fb88eb8f2f2785c0"
         }
       ],
       "rooms": {

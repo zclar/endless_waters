@@ -2,19 +2,19 @@
   "scope": "static block layouts and files; not engine or multiplayer validation",
   "variants": {
     "new": {
-      "solid_blocks": 18066,
+      "solid_blocks": 18087,
       "dry_hull": true,
       "crew_positions_clear": true,
       "nbt_matches_layout": true
     },
     "tattered": {
-      "solid_blocks": 17445,
+      "solid_blocks": 17466,
       "dry_hull": true,
       "crew_positions_clear": true,
       "nbt_matches_layout": true
     },
     "abandoned": {
-      "solid_blocks": 15623,
+      "solid_blocks": 15640,
       "dry_hull": true,
       "crew_positions_clear": true,
       "nbt_matches_layout": true

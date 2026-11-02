@@ -204,10 +204,13 @@ def platforms(s):
     # Functional boarding ladders lead up to gaps in the side rails.
     for side in [-1, 1]:
         edge = CENTER + side * (beam(57) + 1)
-        for y in range(7, 16):
+        for y in range(7, 15):
+            s.put(edge - side, y, 57, b('stripped_spruce_log', pillar_axis='y'))
+        for y in range(8, 15):
             s.put(edge, y, 57, b('ladder', facing_direction=4 if side < 0 else 5))
-        s.put(edge - side, 15, 57, AIR)
-        s.put(edge - side, 16, 57, AIR)
+        for xx in [edge - side, CENTER + side * hull_width(57, 14)]:
+            s.put(xx, 15, 57, AIR)
+            s.put(xx, 16, 57, AIR)
 
 
 def cabin(s):
@@ -250,7 +253,7 @@ def cabin(s):
         s.lantern(x, 21, 105)
     # Furniture: chart desk, chairs, book cabinets, bed and private treasure alcove.
     s.box(21, 15, 93, 27, 15, 96, FENCE)
-    s.box(21, 16, 93, 27, 16, 96, slab('dark_oak'))
+    s.box(21, 16, 93, 27, 16, 96, slab('dark_oak', True))
     for x in range(22, 27):
         s.put(x, 17, 94, b('white_carpet'))
     for z in [89, 91, 98, 100]:
@@ -293,7 +296,7 @@ def interiors(s):
         for z in [39, 44, 49, 54]:
             x = CENTER + side * 6
             for y in [5, 7]:
-                s.box(x - 1, y, z, x + 1, y, z + 2, slab('spruce'))
+                s.box(x - 1, y, z, x + 1, y, z + 2, slab('spruce', True))
                 s.box(x - 1, y, z + 3, x + 1, y, z + 3, b('white_wool'))
                 s.box(x - 1, y + 1, z, x + 1, y + 1, z + 2, b('red_carpet'))
             for zz in [z, z + 3]:
@@ -312,7 +315,7 @@ def interiors(s):
     # Galley and mess below forecastle; two tables, benches and pantry.
     for x in [19, 28]:
         s.box(x, 10, 27, x, 10, 31, FENCE)
-        s.box(x - 1, 11, 27, x + 1, 11, 31, slab('oak'))
+        s.box(x - 1, 11, 27, x + 1, 11, 31, slab('oak', True))
         for dx in [-2, 2]:
             s.box(x + dx, 10, 27, x + dx, 10, 31, slab('spruce'))
     for x in range(21, 28):
@@ -515,8 +518,9 @@ def age(s):
         for x, y, z in [(16, 18, 88), (31, 18, 99), (18, 7, 94), (29, 12, 95), (23, 19, 102)]:
             s.put(x, y, z, b('web'))
         for z in [90, 94, 99, 103]:
-            for y in range(13, 17):
-                s.put(37, y, z, b('vine', vine_direction_bits=2))
+            for y in range(12, 15):
+                # Attach each vine to the actual curved hull, facing west.
+                s.put(CENTER + hull_width(z, y) + 1, y, z, b('vine', vine_direction_bits=2))
         # Fallen crates at the breach; the cabin remains accessible.
         s.barrel(16, 10, 68)
         s.barrel(17, 10, 69)
@@ -529,12 +533,54 @@ def build_ship(variant):
     cabin(s)
     interiors(s)
     rig(s)
+    finish_furnishings(s)
     age(s)
+    secure_attachments(s)
     positions = [(20, 15, 42), (28, 15, 44), (21, 15, 71), (27, 15, 76),
                  (20, 19, 24), (28, 19, 25), (20, 22, 88), (27, 22, 99),
                  (20, 15, 90), (24, 10, 41), (24, 10, 74), (24, 10, 95)]
     s.crew = positions[:12 if variant == 'new' else 8 if variant == 'tattered' else 0]
     return s
+
+
+def finish_furnishings(s):
+    """Small functional work areas and provisions inside the accepted design."""
+    # Supported tableware and a pantry sideboard in the galley.
+    s.put(19, 12, 28, b('cake', bite_counter=0))
+    s.put(28, 12, 30, b('cake', bite_counter=2 if s.variant != 'new' else 0))
+    s.put(31, 10, 32, b('cauldron', cauldron_liquid='water', fill_level=6))
+    s.put(17, 10, 32, b('crafting_table'))
+    s.put(17, 11, 32, b('brewing_stand'))
+    # Captain's drinks cabinet and an independent navigation-supply chest.
+    s.barrel(31, 15, 91)
+    s.barrel(32, 15, 91)
+    s.put(31, 16, 91, b('brewing_stand'))
+    s.chest(32, 15, 89, facing=4)
+    # The chart table has candle clusters and a desk book rather than empty trim.
+    for x, z in [(21, 93), (27, 96)]:
+        s.put(x, 17, z, b('candle', candles=1, lit=s.variant != 'abandoned'))
+    s.chest(29, 5, 99)
+    # Grain sacks among the cargo stacks; retain the selected loot barrels.
+    for x, y, z in [(31, 5, 65), (31, 6, 65), (30, 5, 66), (19, 5, 83), (20, 5, 83)]:
+        s.put(x, y, z, b('hay_block', pillar_axis='y'))
+    # Shelving in the workshop and a small anvil stand on the main deck.
+    s.box(29, 12, 94, 31, 12, 96, slab('dark_oak', True))
+    s.barrel(30, 13, 95)
+    s.put(17, 15, 78, b('smithing_table'))
+    s.put(17, 16, 78, b('anvil', damage='undamaged', direction=0))
+
+
+def secure_attachments(s):
+    # Stays meet mastheads; the solid timber still needs to support the ladder.
+    for (x, y, z), block in list(s.blocks.items()):
+        if block.name == 'ladder' and x in [25, 26]:
+            support = (x - 1, y, z)
+            if s.blocks.get(support, AIR).name == 'oak_fence':
+                s.put(*support, b('spruce_log', pillar_axis='y'))
+        if block.name.endswith('_carpet'):
+            below = s.blocks.get((x, y - 1, z), AIR)
+            if below == AIR or below.name == 'ladder':
+                s.put(x, y, z, AIR)
 
 
 # Small self-contained little-endian NBT encoder: Bedrock block states need byte
