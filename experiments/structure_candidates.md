@@ -4,6 +4,11 @@ Research only: no structures or third-party executable code have been added.
 All candidates below are Java content and need asset inspection, conversion to
 Bedrock, block/state and loot translation, and tests with our generator.
 
+The current direction is the [detailed structure plan](structure_plan.md):
+large furnished ships, raft villages, wrecks, crashed submarines, abandoned
+underwater bases and ancient ruins. Basic wreck templates do not meet the
+user's requested detail level.
+
 ## First candidate: Trek
 
 - Project: https://modrinth.com/datapack/trek
@@ -15,14 +20,15 @@ Bedrock, block/state and loot translation, and tests with our generator.
   included license for the selected assets before copying them. No assets have
   yet been inspected or validated for Bedrock.
 
-## Legacy Boat Ruins
+## Legacy Boat Ruins — rejected after preview
 
 - https://modrinth.com/mod/legacy-boat-ruins
 - https://github.com/425913490bb-gif/boat_ruins_mod
-- Author lists three wreck templates and five loot-table categories, using
-  vanilla items. A small set could provide wood and supplies during exploration.
-- Repository/project label says MIT, while README says CC0. Inspect the actual
-  LICENSE and templates before importing; preserve the applicable notice.
+- Three actual NBT templates were inspected and rendered as approximate
+  previews. The user rejected them as too basic; do not convert or integrate.
+- The downloaded archive's actual LICENSE is MIT, copyright 2026
+  425913490bb-gif, despite the README's CC0 wording. The notice and asset hashes
+  are retained with the archived previews.
 
 ## Later candidate: YUNG's Better Ocean Monuments
 

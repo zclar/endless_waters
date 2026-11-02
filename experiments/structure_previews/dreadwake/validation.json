@@ -1,0 +1,24 @@
+{
+  "scope": "static block layouts and files; not engine or multiplayer validation",
+  "variants": {
+    "new": {
+      "solid_blocks": 18066,
+      "dry_hull": true,
+      "crew_positions_clear": true,
+      "nbt_matches_layout": true
+    },
+    "tattered": {
+      "solid_blocks": 17445,
+      "dry_hull": true,
+      "crew_positions_clear": true,
+      "nbt_matches_layout": true
+    },
+    "abandoned": {
+      "solid_blocks": 15623,
+      "dry_hull": true,
+      "crew_positions_clear": true,
+      "nbt_matches_layout": true
+    }
+  },
+  "main_addon_sha256": "adc57b8352127157cc3908f0bbe936c4232b414093c6b498ca5154aa4a94297e"
+}

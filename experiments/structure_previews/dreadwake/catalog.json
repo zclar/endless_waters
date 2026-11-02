@@ -1,0 +1,318 @@
+{
+  "name": "Dreadwake",
+  "size": [
+    49,
+    76,
+    116
+  ],
+  "water_surface_y": 8,
+  "status": "review only; not integrated into Endless Waters",
+  "variants": {
+    "new": {
+      "solid_blocks": 18066,
+      "actual_block_bounds": [
+        [
+          3,
+          45
+        ],
+        [
+          0,
+          73
+        ],
+        [
+          0,
+          107
+        ]
+      ],
+      "palette_entries": 57,
+      "planned_pillagers": 12,
+      "crew_positions": [
+        [
+          20,
+          15,
+          42
+        ],
+        [
+          28,
+          15,
+          44
+        ],
+        [
+          21,
+          15,
+          71
+        ],
+        [
+          27,
+          15,
+          76
+        ],
+        [
+          20,
+          19,
+          24
+        ],
+        [
+          28,
+          19,
+          25
+        ],
+        [
+          20,
+          22,
+          88
+        ],
+        [
+          27,
+          22,
+          99
+        ],
+        [
+          20,
+          15,
+          90
+        ],
+        [
+          24,
+          10,
+          41
+        ],
+        [
+          24,
+          10,
+          74
+        ],
+        [
+          24,
+          10,
+          95
+        ]
+      ],
+      "parts": [
+        {
+          "file": "templates/new/dreadwake_new_0.mcstructure",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            49,
+            76,
+            58
+          ],
+          "sha256": "c4167fa0e254fceb14ff0f0c8ee6188131acd27294cd98a4008721697b4509bf"
+        },
+        {
+          "file": "templates/new/dreadwake_new_1.mcstructure",
+          "offset": [
+            0,
+            0,
+            58
+          ],
+          "size": [
+            49,
+            76,
+            58
+          ],
+          "sha256": "f2420f2ef5e0d8656d678761ee3b377bafad49f1ddc04a09ede298c700c1d5c6"
+        }
+      ],
+      "rooms": {
+        "cargo_and_berths": [
+          5,
+          8
+        ],
+        "gun_deck_galley_workshop": [
+          10,
+          13
+        ],
+        "main_deck_captains_cabin": [
+          15,
+          20
+        ],
+        "quarterdeck": [
+          22,
+          25
+        ]
+      }
+    },
+    "tattered": {
+      "solid_blocks": 17445,
+      "actual_block_bounds": [
+        [
+          3,
+          45
+        ],
+        [
+          0,
+          73
+        ],
+        [
+          0,
+          107
+        ]
+      ],
+      "palette_entries": 59,
+      "planned_pillagers": 8,
+      "crew_positions": [
+        [
+          20,
+          15,
+          42
+        ],
+        [
+          28,
+          15,
+          44
+        ],
+        [
+          21,
+          15,
+          71
+        ],
+        [
+          27,
+          15,
+          76
+        ],
+        [
+          20,
+          19,
+          24
+        ],
+        [
+          28,
+          19,
+          25
+        ],
+        [
+          20,
+          22,
+          88
+        ],
+        [
+          27,
+          22,
+          99
+        ]
+      ],
+      "parts": [
+        {
+          "file": "templates/tattered/dreadwake_tattered_0.mcstructure",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            49,
+            76,
+            58
+          ],
+          "sha256": "56ca5c6ced88278745458a35af6170d1b4f6a16d87c28e20502a6048290d2235"
+        },
+        {
+          "file": "templates/tattered/dreadwake_tattered_1.mcstructure",
+          "offset": [
+            0,
+            0,
+            58
+          ],
+          "size": [
+            49,
+            76,
+            58
+          ],
+          "sha256": "022b3f15c51f195a3b9421fbcc32992dd581ad316453002e8c465c80f889df08"
+        }
+      ],
+      "rooms": {
+        "cargo_and_berths": [
+          5,
+          8
+        ],
+        "gun_deck_galley_workshop": [
+          10,
+          13
+        ],
+        "main_deck_captains_cabin": [
+          15,
+          20
+        ],
+        "quarterdeck": [
+          22,
+          25
+        ]
+      }
+    },
+    "abandoned": {
+      "solid_blocks": 15623,
+      "actual_block_bounds": [
+        [
+          3,
+          45
+        ],
+        [
+          0,
+          64
+        ],
+        [
+          0,
+          107
+        ]
+      ],
+      "palette_entries": 61,
+      "planned_pillagers": 0,
+      "crew_positions": [],
+      "parts": [
+        {
+          "file": "templates/abandoned/dreadwake_abandoned_0.mcstructure",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            49,
+            76,
+            58
+          ],
+          "sha256": "02284fd22c32358ef96cb644066a455d97494bee83ca6a24c085dbe0c6a73ca0"
+        },
+        {
+          "file": "templates/abandoned/dreadwake_abandoned_1.mcstructure",
+          "offset": [
+            0,
+            0,
+            58
+          ],
+          "size": [
+            49,
+            76,
+            58
+          ],
+          "sha256": "eae33891477aebf879eb96d045d369d501584f72beb9e6457e9feb9420a26a03"
+        }
+      ],
+      "rooms": {
+        "cargo_and_berths": [
+          5,
+          8
+        ],
+        "gun_deck_galley_workshop": [
+          10,
+          13
+        ],
+        "main_deck_captains_cabin": [
+          15,
+          20
+        ],
+        "quarterdeck": [
+          22,
+          25
+        ]
+      }
+    }
+  }
+}

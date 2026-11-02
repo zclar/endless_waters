@@ -35,8 +35,15 @@ The reported guest join/kick is still under investigation. v0.5.2 reduces
 unnecessary gear checks while players load and isolates errors per player;
 it is not a confirmed fix for that disconnect. See the
 [multiplayer test notes](experiments/sea_life/multiplayer_notes.md) for verified
-checks and the next real-device comparison. Structure candidates are recorded
-[here](experiments/structure_candidates.md); none are included yet.
+checks and the next real-device comparison. The
+[structure plan](experiments/structure_plan.md) covers detailed ships, large raft
+villages, wrecks, crashed submarines, underwater bases and ancient ruins; none
+are included yet. [Research candidates](experiments/structure_candidates.md)
+are tracked separately.
+
+**Pirate ship design review:** [see the new, tattered and abandoned Dreadwake](experiments/structure_previews/dreadwake/README.md),
+or [download its pictures and offline viewer](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Ship_Previews.zip).
+These are previews; the ships are not included in the addon yet.
 
 ## New sea life
 
