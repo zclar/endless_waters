@@ -88,3 +88,4 @@ def build(bp, rp):
     recipe('flippers',['K K','I I','K K'],{'K':'minecraft:dried_kelp','I':'minecraft:iron_ingot'})
     (bp/'scripts').mkdir(exist_ok=True)
     shutil.copyfile(ROOT/'scripts/diving_gear.js',bp/'scripts/diving_gear.js')
+    shutil.copyfile(ROOT/'scripts/starter_boat.js',bp/'scripts/starter_boat.js')

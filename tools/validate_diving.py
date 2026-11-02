@@ -67,6 +67,7 @@ def validate():
             loot = read(bp / c['minecraft:loot'])
             assert loot['pools'][0]['entries'][0]['name'] == name
     assert (bp / 'scripts/diving_gear.js').read_bytes() == (ROOT / 'scripts/diving_gear.js').read_bytes()
+    assert (bp / 'scripts/starter_boat.js').read_bytes() == (ROOT / 'scripts/starter_boat.js').read_bytes()
     assert read(rp / 'manifest.json')['capabilities'] == ['pbr']
     textures = list((rp / 'textures').rglob('*.png'))
     sets = list((rp / 'textures').rglob('*.texture_set.json'))

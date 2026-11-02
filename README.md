@@ -2,7 +2,7 @@
 
 ## ⬇️ [Download Endless Waters for Bedrock (.mcaddon)](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Endless_Waters.mcaddon)
 
-**Version 0.5.1 — sea life, diving gear and ocean building blocks.** On your phone, tap the link above,
+**Version 0.5.2 — starting boat, sea life and diving gear.** On your phone, tap the link above,
 then open **Endless_Waters.mcaddon** with Minecraft. The file contains both packs.
 
 ## Install
@@ -19,6 +19,24 @@ previously generated terrain. **Upgrading from v0.4.0 does not require a new
 world:** the terrain generator is identical, and the new creatures can spawn in
 existing ocean areas. If upgrading from v0.3.0 or earlier, a new world or new
 chunks are needed for the v0.4.0 depth and floating-remnant fixes.
+
+## Starting boat
+
+On their first join after installing v0.5.2, each player receives one vanilla
+oak boat and 30 seconds of water breathing. This also applies once in an
+existing world upgraded from an earlier addon version. The grant is saved per
+player, so reconnecting or respawning does not give additional boats. If their
+inventory is full, the boat drops at their location. A stronger or longer
+existing water-breathing effect is preserved.
+
+## Multiplayer status
+
+The reported guest join/kick is still under investigation. v0.5.2 reduces
+unnecessary gear checks while players load and isolates errors per player;
+it is not a confirmed fix for that disconnect. See the
+[multiplayer test notes](experiments/sea_life/multiplayer_notes.md) for verified
+checks and the next real-device comparison. Structure candidates are recorded
+[here](experiments/structure_candidates.md); none are included yet.
 
 ## New sea life
 
@@ -111,7 +129,7 @@ material support alone does not solve that mismatch. See the
 ## Tested
 
 The v0.4.0 terrain checks below still apply: all **294 generation/biome files**
-are byte-for-byte unchanged in v0.5.1. Creature, gear and building-block checks are documented in
+are byte-for-byte unchanged in v0.5.2. Creature, gear and building-block checks are documented in
 [the sea-life test notes](experiments/sea_life/README.md).
 
 Bedrock Dedicated Server **1.26.52.3**: two reproduced floating-portal sites

@@ -1,6 +1,6 @@
 {
   "name": "endless-waters",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "private": true,
   "scripts": {
     "build": "python3 tools/build.py",

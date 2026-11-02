@@ -1,6 +1,7 @@
 // Bedrock adaptation of Ocean Overhaul's independent diving-kit bonuses (MIT).
 // Small player-only poll: no terrain edits, entity scans or world-generation work.
 import {system, world, EquipmentSlot} from '@minecraft/server';
+import './starter_boat.js';
 
 const BASE = 'endless:flippers_base';
 const BOOST = 'endless:flippers_boost';
@@ -21,18 +22,18 @@ export function updateDivingGear(player) {
     const head=equipment.getEquipment(EquipmentSlot.Head)?.typeId;
     const chest=equipment.getEquipment(EquipmentSlot.Chest)?.typeId;
     const feet=equipment.getEquipment(EquipmentSlot.Feet)?.typeId;
-    const headBlock=player.dimension.getBlock(player.getHeadLocation());
-    const submerged=headBlock && ['minecraft:water','minecraft:flowing_water',
-        'minecraft:kelp','minecraft:seagrass','minecraft:bubble_column'].includes(headBlock.typeId);
-    if (head==='endless:deep_sea_helmet' && submerged) {
-        // Stay above the night-vision flashing threshold while wearing it.
-        refresh(player,'night_vision',300,230);
+    if (head==='endless:deep_sea_helmet') {
+        const headBlock=player.dimension.getBlock(player.getHeadLocation());
+        const submerged=headBlock && ['minecraft:water','minecraft:flowing_water',
+            'minecraft:kelp','minecraft:seagrass','minecraft:bubble_column'].includes(headBlock.typeId);
+        if (submerged) refresh(player,'night_vision',300,230);
     }
     if (chest==='endless:oxygen_tank') refresh(player,'water_breathing',100,40);
 
+    const previous=player.getDynamicProperty(BASE);
+    if (feet!=='endless:flippers' && typeof previous!=='number') return;
     const movement=player.getComponent('minecraft:underwater_movement');
     if (!movement) return;
-    const previous=player.getDynamicProperty(BASE);
     const boost=player.getDynamicProperty(BOOST);
     if (feet==='endless:flippers') {
         // Persist the original value so removing gear after a reload restores it.
@@ -54,8 +55,21 @@ export function updateDivingGear(player) {
     }
 }
 
+const reportedErrors = new Set();
+world.afterEvents.playerLeave.subscribe(event=>reportedErrors.delete(event.playerId));
 system.runInterval(()=>{
     for (const player of world.getAllPlayers()) {
-        if (player?.isValid) updateDivingGear(player);
+        if (!player?.isValid) continue;
+        try {
+            updateDivingGear(player);
+            reportedErrors.delete(player.id);
+        } catch (error) {
+            // A disconnect or unloaded block for one player must not interrupt
+            // gear updates for the other players. Report once until recovery.
+            if (player.isValid && !reportedErrors.has(player.id)) {
+                console.warn('Endless Waters gear update: '+error);
+                reportedErrors.add(player.id);
+            }
+        }
     }
 },10);
