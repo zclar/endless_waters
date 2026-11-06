@@ -1,0 +1,1275 @@
+{
+  "entries": [
+    {
+      "id": "endless:decor_carpentry_table",
+      "name": "Carpentry Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_book",
+      "name": "Book",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_bottle",
+      "name": "Bottle",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_acacia_cabinet",
+      "name": "Acacia Cabinet",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_birch_cabinet",
+      "name": "Birch Cabinet",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_crimson_cabinet",
+      "name": "Crimson Cabinet",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_dark_oak_cabinet",
+      "name": "Dark Oak Cabinet",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_jungle_cabinet",
+      "name": "Jungle Cabinet",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_oak_cabinet",
+      "name": "Oak Cabinet",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_spruce_cabinet",
+      "name": "Spruce Cabinet",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_warped_cabinet",
+      "name": "Warped Cabinet",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_ceiling_fan",
+      "name": "Ceiling Fan",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_acacia_chair",
+      "name": "Acacia Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_birch_chair",
+      "name": "Birch Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_crimson_chair",
+      "name": "Crimson Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_dark_oak_chair",
+      "name": "Dark Oak Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_jungle_chair",
+      "name": "Jungle Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_oak_chair",
+      "name": "Oak Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_spruce_chair",
+      "name": "Spruce Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_warped_chair",
+      "name": "Warped Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_chandelier",
+      "name": "Chandelier",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_clock",
+      "name": "Clock",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_acacia_coffee_table",
+      "name": "Acacia Coffee Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_birch_coffee_table",
+      "name": "Birch Coffee Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_crimson_coffee_table",
+      "name": "Crimson Coffee Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_dark_oak_coffee_table",
+      "name": "Dark Oak Coffee Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_jungle_coffee_table",
+      "name": "Jungle Coffee Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_oak_coffee_table",
+      "name": "Oak Coffee Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_spruce_coffee_table",
+      "name": "Spruce Coffee Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_warped_coffee_table",
+      "name": "Warped Coffee Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_curtain",
+      "name": "Curtain",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_fire_pit",
+      "name": "Fire Pit",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_grandfather_clock",
+      "name": "Grandfather Clock",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_lamp",
+      "name": "Lamp",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_mounted_goat_horn",
+      "name": "Mounted Goat Horn",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_plant_pot",
+      "name": "Plant Pot",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_radio",
+      "name": "Radio",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_acacia_rocking_chair",
+      "name": "Acacia Rocking Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_birch_rocking_chair",
+      "name": "Birch Rocking Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_crimson_rocking_chair",
+      "name": "Crimson Rocking Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_dark_oak_rocking_chair",
+      "name": "Dark Oak Rocking Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_jungle_rocking_chair",
+      "name": "Jungle Rocking Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_oak_rocking_chair",
+      "name": "Oak Rocking Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_spruce_rocking_chair",
+      "name": "Spruce Rocking Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_warped_rocking_chair",
+      "name": "Warped Rocking Chair",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_scroll",
+      "name": "Scroll",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_shelve",
+      "name": "Shelve",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_acacia_sofa",
+      "name": "Acacia Sofa",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_birch_sofa",
+      "name": "Birch Sofa",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_crimson_sofa",
+      "name": "Crimson Sofa",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_dark_oak_sofa",
+      "name": "Dark Oak Sofa",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_jungle_sofa",
+      "name": "Jungle Sofa",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_oak_sofa",
+      "name": "Oak Sofa",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_spruce_sofa",
+      "name": "Spruce Sofa",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_warped_sofa",
+      "name": "Warped Sofa",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_step_ladder",
+      "name": "Step Ladder",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_acacia_stool",
+      "name": "Acacia Stool",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_birch_stool",
+      "name": "Birch Stool",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_crimson_stool",
+      "name": "Crimson Stool",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_dark_oak_stool",
+      "name": "Dark Oak Stool",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_jungle_stool",
+      "name": "Jungle Stool",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_oak_stool",
+      "name": "Oak Stool",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_spruce_stool",
+      "name": "Spruce Stool",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_warped_stool",
+      "name": "Warped Stool",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_acacia_table",
+      "name": "Acacia Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_birch_table",
+      "name": "Birch Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_crimson_table",
+      "name": "Crimson Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_dark_oak_table",
+      "name": "Dark Oak Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_jungle_table",
+      "name": "Jungle Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_oak_table",
+      "name": "Oak Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_spruce_table",
+      "name": "Spruce Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_warped_table",
+      "name": "Warped Table",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_rustic_television",
+      "name": "Television",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_trash_can",
+      "name": "Trash Can",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rustic_vase",
+      "name": "Vase",
+      "source": "FurniDeco",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative; interact to change style/light, sneak to change color"
+    },
+    {
+      "id": "endless:decor_ocean_anchor",
+      "name": "Anchor",
+      "source": "Ocean Overhaul",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_ships_wheel",
+      "name": "Ships Wheel",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_rope",
+      "name": "Rope",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_tattered_sail",
+      "name": "Tattered Sail",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_aquarium",
+      "name": "Aquarium",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_abyssal_coral_block",
+      "name": "Abyssal Coral Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_living_abyssal_coral_block",
+      "name": "Living Abyssal Coral Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_barnacle_block",
+      "name": "Barnacle Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_crushed_coral_block",
+      "name": "Crushed Coral Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_salt_block",
+      "name": "Salt Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_abyssal_pearl_block",
+      "name": "Abyssal Pearl Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_glowing_plankton_block",
+      "name": "Glowing Plankton Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_abyssal_vent",
+      "name": "Abyssal Vent",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_giant_clam",
+      "name": "Giant Clam",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_prismarine_crystal_block",
+      "name": "Prismarine Crystal Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_chiseled_prismarine_tiles",
+      "name": "Chiseled Prismarine Tiles",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_pearl_block",
+      "name": "Pearl Block",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_driftwood_plank_slab",
+      "name": "Driftwood Plank Slab",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_driftwood_plank_stairs",
+      "name": "Driftwood Plank Stairs",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_driftwood_plank_wall",
+      "name": "Driftwood Plank Wall",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_sea_glass_slab",
+      "name": "Sea Glass Slab",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_sea_glass_stairs",
+      "name": "Sea Glass Stairs",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_polished_prismarine_bricks_slab",
+      "name": "Polished Prismarine Bricks Slab",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_polished_prismarine_bricks_stairs",
+      "name": "Polished Prismarine Bricks Stairs",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_polished_prismarine_bricks_wall",
+      "name": "Polished Prismarine Bricks Wall",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_chiseled_prismarine_tiles_slab",
+      "name": "Chiseled Prismarine Tiles Slab",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_chiseled_prismarine_tiles_stairs",
+      "name": "Chiseled Prismarine Tiles Stairs",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_chiseled_prismarine_tiles_wall",
+      "name": "Chiseled Prismarine Tiles Wall",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_pearl_block_slab",
+      "name": "Pearl Block Slab",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_pearl_block_stairs",
+      "name": "Pearl Block Stairs",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_pearl_block_wall",
+      "name": "Pearl Block Wall",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_driftwood_plank_fence",
+      "name": "Driftwood Plank Fence",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_driftwood_fence_gate",
+      "name": "Driftwood Fence Gate",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_ocean_driftwood_trapdoor",
+      "name": "Driftwood Trapdoor",
+      "source": "Ocean Overhaul",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_stove",
+      "name": "Stove",
+      "source": "Farmer's Delight",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_cooking_pot",
+      "name": "Cooking Pot",
+      "source": "Farmer's Delight",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_cutting_board",
+      "name": "Cutting Board",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_skillet",
+      "name": "Skillet",
+      "source": "Farmer's Delight",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_wooden_basket",
+      "name": "Wooden Basket",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_bamboo_basket",
+      "name": "Bamboo Basket",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_carrot_crate",
+      "name": "Carrot Crate",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_potato_crate",
+      "name": "Potato Crate",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_beetroot_crate",
+      "name": "Beetroot Crate",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_rice_bag",
+      "name": "Rice Bag",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_straw_bale",
+      "name": "Straw Bale",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_canvas_rug",
+      "name": "Canvas Rug",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_safety_net",
+      "name": "Safety Net",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_rope_fence",
+      "name": "Rope Fence",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_rope_fence_gate",
+      "name": "Rope Fence Gate",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_oak_cabinet",
+      "name": "Oak Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_spruce_cabinet",
+      "name": "Spruce Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_birch_cabinet",
+      "name": "Birch Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_jungle_cabinet",
+      "name": "Jungle Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_acacia_cabinet",
+      "name": "Acacia Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_dark_oak_cabinet",
+      "name": "Dark Oak Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_mangrove_cabinet",
+      "name": "Mangrove Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_cherry_cabinet",
+      "name": "Cherry Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_bamboo_cabinet",
+      "name": "Bamboo Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_crimson_cabinet",
+      "name": "Crimson Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_galley_warped_cabinet",
+      "name": "Warped Cabinet",
+      "source": "Farmer's Delight",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_rope_coil",
+      "name": "Rope Coil",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_open_crate",
+      "name": "Open Crate",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_sealed_crate",
+      "name": "Sealed Crate",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_powder_keg",
+      "name": "Powder Keg",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_cannonballs",
+      "name": "Cannonballs",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_weapon_rack",
+      "name": "Weapon Rack",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_hammock",
+      "name": "Hammock",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_boots",
+      "name": "Boots",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_hanging_coat",
+      "name": "Hanging Coat",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_mug",
+      "name": "Mug",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_inkwell",
+      "name": "Inkwell",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_sextant",
+      "name": "Sextant",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_compass_stand",
+      "name": "Compass Stand",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_canvas_bundle",
+      "name": "Canvas Bundle",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_coin_pile",
+      "name": "Coin Pile",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_treasure_chest",
+      "name": "Treasure Chest",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_porthole",
+      "name": "Porthole",
+      "source": "Endless Waters original",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_pipe",
+      "name": "Pipe",
+      "source": "Endless Waters original",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_valve",
+      "name": "Valve",
+      "source": "Endless Waters original",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_pressure_gauge",
+      "name": "Pressure Gauge",
+      "source": "Endless Waters original",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_oxygen_cylinder",
+      "name": "Oxygen Cylinder",
+      "source": "Endless Waters original",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_equipment_rack",
+      "name": "Equipment Rack",
+      "source": "Endless Waters original",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_control_console",
+      "name": "Control Console",
+      "source": "Endless Waters original",
+      "ingredient": "minecraft:iron_ingot",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:decor_broken_pottery",
+      "name": "Broken Pottery",
+      "source": "Endless Waters original",
+      "ingredient": "endless:driftwood_plank",
+      "behavior": "decorative"
+    },
+    {
+      "id": "endless:food_kelp_roll",
+      "name": "Kelp Roll",
+      "source": "ocean",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:dried_kelp",
+        "minecraft:cooked_salmon"
+      ]
+    },
+    {
+      "id": "endless:food_salted_cod",
+      "name": "Salted Cod",
+      "source": "ocean",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:cooked_cod",
+        "minecraft:dried_kelp"
+      ]
+    },
+    {
+      "id": "endless:food_seafood_stew",
+      "name": "Seafood Stew",
+      "source": "ocean",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:bowl",
+        "minecraft:cooked_cod",
+        "minecraft:cooked_salmon",
+        "minecraft:dried_kelp"
+      ]
+    },
+    {
+      "id": "endless:food_fish_stew",
+      "name": "Fish Stew",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:bowl",
+        "minecraft:cooked_cod",
+        "minecraft:carrot",
+        "minecraft:potato"
+      ]
+    },
+    {
+      "id": "endless:food_baked_cod_stew",
+      "name": "Baked Cod Stew",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:bowl",
+        "minecraft:cooked_cod",
+        "minecraft:baked_potato"
+      ]
+    },
+    {
+      "id": "endless:food_grilled_salmon",
+      "name": "Grilled Salmon",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:cooked_salmon",
+        "minecraft:carrot"
+      ]
+    },
+    {
+      "id": "endless:food_fruit_salad",
+      "name": "Fruit Salad",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:bowl",
+        "minecraft:apple",
+        "minecraft:melon_slice"
+      ]
+    },
+    {
+      "id": "endless:food_mixed_salad",
+      "name": "Mixed Salad",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:bowl",
+        "minecraft:carrot",
+        "minecraft:beetroot"
+      ]
+    },
+    {
+      "id": "endless:food_vegetable_soup",
+      "name": "Vegetable Soup",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:bowl",
+        "minecraft:carrot",
+        "minecraft:baked_potato"
+      ]
+    },
+    {
+      "id": "endless:food_apple_cider",
+      "name": "Apple Cider",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:glass_bottle",
+        "minecraft:apple",
+        "minecraft:sugar"
+      ]
+    },
+    {
+      "id": "endless:food_hot_cocoa",
+      "name": "Hot Cocoa",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:glass_bottle",
+        "minecraft:cocoa_beans",
+        "minecraft:sugar"
+      ]
+    },
+    {
+      "id": "endless:food_melon_juice",
+      "name": "Melon Juice",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:glass_bottle",
+        "minecraft:melon_slice",
+        "minecraft:sugar"
+      ]
+    },
+    {
+      "id": "endless:food_sweet_berry_cookie",
+      "name": "Sweet Berry Cookie",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:cookie",
+        "minecraft:sweet_berries"
+      ]
+    },
+    {
+      "id": "endless:food_honey_cookie",
+      "name": "Honey Cookie",
+      "source": "farm",
+      "behavior": "edible",
+      "ingredients": [
+        "minecraft:cookie",
+        "minecraft:honey_bottle"
+      ]
+    },
+    {
+      "id": "endless:harpoon",
+      "name": "Harpoon",
+      "source": "Ocean Overhaul texture; rebuilt Bedrock behavior",
+      "behavior": "throwable, recoverable on impact; no automatic loyalty return"
+    }
+  ],
+  "count": 174
+}

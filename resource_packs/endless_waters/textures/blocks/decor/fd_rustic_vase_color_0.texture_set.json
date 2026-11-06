@@ -1,0 +1,11 @@
+{
+  "format_version": "1.21.30",
+  "minecraft:texture_set": {
+    "color": "fd_rustic_vase_color_0",
+    "metalness_emissive_roughness": [
+      0,
+      0,
+      190
+    ]
+  }
+}

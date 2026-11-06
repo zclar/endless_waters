@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "endless:decor_rustic_fire_pit"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "endless:driftwood_plank"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "endless:driftwood_plank"
+      }
+    ],
+    "result": {
+      "item": "endless:decor_rustic_fire_pit",
+      "count": 1
+    }
+  }
+}

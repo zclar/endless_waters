@@ -1,0 +1,960 @@
+{
+  "status": "identifier audit; runtime results are recorded in ship_review/validation.json",
+  "existing_identifiers": {
+    "endless:sea_glass": "behavior_packs/endless_waters/blocks/sea_glass.json",
+    "endless:polished_prismarine_bricks": "behavior_packs/endless_waters/blocks/polished_prismarine_bricks.json",
+    "endless:driftwood_plank": "behavior_packs/endless_waters/blocks/driftwood_plank.json",
+    "endless:pearl_lantern": "behavior_packs/endless_waters/blocks/pearl_lantern.json",
+    "endless:decor_rustic_spruce_sofa": "behavior_packs/endless_waters/blocks/decor/decor_rustic_spruce_sofa.json",
+    "endless:decor_pipe": "behavior_packs/endless_waters/blocks/decor/decor_pipe.json",
+    "endless:decor_rustic_trash_can": "behavior_packs/endless_waters/blocks/decor/decor_rustic_trash_can.json",
+    "endless:decor_sealed_crate": "behavior_packs/endless_waters/blocks/decor/decor_sealed_crate.json",
+    "endless:decor_rustic_spruce_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_rustic_spruce_cabinet.json",
+    "endless:decor_galley_rope_fence": "behavior_packs/endless_waters/blocks/decor/decor_galley_rope_fence.json",
+    "endless:decor_rustic_crimson_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_crimson_table.json",
+    "endless:decor_galley_mangrove_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_mangrove_cabinet.json",
+    "endless:decor_rustic_birch_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_birch_chair.json",
+    "endless:decor_galley_cooking_pot": "behavior_packs/endless_waters/blocks/decor/decor_galley_cooking_pot.json",
+    "endless:decor_ocean_driftwood_trapdoor": "behavior_packs/endless_waters/blocks/decor/decor_ocean_driftwood_trapdoor.json",
+    "endless:decor_rustic_curtain": "behavior_packs/endless_waters/blocks/decor/decor_rustic_curtain.json",
+    "endless:decor_rustic_dark_oak_coffee_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_dark_oak_coffee_table.json",
+    "endless:decor_rustic_crimson_stool": "behavior_packs/endless_waters/blocks/decor/decor_rustic_crimson_stool.json",
+    "endless:decor_rustic_jungle_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_jungle_table.json",
+    "endless:decor_powder_keg": "behavior_packs/endless_waters/blocks/decor/decor_powder_keg.json",
+    "endless:decor_ocean_prismarine_crystal_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_prismarine_crystal_block.json",
+    "endless:decor_ocean_tattered_sail": "behavior_packs/endless_waters/blocks/decor/decor_ocean_tattered_sail.json",
+    "endless:decor_galley_wooden_basket": "behavior_packs/endless_waters/blocks/decor/decor_galley_wooden_basket.json",
+    "endless:decor_rustic_birch_stool": "behavior_packs/endless_waters/blocks/decor/decor_rustic_birch_stool.json",
+    "endless:decor_rustic_crimson_sofa": "behavior_packs/endless_waters/blocks/decor/decor_rustic_crimson_sofa.json",
+    "endless:decor_ocean_chiseled_prismarine_tiles_wall": "behavior_packs/endless_waters/blocks/decor/decor_ocean_chiseled_prismarine_tiles_wall.json",
+    "endless:decor_rustic_spruce_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_spruce_table.json",
+    "endless:decor_ocean_salt_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_salt_block.json",
+    "endless:decor_rustic_crimson_rocking_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_crimson_rocking_chair.json",
+    "endless:decor_inkwell": "behavior_packs/endless_waters/blocks/decor/decor_inkwell.json",
+    "endless:decor_ocean_sea_glass_stairs": "behavior_packs/endless_waters/blocks/decor/decor_ocean_sea_glass_stairs.json",
+    "endless:decor_rustic_spruce_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_spruce_chair.json",
+    "endless:decor_rustic_oak_rocking_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_oak_rocking_chair.json",
+    "endless:decor_rustic_oak_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_rustic_oak_cabinet.json",
+    "endless:decor_valve": "behavior_packs/endless_waters/blocks/decor/decor_valve.json",
+    "endless:decor_ocean_abyssal_vent": "behavior_packs/endless_waters/blocks/decor/decor_ocean_abyssal_vent.json",
+    "endless:decor_sextant": "behavior_packs/endless_waters/blocks/decor/decor_sextant.json",
+    "endless:decor_rustic_jungle_rocking_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_jungle_rocking_chair.json",
+    "endless:decor_ocean_living_abyssal_coral_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_living_abyssal_coral_block.json",
+    "endless:decor_galley_cutting_board": "behavior_packs/endless_waters/blocks/decor/decor_galley_cutting_board.json",
+    "endless:decor_ocean_sea_glass_slab": "behavior_packs/endless_waters/blocks/decor/decor_ocean_sea_glass_slab.json",
+    "endless:decor_ocean_polished_prismarine_bricks_slab": "behavior_packs/endless_waters/blocks/decor/decor_ocean_polished_prismarine_bricks_slab.json",
+    "endless:decor_rustic_jungle_coffee_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_jungle_coffee_table.json",
+    "endless:decor_rustic_acacia_rocking_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_acacia_rocking_chair.json",
+    "endless:decor_ocean_driftwood_plank_wall": "behavior_packs/endless_waters/blocks/decor/decor_ocean_driftwood_plank_wall.json",
+    "endless:decor_rustic_birch_rocking_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_birch_rocking_chair.json",
+    "endless:decor_galley_crimson_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_crimson_cabinet.json",
+    "endless:decor_rustic_ceiling_fan": "behavior_packs/endless_waters/blocks/decor/decor_rustic_ceiling_fan.json",
+    "endless:decor_rustic_oak_sofa": "behavior_packs/endless_waters/blocks/decor/decor_rustic_oak_sofa.json",
+    "endless:decor_porthole": "behavior_packs/endless_waters/blocks/decor/decor_porthole.json",
+    "endless:decor_rustic_oak_stool": "behavior_packs/endless_waters/blocks/decor/decor_rustic_oak_stool.json",
+    "endless:decor_carpentry_table": "behavior_packs/endless_waters/blocks/decor/decor_carpentry_table.json",
+    "endless:decor_rustic_plant_pot": "behavior_packs/endless_waters/blocks/decor/decor_rustic_plant_pot.json",
+    "endless:decor_rustic_bottle": "behavior_packs/endless_waters/blocks/decor/decor_rustic_bottle.json",
+    "endless:decor_rustic_chandelier": "behavior_packs/endless_waters/blocks/decor/decor_rustic_chandelier.json",
+    "endless:decor_rustic_warped_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_rustic_warped_cabinet.json",
+    "endless:decor_ocean_anchor": "behavior_packs/endless_waters/blocks/decor/decor_ocean_anchor.json",
+    "endless:decor_rustic_clock": "behavior_packs/endless_waters/blocks/decor/decor_rustic_clock.json",
+    "endless:decor_rustic_oak_coffee_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_oak_coffee_table.json",
+    "endless:decor_rustic_warped_sofa": "behavior_packs/endless_waters/blocks/decor/decor_rustic_warped_sofa.json",
+    "endless:decor_galley_oak_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_oak_cabinet.json",
+    "endless:decor_rustic_dark_oak_stool": "behavior_packs/endless_waters/blocks/decor/decor_rustic_dark_oak_stool.json",
+    "endless:decor_rustic_spruce_rocking_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_spruce_rocking_chair.json",
+    "endless:decor_rustic_book": "behavior_packs/endless_waters/blocks/decor/decor_rustic_book.json",
+    "endless:decor_rustic_grandfather_clock": "behavior_packs/endless_waters/blocks/decor/decor_rustic_grandfather_clock.json",
+    "endless:decor_rope_coil": "behavior_packs/endless_waters/blocks/decor/decor_rope_coil.json",
+    "endless:decor_rustic_dark_oak_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_dark_oak_chair.json",
+    "endless:decor_rustic_dark_oak_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_dark_oak_table.json",
+    "endless:decor_ocean_pearl_block_wall": "behavior_packs/endless_waters/blocks/decor/decor_ocean_pearl_block_wall.json",
+    "endless:decor_rustic_radio": "behavior_packs/endless_waters/blocks/decor/decor_rustic_radio.json",
+    "endless:decor_galley_warped_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_warped_cabinet.json",
+    "endless:decor_rustic_jungle_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_jungle_chair.json",
+    "endless:decor_galley_carrot_crate": "behavior_packs/endless_waters/blocks/decor/decor_galley_carrot_crate.json",
+    "endless:decor_weapon_rack": "behavior_packs/endless_waters/blocks/decor/decor_weapon_rack.json",
+    "endless:decor_pressure_gauge": "behavior_packs/endless_waters/blocks/decor/decor_pressure_gauge.json",
+    "endless:decor_cannonballs": "behavior_packs/endless_waters/blocks/decor/decor_cannonballs.json",
+    "endless:decor_ocean_ships_wheel": "behavior_packs/endless_waters/blocks/decor/decor_ocean_ships_wheel.json",
+    "endless:decor_coin_pile": "behavior_packs/endless_waters/blocks/decor/decor_coin_pile.json",
+    "endless:decor_rustic_scroll": "behavior_packs/endless_waters/blocks/decor/decor_rustic_scroll.json",
+    "endless:decor_rustic_jungle_stool": "behavior_packs/endless_waters/blocks/decor/decor_rustic_jungle_stool.json",
+    "endless:decor_ocean_barnacle_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_barnacle_block.json",
+    "endless:decor_ocean_rope": "behavior_packs/endless_waters/blocks/decor/decor_ocean_rope.json",
+    "endless:decor_rustic_crimson_coffee_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_crimson_coffee_table.json",
+    "endless:decor_rustic_birch_sofa": "behavior_packs/endless_waters/blocks/decor/decor_rustic_birch_sofa.json",
+    "endless:decor_galley_jungle_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_jungle_cabinet.json",
+    "endless:decor_rustic_jungle_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_rustic_jungle_cabinet.json",
+    "endless:decor_galley_stove": "behavior_packs/endless_waters/blocks/decor/decor_galley_stove.json",
+    "endless:decor_ocean_driftwood_plank_stairs": "behavior_packs/endless_waters/blocks/decor/decor_ocean_driftwood_plank_stairs.json",
+    "endless:decor_rustic_dark_oak_sofa": "behavior_packs/endless_waters/blocks/decor/decor_rustic_dark_oak_sofa.json",
+    "endless:decor_galley_straw_bale": "behavior_packs/endless_waters/blocks/decor/decor_galley_straw_bale.json",
+    "endless:decor_rustic_oak_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_oak_table.json",
+    "endless:decor_rustic_step_ladder": "behavior_packs/endless_waters/blocks/decor/decor_rustic_step_ladder.json",
+    "endless:decor_control_console": "behavior_packs/endless_waters/blocks/decor/decor_control_console.json",
+    "endless:decor_equipment_rack": "behavior_packs/endless_waters/blocks/decor/decor_equipment_rack.json",
+    "endless:decor_ocean_polished_prismarine_bricks_stairs": "behavior_packs/endless_waters/blocks/decor/decor_ocean_polished_prismarine_bricks_stairs.json",
+    "endless:decor_rustic_dark_oak_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_rustic_dark_oak_cabinet.json",
+    "endless:decor_rustic_warped_rocking_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_warped_rocking_chair.json",
+    "endless:decor_ocean_abyssal_pearl_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_abyssal_pearl_block.json",
+    "endless:decor_ocean_pearl_block_stairs": "behavior_packs/endless_waters/blocks/decor/decor_ocean_pearl_block_stairs.json",
+    "endless:decor_galley_skillet": "behavior_packs/endless_waters/blocks/decor/decor_galley_skillet.json",
+    "endless:decor_mug": "behavior_packs/endless_waters/blocks/decor/decor_mug.json",
+    "endless:decor_galley_cherry_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_cherry_cabinet.json",
+    "endless:decor_boots": "behavior_packs/endless_waters/blocks/decor/decor_boots.json",
+    "endless:decor_ocean_chiseled_prismarine_tiles_slab": "behavior_packs/endless_waters/blocks/decor/decor_ocean_chiseled_prismarine_tiles_slab.json",
+    "endless:decor_rustic_warped_coffee_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_warped_coffee_table.json",
+    "endless:decor_galley_spruce_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_spruce_cabinet.json",
+    "endless:decor_rustic_fire_pit": "behavior_packs/endless_waters/blocks/decor/decor_rustic_fire_pit.json",
+    "endless:decor_rustic_acacia_coffee_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_acacia_coffee_table.json",
+    "endless:decor_hammock": "behavior_packs/endless_waters/blocks/decor/decor_hammock.json",
+    "endless:decor_ocean_pearl_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_pearl_block.json",
+    "endless:decor_rustic_spruce_coffee_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_spruce_coffee_table.json",
+    "endless:decor_ocean_aquarium": "behavior_packs/endless_waters/blocks/decor/decor_ocean_aquarium.json",
+    "endless:decor_galley_dark_oak_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_dark_oak_cabinet.json",
+    "endless:decor_ocean_crushed_coral_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_crushed_coral_block.json",
+    "endless:decor_rustic_crimson_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_crimson_chair.json",
+    "endless:decor_rustic_lamp": "behavior_packs/endless_waters/blocks/decor/decor_rustic_lamp.json",
+    "endless:decor_rustic_warped_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_warped_table.json",
+    "endless:decor_rustic_dark_oak_rocking_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_dark_oak_rocking_chair.json",
+    "endless:decor_rustic_mounted_goat_horn": "behavior_packs/endless_waters/blocks/decor/decor_rustic_mounted_goat_horn.json",
+    "endless:decor_ocean_glowing_plankton_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_glowing_plankton_block.json",
+    "endless:decor_rustic_warped_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_warped_chair.json",
+    "endless:decor_rustic_birch_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_birch_table.json",
+    "endless:decor_ocean_chiseled_prismarine_tiles": "behavior_packs/endless_waters/blocks/decor/decor_ocean_chiseled_prismarine_tiles.json",
+    "endless:decor_rustic_birch_coffee_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_birch_coffee_table.json",
+    "endless:decor_ocean_abyssal_coral_block": "behavior_packs/endless_waters/blocks/decor/decor_ocean_abyssal_coral_block.json",
+    "endless:decor_hanging_coat": "behavior_packs/endless_waters/blocks/decor/decor_hanging_coat.json",
+    "endless:decor_galley_rope_fence_gate": "behavior_packs/endless_waters/blocks/decor/decor_galley_rope_fence_gate.json",
+    "endless:decor_canvas_bundle": "behavior_packs/endless_waters/blocks/decor/decor_canvas_bundle.json",
+    "endless:decor_compass_stand": "behavior_packs/endless_waters/blocks/decor/decor_compass_stand.json",
+    "endless:decor_rustic_oak_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_oak_chair.json",
+    "endless:decor_galley_canvas_rug": "behavior_packs/endless_waters/blocks/decor/decor_galley_canvas_rug.json",
+    "endless:decor_open_crate": "behavior_packs/endless_waters/blocks/decor/decor_open_crate.json",
+    "endless:decor_oxygen_cylinder": "behavior_packs/endless_waters/blocks/decor/decor_oxygen_cylinder.json",
+    "endless:decor_ocean_driftwood_plank_slab": "behavior_packs/endless_waters/blocks/decor/decor_ocean_driftwood_plank_slab.json",
+    "endless:decor_galley_potato_crate": "behavior_packs/endless_waters/blocks/decor/decor_galley_potato_crate.json",
+    "endless:decor_galley_acacia_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_acacia_cabinet.json",
+    "endless:decor_rustic_jungle_sofa": "behavior_packs/endless_waters/blocks/decor/decor_rustic_jungle_sofa.json",
+    "endless:decor_ocean_chiseled_prismarine_tiles_stairs": "behavior_packs/endless_waters/blocks/decor/decor_ocean_chiseled_prismarine_tiles_stairs.json",
+    "endless:decor_galley_bamboo_basket": "behavior_packs/endless_waters/blocks/decor/decor_galley_bamboo_basket.json",
+    "endless:decor_treasure_chest": "behavior_packs/endless_waters/blocks/decor/decor_treasure_chest.json",
+    "endless:decor_galley_beetroot_crate": "behavior_packs/endless_waters/blocks/decor/decor_galley_beetroot_crate.json",
+    "endless:decor_rustic_acacia_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_rustic_acacia_cabinet.json",
+    "endless:decor_rustic_crimson_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_rustic_crimson_cabinet.json",
+    "endless:decor_broken_pottery": "behavior_packs/endless_waters/blocks/decor/decor_broken_pottery.json",
+    "endless:decor_rustic_acacia_stool": "behavior_packs/endless_waters/blocks/decor/decor_rustic_acacia_stool.json",
+    "endless:decor_rustic_television": "behavior_packs/endless_waters/blocks/decor/decor_rustic_television.json",
+    "endless:decor_ocean_giant_clam": "behavior_packs/endless_waters/blocks/decor/decor_ocean_giant_clam.json",
+    "endless:decor_galley_bamboo_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_bamboo_cabinet.json",
+    "endless:decor_ocean_pearl_block_slab": "behavior_packs/endless_waters/blocks/decor/decor_ocean_pearl_block_slab.json",
+    "endless:decor_rustic_birch_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_rustic_birch_cabinet.json",
+    "endless:decor_galley_birch_cabinet": "behavior_packs/endless_waters/blocks/decor/decor_galley_birch_cabinet.json",
+    "endless:decor_rustic_acacia_sofa": "behavior_packs/endless_waters/blocks/decor/decor_rustic_acacia_sofa.json",
+    "endless:decor_rustic_spruce_stool": "behavior_packs/endless_waters/blocks/decor/decor_rustic_spruce_stool.json",
+    "endless:decor_ocean_driftwood_fence_gate": "behavior_packs/endless_waters/blocks/decor/decor_ocean_driftwood_fence_gate.json",
+    "endless:decor_ocean_polished_prismarine_bricks_wall": "behavior_packs/endless_waters/blocks/decor/decor_ocean_polished_prismarine_bricks_wall.json",
+    "endless:decor_rustic_shelve": "behavior_packs/endless_waters/blocks/decor/decor_rustic_shelve.json",
+    "endless:decor_ocean_driftwood_plank_fence": "behavior_packs/endless_waters/blocks/decor/decor_ocean_driftwood_plank_fence.json",
+    "endless:decor_rustic_vase": "behavior_packs/endless_waters/blocks/decor/decor_rustic_vase.json",
+    "endless:decor_rustic_acacia_chair": "behavior_packs/endless_waters/blocks/decor/decor_rustic_acacia_chair.json",
+    "endless:decor_rustic_warped_stool": "behavior_packs/endless_waters/blocks/decor/decor_rustic_warped_stool.json",
+    "endless:decor_galley_rice_bag": "behavior_packs/endless_waters/blocks/decor/decor_galley_rice_bag.json",
+    "endless:decor_galley_safety_net": "behavior_packs/endless_waters/blocks/decor/decor_galley_safety_net.json",
+    "endless:decor_rustic_acacia_table": "behavior_packs/endless_waters/blocks/decor/decor_rustic_acacia_table.json",
+    "endless:oxygen_tank": "behavior_packs/endless_waters/items/oxygen_tank.json",
+    "endless:deep_sea_helmet": "behavior_packs/endless_waters/items/deep_sea_helmet.json",
+    "endless:flippers": "behavior_packs/endless_waters/items/flippers.json",
+    "endless:food_grilled_salmon": "behavior_packs/endless_waters/items/decor/grilled_salmon.json",
+    "endless:food_apple_cider": "behavior_packs/endless_waters/items/decor/apple_cider.json",
+    "endless:food_hot_cocoa": "behavior_packs/endless_waters/items/decor/hot_cocoa.json",
+    "endless:harpoon": "behavior_packs/endless_waters/items/decor/harpoon.json",
+    "endless:food_mixed_salad": "behavior_packs/endless_waters/items/decor/mixed_salad.json",
+    "endless:food_honey_cookie": "behavior_packs/endless_waters/items/decor/honey_cookie.json",
+    "endless:food_salted_cod": "behavior_packs/endless_waters/items/decor/salted_cod.json",
+    "endless:food_fruit_salad": "behavior_packs/endless_waters/items/decor/fruit_salad.json",
+    "endless:food_fish_stew": "behavior_packs/endless_waters/items/decor/fish_stew.json",
+    "endless:food_seafood_stew": "behavior_packs/endless_waters/items/decor/seafood_stew.json",
+    "endless:food_vegetable_soup": "behavior_packs/endless_waters/items/decor/vegetable_soup.json",
+    "endless:food_kelp_roll": "behavior_packs/endless_waters/items/decor/kelp_roll.json",
+    "endless:food_baked_cod_stew": "behavior_packs/endless_waters/items/decor/baked_cod_stew.json",
+    "endless:food_sweet_berry_cookie": "behavior_packs/endless_waters/items/decor/sweet_berry_cookie.json",
+    "endless:food_melon_juice": "behavior_packs/endless_waters/items/decor/melon_juice.json"
+  },
+  "reuse_existing": {
+    "oceanoverhaul:driftwood_plank": "endless:driftwood_plank",
+    "oceanoverhaul:sea_glass": "endless:sea_glass",
+    "oceanoverhaul:polished_prismarine_bricks": "endless:polished_prismarine_bricks",
+    "oceanoverhaul:pearl_lantern": "endless:pearl_lantern",
+    "oceanoverhaul:deep_sea_helmet": "endless:deep_sea_helmet",
+    "oceanoverhaul:oxygen_tank": "endless:oxygen_tank",
+    "oceanoverhaul:flippers": "endless:flippers"
+  },
+  "furniture": [
+    {
+      "source_id": "furnideco:carpentry_table",
+      "target_id": "endless:decor_carpentry_table",
+      "source": "third_party/furnideco/BP/blocks/carpentry_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.book",
+      "target_id": "endless:decor_rustic_book",
+      "source": "third_party/furnideco/BP/blocks/rustic/book.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:mixed_geometries"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.bottle",
+      "target_id": "endless:decor_rustic_bottle",
+      "source": "third_party/furnideco/BP/blocks/rustic/bottle.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:mixed_geometries"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.acacia.cabinet",
+      "target_id": "endless:decor_rustic_acacia_cabinet",
+      "source": "third_party/furnideco/BP/blocks/rustic/cabinet/acacia.cabinet.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:storage"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.birch.cabinet",
+      "target_id": "endless:decor_rustic_birch_cabinet",
+      "source": "third_party/furnideco/BP/blocks/rustic/cabinet/birch.cabinet.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:storage"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.crimson.cabinet",
+      "target_id": "endless:decor_rustic_crimson_cabinet",
+      "source": "third_party/furnideco/BP/blocks/rustic/cabinet/crimson.cabinet.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:storage"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.dark_oak.cabinet",
+      "target_id": "endless:decor_rustic_dark_oak_cabinet",
+      "source": "third_party/furnideco/BP/blocks/rustic/cabinet/dark_oak.cabinet.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:storage"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.jungle.cabinet",
+      "target_id": "endless:decor_rustic_jungle_cabinet",
+      "source": "third_party/furnideco/BP/blocks/rustic/cabinet/jungle.cabinet.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:storage"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.oak.cabinet",
+      "target_id": "endless:decor_rustic_oak_cabinet",
+      "source": "third_party/furnideco/BP/blocks/rustic/cabinet/oak.cabinet.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:storage"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.spruce.cabinet",
+      "target_id": "endless:decor_rustic_spruce_cabinet",
+      "source": "third_party/furnideco/BP/blocks/rustic/cabinet/spruce.cabinet.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:storage"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.warped.cabinet",
+      "target_id": "endless:decor_rustic_warped_cabinet",
+      "source": "third_party/furnideco/BP/blocks/rustic/cabinet/warped.cabinet.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:storage"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.ceiling_fan",
+      "target_id": "endless:decor_rustic_ceiling_fan",
+      "source": "third_party/furnideco/BP/blocks/rustic/ceiling_fan.block.json",
+      "legacy_components_to_port": [
+        "furnideco:animate",
+        "furnideco:attributes"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.acacia.chair",
+      "target_id": "endless:decor_rustic_acacia_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/chair/acacia.chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.birch.chair",
+      "target_id": "endless:decor_rustic_birch_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/chair/birch.chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.crimson.chair",
+      "target_id": "endless:decor_rustic_crimson_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/chair/crimson.chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.dark_oak.chair",
+      "target_id": "endless:decor_rustic_dark_oak_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/chair/dark_oak.chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.jungle.chair",
+      "target_id": "endless:decor_rustic_jungle_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/chair/jungle.chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.oak.chair",
+      "target_id": "endless:decor_rustic_oak_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/chair/oak.chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.spruce.chair",
+      "target_id": "endless:decor_rustic_spruce_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/chair/spruce.chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.warped.chair",
+      "target_id": "endless:decor_rustic_warped_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/chair/warped.chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.chandelier",
+      "target_id": "endless:decor_rustic_chandelier",
+      "source": "third_party/furnideco/BP/blocks/rustic/chandelier.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:lightable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.clock",
+      "target_id": "endless:decor_rustic_clock",
+      "source": "third_party/furnideco/BP/blocks/rustic/clock.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.acacia.coffee_table",
+      "target_id": "endless:decor_rustic_acacia_coffee_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/coffee_table/acacia.coffee_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.birch.coffee_table",
+      "target_id": "endless:decor_rustic_birch_coffee_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/coffee_table/birch.coffee_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.crimson.coffee_table",
+      "target_id": "endless:decor_rustic_crimson_coffee_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/coffee_table/crimson.coffee_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.dark_oak.coffee_table",
+      "target_id": "endless:decor_rustic_dark_oak_coffee_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/coffee_table/dark_oak.coffee_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.jungle.coffee_table",
+      "target_id": "endless:decor_rustic_jungle_coffee_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/coffee_table/jungle.coffee_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.oak.coffee_table",
+      "target_id": "endless:decor_rustic_oak_coffee_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/coffee_table/oak.coffee_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.spruce.coffee_table",
+      "target_id": "endless:decor_rustic_spruce_coffee_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/coffee_table/spruce.coffee_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.warped.coffee_table",
+      "target_id": "endless:decor_rustic_warped_coffee_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/coffee_table/warped.coffee_table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.curtain",
+      "target_id": "endless:decor_rustic_curtain",
+      "source": "third_party/furnideco/BP/blocks/rustic/curtain.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:mixed_geometries",
+        "furnideco:paintable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.fire_pit",
+      "target_id": "endless:decor_rustic_fire_pit",
+      "source": "third_party/furnideco/BP/blocks/rustic/fire_pit.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.grandfather_clock",
+      "target_id": "endless:decor_rustic_grandfather_clock",
+      "source": "third_party/furnideco/BP/blocks/rustic/grandfather_clock.block.json",
+      "legacy_components_to_port": [
+        "furnideco:animate",
+        "furnideco:attributes",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.lamp",
+      "target_id": "endless:decor_rustic_lamp",
+      "source": "third_party/furnideco/BP/blocks/rustic/lamp.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:facing",
+        "furnideco:lightable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.mounted_goat_horn",
+      "target_id": "endless:decor_rustic_mounted_goat_horn",
+      "source": "third_party/furnideco/BP/blocks/rustic/mounted_goat_horn.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.plant_pot",
+      "target_id": "endless:decor_rustic_plant_pot",
+      "source": "third_party/furnideco/BP/blocks/rustic/plant_pot.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:plantable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.radio",
+      "target_id": "endless:decor_rustic_radio",
+      "source": "third_party/furnideco/BP/blocks/rustic/radio.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.acacia.rocking_chair",
+      "target_id": "endless:decor_rustic_acacia_rocking_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/rocking_chair/acacia.rocking_chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.birch.rocking_chair",
+      "target_id": "endless:decor_rustic_birch_rocking_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/rocking_chair/birch.rocking_chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.crimson.rocking_chair",
+      "target_id": "endless:decor_rustic_crimson_rocking_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/rocking_chair/crimson.rocking_chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.dark_oak.rocking_chair",
+      "target_id": "endless:decor_rustic_dark_oak_rocking_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/rocking_chair/dark_oak.rocking_chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.jungle.rocking_chair",
+      "target_id": "endless:decor_rustic_jungle_rocking_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/rocking_chair/jungle.rocking_chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.oak.rocking_chair",
+      "target_id": "endless:decor_rustic_oak_rocking_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/rocking_chair/oak.rocking_chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.spruce.rocking_chair",
+      "target_id": "endless:decor_rustic_spruce_rocking_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/rocking_chair/spruce.rocking_chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.warped.rocking_chair",
+      "target_id": "endless:decor_rustic_warped_rocking_chair",
+      "source": "third_party/furnideco/BP/blocks/rustic/rocking_chair/warped.rocking_chair.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.scroll",
+      "target_id": "endless:decor_rustic_scroll",
+      "source": "third_party/furnideco/BP/blocks/rustic/scroll.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.shelve",
+      "target_id": "endless:decor_rustic_shelve",
+      "source": "third_party/furnideco/BP/blocks/rustic/shelve.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.acacia.sofa",
+      "target_id": "endless:decor_rustic_acacia_sofa",
+      "source": "third_party/furnideco/BP/blocks/rustic/sofa/acacia.sofa.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.birch.sofa",
+      "target_id": "endless:decor_rustic_birch_sofa",
+      "source": "third_party/furnideco/BP/blocks/rustic/sofa/birch.sofa.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.crimson.sofa",
+      "target_id": "endless:decor_rustic_crimson_sofa",
+      "source": "third_party/furnideco/BP/blocks/rustic/sofa/crimson.sofa.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.dark_oak.sofa",
+      "target_id": "endless:decor_rustic_dark_oak_sofa",
+      "source": "third_party/furnideco/BP/blocks/rustic/sofa/dark_oak.sofa.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.jungle.sofa",
+      "target_id": "endless:decor_rustic_jungle_sofa",
+      "source": "third_party/furnideco/BP/blocks/rustic/sofa/jungle.sofa.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.oak.sofa",
+      "target_id": "endless:decor_rustic_oak_sofa",
+      "source": "third_party/furnideco/BP/blocks/rustic/sofa/oak.sofa.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.spruce.sofa",
+      "target_id": "endless:decor_rustic_spruce_sofa",
+      "source": "third_party/furnideco/BP/blocks/rustic/sofa/spruce.sofa.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.warped.sofa",
+      "target_id": "endless:decor_rustic_warped_sofa",
+      "source": "third_party/furnideco/BP/blocks/rustic/sofa/warped.sofa.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.step_ladder",
+      "target_id": "endless:decor_rustic_step_ladder",
+      "source": "third_party/furnideco/BP/blocks/rustic/step_ladder.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.acacia.stool",
+      "target_id": "endless:decor_rustic_acacia_stool",
+      "source": "third_party/furnideco/BP/blocks/rustic/stool/acacia.stool.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.birch.stool",
+      "target_id": "endless:decor_rustic_birch_stool",
+      "source": "third_party/furnideco/BP/blocks/rustic/stool/birch.stool.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.crimson.stool",
+      "target_id": "endless:decor_rustic_crimson_stool",
+      "source": "third_party/furnideco/BP/blocks/rustic/stool/crimson.stool.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.dark_oak.stool",
+      "target_id": "endless:decor_rustic_dark_oak_stool",
+      "source": "third_party/furnideco/BP/blocks/rustic/stool/dark_oak.stool.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.jungle.stool",
+      "target_id": "endless:decor_rustic_jungle_stool",
+      "source": "third_party/furnideco/BP/blocks/rustic/stool/jungle.stool.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.oak.stool",
+      "target_id": "endless:decor_rustic_oak_stool",
+      "source": "third_party/furnideco/BP/blocks/rustic/stool/oak.stool.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.spruce.stool",
+      "target_id": "endless:decor_rustic_spruce_stool",
+      "source": "third_party/furnideco/BP/blocks/rustic/stool/spruce.stool.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.warped.stool",
+      "target_id": "endless:decor_rustic_warped_stool",
+      "source": "third_party/furnideco/BP/blocks/rustic/stool/warped.stool.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:paintable",
+        "furnideco:seat"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.acacia.table",
+      "target_id": "endless:decor_rustic_acacia_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/table/acacia.table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.birch.table",
+      "target_id": "endless:decor_rustic_birch_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/table/birch.table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.crimson.table",
+      "target_id": "endless:decor_rustic_crimson_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/table/crimson.table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.dark_oak.table",
+      "target_id": "endless:decor_rustic_dark_oak_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/table/dark_oak.table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.jungle.table",
+      "target_id": "endless:decor_rustic_jungle_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/table/jungle.table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.oak.table",
+      "target_id": "endless:decor_rustic_oak_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/table/oak.table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.spruce.table",
+      "target_id": "endless:decor_rustic_spruce_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/table/spruce.table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.warped.table",
+      "target_id": "endless:decor_rustic_warped_table",
+      "source": "third_party/furnideco/BP/blocks/rustic/table/warped.table.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:connectable"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.television",
+      "target_id": "endless:decor_rustic_television",
+      "source": "third_party/furnideco/BP/blocks/rustic/television.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.trash_can",
+      "target_id": "endless:decor_rustic_trash_can",
+      "source": "third_party/furnideco/BP/blocks/rustic/trash_can.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes"
+      ]
+    },
+    {
+      "source_id": "furnideco:rustic.vase",
+      "target_id": "endless:decor_rustic_vase",
+      "source": "third_party/furnideco/BP/blocks/rustic/vase.block.json",
+      "legacy_components_to_port": [
+        "furnideco:attributes",
+        "furnideco:horizontal_facing",
+        "furnideco:paintable"
+      ]
+    }
+  ],
+  "furniture_count": 75,
+  "furniture_identifier_conflicts": [],
+  "release_sha256": "5d73af7d688bb47b747e49adfed497821231990ee7c4e5a279e13dec5eb6681c"
+}

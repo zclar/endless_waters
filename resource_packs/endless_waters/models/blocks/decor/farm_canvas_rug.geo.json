@@ -1,0 +1,295 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.endless.farm_canvas_rug",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "part_0",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                16,
+                1,
+                16
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    1
+                  ],
+                  "uv_size": [
+                    16,
+                    1
+                  ],
+                  "material_instance": "farm_block_canvas_rug"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    1
+                  ],
+                  "uv_size": [
+                    16,
+                    1
+                  ],
+                  "material_instance": "farm_block_canvas_rug"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    1
+                  ],
+                  "uv_size": [
+                    16,
+                    1
+                  ],
+                  "material_instance": "farm_block_canvas_rug"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    1
+                  ],
+                  "uv_size": [
+                    16,
+                    1
+                  ],
+                  "material_instance": "farm_block_canvas_rug"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "farm_block_canvas_rug"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    16
+                  ],
+                  "uv_size": [
+                    16,
+                    -16
+                  ],
+                  "material_instance": "farm_block_canvas_rug"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_1",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                0.999,
+                -16
+              ],
+              "size": [
+                16,
+                0.0,
+                8
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    8
+                  ],
+                  "material_instance": "farm_block_canvas_rug_fraying"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    -8
+                  ],
+                  "material_instance": "farm_block_canvas_rug_fraying"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_2",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                8,
+                0.999,
+                -8
+              ],
+              "size": [
+                8,
+                0.0,
+                16
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    0,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    8
+                  ],
+                  "material_instance": "farm_block_canvas_rug_fraying"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    8
+                  ],
+                  "material_instance": "farm_block_canvas_rug_fraying"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_3",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                0.999,
+                8
+              ],
+              "size": [
+                16,
+                0.0,
+                8
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    0,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    8
+                  ],
+                  "material_instance": "farm_block_canvas_rug_fraying"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    16
+                  ],
+                  "uv_size": [
+                    16,
+                    -8
+                  ],
+                  "material_instance": "farm_block_canvas_rug_fraying"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_4",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -16,
+                0.999,
+                -8
+              ],
+              "size": [
+                8,
+                0.0,
+                16
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    8
+                  ],
+                  "material_instance": "farm_block_canvas_rug_fraying"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    8
+                  ],
+                  "uv_size": [
+                    16,
+                    8
+                  ],
+                  "material_instance": "farm_block_canvas_rug_fraying"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

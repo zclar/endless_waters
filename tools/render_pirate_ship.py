@@ -6,6 +6,8 @@ No AI-generated concept art is substituted for a build.
 from pathlib import Path
 import json
 import math
+import re
+from functools import lru_cache
 import zipfile
 from PIL import Image, ImageDraw, ImageFont
 from pirate_ship import OUT, SIZE, WATER, VARIANTS, AIR, Block, build_ship
@@ -13,7 +15,47 @@ from pirate_ship import OUT, SIZE, WATER, VARIANTS, AIR, Block, build_ship
 BOX = (0, 0, 0, 1, 1, 1)
 
 
+@lru_cache(None)
+def custom_boxes(block):
+    root = Path(__file__).resolve().parents[1]
+    path = root / 'behavior_packs/endless_waters/blocks/decor' / (block.name.split(':')[-1] + '.json')
+    if not path.exists(): return [BOX]
+    data = json.loads(path.read_text())['minecraft:block']
+    components = dict(data['components'])
+    for permutation in data.get('permutations', []):
+        match = re.fullmatch(r"q.block_state\('([^']+)'\) == (.+)", permutation['condition'])
+        if match:
+            state, value = match.groups()
+            value = value.strip("'") if value.startswith("'") else int(value)
+            default = data['description'].get('states', {}).get(state, [0])[0]
+            if block.state(state, default) == value: components.update(permutation['components'])
+    identifier = components['minecraft:geometry']
+    if isinstance(identifier, dict): identifier = identifier['identifier']
+    geometry = geometry_index()[identifier]
+    angle = math.radians(components.get('minecraft:transformation', {}).get('rotation', [0,0,0])[1])
+    result = []
+    for bone in geometry['bones']:
+        for cube in bone.get('cubes', []):
+            origin, size = cube['origin'], cube['size']
+            corners = []
+            for x in [origin[0],origin[0]+size[0]]:
+                for z in [origin[2],origin[2]+size[2]]:
+                    corners.append((.5+(x*math.cos(angle)+z*math.sin(angle))/16,
+                                    .5+(-x*math.sin(angle)+z*math.cos(angle))/16))
+            result.append((min(p[0] for p in corners),origin[1]/16,min(p[1] for p in corners),
+                           max(p[0] for p in corners),(origin[1]+size[1])/16,max(p[1] for p in corners)))
+    return result or [BOX]
+
+
+@lru_cache(None)
+def geometry_index():
+    root = Path(__file__).resolve().parents[1] / 'resource_packs/endless_waters/models/blocks'
+    return {g['description']['identifier']:g for p in root.rglob('*.json')
+            for g in json.loads(p.read_text()).get('minecraft:geometry',[])}
+
+
 def boxes(block, neighbors):
+    if block.name.startswith('endless:decor_'): return custom_boxes(block)
     n = block.name
     if n == 'air':
         return []
@@ -194,7 +236,7 @@ def write_viewer(ships):
         palette = list(dict.fromkeys(ship.blocks.values()))
         ids = {v: i for i, v in enumerate(palette)}
         data[ship.variant] = {'blocks': [[*p, ids[v]] for p, v in ship.blocks.items() if v != AIR],
-                             'palette': [{'name': b.name, 'states': dict(b.states), 'color': color(b)} for b in palette],
+                             'palette': [{'name': b.name, 'states': dict(b.states), 'color': color(b), **({'boxes': custom_boxes(b)} if b.name.startswith('endless:decor_') else {})} for b in palette],
                              'crew': ship.crew}
     (OUT / 'VIEW_SHIP.html').write_text(template.replace('/*SHIP_DATA*/{}', json.dumps(data, separators=(',', ':'))))
 

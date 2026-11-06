@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "endless:food_mixed_salad"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "minecraft:carrot"
+      },
+      {
+        "item": "minecraft:beetroot"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:bowl"
+      }
+    ],
+    "result": {
+      "item": "endless:food_mixed_salad",
+      "count": 1
+    }
+  }
+}

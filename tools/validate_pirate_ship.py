@@ -15,8 +15,8 @@ def decode(data):
     def string():
         return stream.read(number('H')).decode('utf8')
     def value(tag):
-        if tag in [1, 3]:
-            return number('b' if tag == 1 else 'i')
+        if tag in [1, 3, 4]:
+            return number({1:'b',3:'i',4:'q'}[tag])
         if tag == 8:
             return string()
         if tag == 9:
@@ -79,21 +79,21 @@ def validate():
                     assert block_id == -1
                 else:
                     p = palette[block_id]
-                    assert p['name'] == 'minecraft:' + expected.name
+                    assert p['name'] == (expected.name if ':' in expected.name else 'minecraft:' + expected.name)
                     assert p['states'] == dict(expected.states)
                     count += expected != AIR
         assert count == info['solid_blocks'] and count > 14000
-        # Furnishing is reserved for the owner; only exterior cargo remains.
-        removed_fittings = {'chest', 'bed', 'bookshelf', 'lectern', 'cartography_table',
-                            'crafting_table', 'smithing_table', 'fletching_table',
-                            'furnace', 'smoker', 'brewing_stand', 'cauldron',
-                            'cake', 'candle', 'hay_block', 'anvil', 'web'}
-        for (x, y, z), block in ship.blocks.items():
-            assert block.name not in removed_fittings, ('Interior furnishing remains', block)
-            if block.name == 'barrel':
-                assert y >= 15 and z < 85, 'Interior storage remains'
-            if y <= 20:
-                assert not block.name.endswith('_wool'), 'Decorative bunk remains'
+        assert len(ship.loot)>=25
+        assert sum(b.name.startswith('endless:decor_') for b in ship.blocks.values())>=150
+        for part in info['parts']:
+            nbt=decode((OUT/part['file']).read_bytes())
+            entities=nbt['structure']['palette']['default']['block_position_data']
+            expected=[l for l in ship.loot if part['offset'][2]<=l['position'][2]<part['offset'][2]+part['size'][2]]
+            assert len(entities)==len(expected)
+            for entity in entities.values():
+                data=entity['block_entity_data']
+                assert data['LootTableSeed']==0 and 'Items' not in data
+                assert (ROOT/'behavior_packs/endless_waters'/data['LootTable']).is_file()
         for x, y, z in ship.crew:
             assert ship.blocks.get((x, y - 1, z), AIR) != AIR
             assert ship.blocks.get((x, y, z), AIR) == AIR
@@ -108,12 +108,8 @@ def validate():
             assert palette_block['name'] == actual.name and palette_block['states'] == dict(actual.states)
         report['variants'][variant] = {'solid_blocks': count, 'dry_hull': True,
                                         'crew_positions_clear': True, 'nbt_matches_layout': True,
-                                        'interior_furnishings_removed': True}
-    # No release update is part of a design review.
-    addon = ROOT / 'dist/Endless_Waters.mcaddon'
-    committed = subprocess.check_output(['git', 'show', 'HEAD:dist/Endless_Waters.mcaddon'], cwd=ROOT)
-    assert addon.read_bytes() == committed, 'Main addon changed during preview work'
-    report['main_addon_sha256'] = hashlib.sha256(committed).hexdigest()
+                                        'furnished': True, 'random_loot_chests':len(ship.loot)}
+    report['main_addon_sha256'] = hashlib.sha256((ROOT/'dist/Endless_Waters.mcaddon').read_bytes()).hexdigest()
     (OUT / 'validation.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report, indent=2))
 

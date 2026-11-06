@@ -1,6 +1,7 @@
 // Runs only on the isolated local BDS world; never packaged with the download.
-import {world, system, BlockPermutation, SignSide} from '@minecraft/server';
-import {SHIPS, BUILD_ID} from './data.js';
+import {world, system, BlockPermutation, SignSide, ItemStack} from '@minecraft/server';
+import {SHIPS, BUILD_ID, DECOR, ITEMS} from './data.js';
+import {interactDecor} from './decor_logic.js';
 
 const pause = ticks => new Promise(resolve => system.runTimeout(resolve, ticks));
 const check = (condition, message) => {if (!condition) throw Error(message);};
@@ -87,7 +88,7 @@ async function inspect(phase) {
                 continue;
             }
             const actual=dimension.getBlock(position(data.origin,[x,y,z]));
-            const canonical=BlockPermutation.resolve('minecraft:'+expected.name,expected.states);
+            const canonical=BlockPermutation.resolve(expected.name.includes(':')?expected.name:'minecraft:'+expected.name,expected.states);
             if(actual.typeId!==canonical.type.id) {
                 if(mismatch.length<30)mismatch.push({p:[x,y,z],expected:expected.name,actual:actual.typeId,
                     below:dimension.getBlock(position(data.origin,[x,y-1,z])).permutation.getAllStates()});
@@ -117,12 +118,62 @@ async function inspect(phase) {
         }
         for(let i=0;i<crew.length;i++)check(dimension.runCommand(`testfor @e[type=pillager,tag=dreadwake_${variant}_${i},hasitem={item=crossbow,location=slot.weapon.mainhand}]`).successCount>0,'Crew unarmed '+variant+' '+i);
         variants[variant]={checkedBlocks:checked,dryHoldCells:dry,clearInteriorCells:interiorAir,
-                           emptyDeckBarrels:emptyBarrels,pillagers:crew.length};
+                           emptyDeckBarrels:emptyBarrels,lootChests:data.loot.length,pillagers:crew.length};
         console.warn('DREADWAKE_VARIANT '+JSON.stringify({phase,variant,...variants[variant]}));
     }
     check(dimension.getBlock({x:260,y:-61,z:0})?.typeId==='minecraft:grass_block' ||
           dimension.getBlock({x:55,y:-61,z:0})?.typeId==='minecraft:grass_block','World not flat grass');
     console.warn('DREADWAKE_REPORT '+JSON.stringify({buildId:BUILD_ID,phase,passed:true,variants}));
+}
+
+async function testDecorAndLoot() {
+    const p={x:0,y:40,z:0},block=dimension.getBlock(p);
+    let permutations=0,interactions=0;
+    for(const entry of DECOR) {
+        block.setPermutation(BlockPermutation.resolve(entry.id));
+        check(block.typeId===entry.id,'Unregistered decoration '+entry.id);
+        for(const [state,values] of Object.entries(entry.states))for(const value of values) {
+            block.setPermutation(BlockPermutation.resolve(entry.id,{[state]:value}));
+            check(block.permutation.getState(state)===value,'Invalid decor state '+entry.id+' '+state);
+            permutations++;
+        }
+        if(entry.interaction) {
+            block.setPermutation(BlockPermutation.resolve(entry.id));
+            const before=JSON.stringify(block.permutation.getAllStates());
+            interactDecor(block,{isSneaking:false},entry.interaction);
+            check(before!==JSON.stringify(block.permutation.getAllStates()),'Interaction did nothing '+entry.id);
+            interactions++;
+        }
+        await pause(1);
+    }
+    for(const id of ITEMS)check(new ItemStack(id).typeId===id,'Item unavailable '+id);
+    // Roll the native tables on disposable chests; leave actual ship loot unopened.
+    const signatures=[];
+    for(let i=0;i<12;i++) {
+        block.setType('minecraft:air');
+        world.structureManager.place('dreadwake:loot_probe',dimension,p,{includeEntities:false});
+        await pause(1);
+        dimension.runCommand('loot replace block 0 40 0 slot.container 0 loot \"ships/new_vault\"');
+        const container=block.getComponent('minecraft:inventory')?.container;
+        check(container,'Probe chest lacks inventory');
+        const contents=[];
+        for(let slot=0;slot<container.size;slot++) {
+            const stack=container.getItem(slot);if(stack)contents.push([stack.typeId,stack.amount]);
+        }
+        signatures.push(JSON.stringify(contents));
+    }
+    block.setType('minecraft:air');
+    check(new Set(signatures).size>=2,'Native chest loot did not vary: '+JSON.stringify(signatures));
+    // Exercise the real projectile and impact recovery, with no players connected.
+    fill([0,40,6],[2,43,6],'stone');
+    const harpoon=dimension.spawnEntity('endless:harpoon_projectile',{x:0.5,y:42,z:0.5});
+    harpoon.getComponent('minecraft:projectile').shoot({x:0,y:0,z:1.2});
+    await pause(30);
+    const recovered=dimension.getEntities({type:'minecraft:item'}).filter(e=>e.getComponent('minecraft:item').itemStack.typeId==='endless:harpoon');
+    check(!harpoon.isValid && recovered.length===1,'Harpoon impact/recovery failed '+JSON.stringify({valid:harpoon.isValid,location:harpoon.isValid?harpoon.location:null,recovered:recovered.map(e=>e.location)}));
+    for(const entity of recovered)entity.remove();
+    fill([0,40,6],[2,43,6],'air');
+    console.warn('DREADWAKE_DECOR_REPORT '+JSON.stringify({passed:true,blocks:DECOR.length,items:ITEMS.length,permutations,interactions,uniqueLootRolls:new Set(signatures).size,harpoonRecovery:true}));
 }
 
 world.afterEvents.worldLoad.subscribe(()=>system.run(async()=>{
@@ -134,7 +185,7 @@ world.afterEvents.worldLoad.subscribe(()=>system.run(async()=>{
             const key=JSON.stringify(block);
             if(checked.has(key))continue;
             checked.add(key);
-            try{BlockPermutation.resolve('minecraft:'+block.name,block.states);}
+            try{BlockPermutation.resolve(block.name.includes(':')?block.name:'minecraft:'+block.name,block.states);}
             catch(e){throw Error('Invalid palette '+key+' '+e);}
         }
         await loadAreas();
@@ -160,10 +211,11 @@ world.afterEvents.worldLoad.subscribe(()=>system.run(async()=>{
             spawnCrew(data,variant);
             console.warn('DREADWAKE_PLACED '+variant);
         }
-        sign({x:118,y:-51,z:-12},'DREADWAKE SHIPYARD\nBUILD EDITION\nInteriors cleared\nMake them your own');
+        sign({x:118,y:-51,z:-12},'DREADWAKE SHIPYARD\nFURNISHED EDITION\nExplore every deck\nLoot varies per chest');
         sign({x:122,y:-51,z:-12},'NEW | TATTERED | EMPTY\n12 crew | 8 crew | 0\nSurvival = hostile crew\nKeep Normal difficulty');
         world.setDefaultSpawnLocation({x:120,y:-51,z:-10});
         await pause(120);
+        await testDecorAndLoot();
         await inspect('built');
         world.setDynamicProperty('dreadwake:built',BUILD_ID);
         // Remove detached decoration drops only in this isolated construction world.

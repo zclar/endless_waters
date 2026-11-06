@@ -9,7 +9,7 @@
   "status": "review only; not integrated into Endless Waters",
   "variants": {
     "new": {
-      "solid_blocks": 17342,
+      "solid_blocks": 17880,
       "actual_block_bounds": [
         [
           3,
@@ -24,7 +24,7 @@
           110
         ]
       ],
-      "palette_entries": 42,
+      "palette_entries": 100,
       "planned_pillagers": 12,
       "crew_positions": [
         [
@@ -101,7 +101,7 @@
             76,
             58
           ],
-          "sha256": "c84cca4c48484cf0076a3bd8e185949e4ae34a0407dc4f4eb6fbeb38c145d404"
+          "sha256": "464c1fa454fdf7191f3205ce2b8e1971492029a929d32bcb596b74b884edcb6b"
         },
         {
           "file": "templates/new/dreadwake_new_1.mcstructure",
@@ -115,19 +115,23 @@
             76,
             58
           ],
-          "sha256": "0eef28ca428ecb1e69745fd75bb3ba132f00f632d6252ece774c098b56294584"
+          "sha256": "2af717173cb88c952125b187b719afff579a9b608d2481fe734db9736d8a82a9"
         }
       ],
       "rooms": {
-        "unfurnished_lower_hold": [
+        "crew_quarters_and_bosun_store": [
           5,
           8
         ],
-        "unfurnished_gun_deck": [
+        "cargo_brig_and_vault": [
+          5,
+          8
+        ],
+        "galley_gun_deck_armory_and_infirmary": [
           10,
           13
         ],
-        "main_deck_empty_cabin": [
+        "captains_suite_library_and_chart_room": [
           15,
           20
         ],
@@ -135,10 +139,282 @@
           22,
           25
         ]
-      }
+      },
+      "loot": [
+        {
+          "position": [
+            20,
+            5,
+            30
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/new_supplies.json"
+        },
+        {
+          "position": [
+            28,
+            5,
+            30
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/new_supplies.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            38
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/new_crew.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            45
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/new_crew.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            52
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/new_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            38
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/new_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            45
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/new_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            52
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/new_crew.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            64
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/new_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            65
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/new_cargo.json"
+        },
+        {
+          "position": [
+            17,
+            5,
+            71
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/new_cargo.json"
+        },
+        {
+          "position": [
+            30,
+            5,
+            72
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/new_cargo.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            76
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/new_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            77
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/new_cargo.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            83
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/new_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            84
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/new_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            92
+          ],
+          "role": "salvage",
+          "table": "loot_tables/ships/new_salvage.json"
+        },
+        {
+          "position": [
+            20,
+            5,
+            97
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/new_vault.json"
+        },
+        {
+          "position": [
+            28,
+            5,
+            97
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/new_vault.json"
+        },
+        {
+          "position": [
+            22,
+            5,
+            100
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/new_vault.json"
+        },
+        {
+          "position": [
+            26,
+            5,
+            100
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/new_vault.json"
+        },
+        {
+          "position": [
+            18,
+            10,
+            33
+          ],
+          "role": "pantry",
+          "table": "loot_tables/ships/new_pantry.json"
+        },
+        {
+          "position": [
+            30,
+            10,
+            33
+          ],
+          "role": "pantry",
+          "table": "loot_tables/ships/new_pantry.json"
+        },
+        {
+          "position": [
+            19,
+            10,
+            41
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/new_armory.json"
+        },
+        {
+          "position": [
+            29,
+            10,
+            49
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/new_armory.json"
+        },
+        {
+          "position": [
+            19,
+            10,
+            73
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/new_armory.json"
+        },
+        {
+          "position": [
+            20,
+            10,
+            97
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/new_supplies.json"
+        },
+        {
+          "position": [
+            30,
+            10,
+            97
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/new_supplies.json"
+        },
+        {
+          "position": [
+            17,
+            15,
+            101
+          ],
+          "role": "captain",
+          "table": "loot_tables/ships/new_captain.json"
+        },
+        {
+          "position": [
+            32,
+            15,
+            93
+          ],
+          "role": "navigation",
+          "table": "loot_tables/ships/new_navigation.json"
+        }
+      ]
     },
     "tattered": {
-      "solid_blocks": 16721,
+      "solid_blocks": 17250,
       "actual_block_bounds": [
         [
           3,
@@ -153,7 +429,7 @@
           110
         ]
       ],
-      "palette_entries": 44,
+      "palette_entries": 101,
       "planned_pillagers": 8,
       "crew_positions": [
         [
@@ -210,7 +486,7 @@
             76,
             58
           ],
-          "sha256": "516d74cf49d9cd19031060a3b11071d96063b279d831eca3dce6d4314424dbd3"
+          "sha256": "92ea272c0164e1f8d8574cd5b448fe4e855d0414eef8034da95a80c60954df8f"
         },
         {
           "file": "templates/tattered/dreadwake_tattered_1.mcstructure",
@@ -224,19 +500,23 @@
             76,
             58
           ],
-          "sha256": "0991f416f7415d0be4512f4a0f3f773de7e439c11ecc0727e85ee275c132a9c7"
+          "sha256": "89cae46eeecb0ab12ab5aaa5ab29e38a1614b659945634aeef3ec8a5c12ac3db"
         }
       ],
       "rooms": {
-        "unfurnished_lower_hold": [
+        "crew_quarters_and_bosun_store": [
           5,
           8
         ],
-        "unfurnished_gun_deck": [
+        "cargo_brig_and_vault": [
+          5,
+          8
+        ],
+        "galley_gun_deck_armory_and_infirmary": [
           10,
           13
         ],
-        "main_deck_empty_cabin": [
+        "captains_suite_library_and_chart_room": [
           15,
           20
         ],
@@ -244,10 +524,282 @@
           22,
           25
         ]
-      }
+      },
+      "loot": [
+        {
+          "position": [
+            20,
+            5,
+            30
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/tattered_supplies.json"
+        },
+        {
+          "position": [
+            28,
+            5,
+            30
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/tattered_supplies.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            38
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/tattered_crew.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            45
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/tattered_crew.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            52
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/tattered_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            38
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/tattered_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            45
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/tattered_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            52
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/tattered_crew.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            64
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/tattered_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            65
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/tattered_cargo.json"
+        },
+        {
+          "position": [
+            17,
+            5,
+            71
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/tattered_cargo.json"
+        },
+        {
+          "position": [
+            30,
+            5,
+            72
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/tattered_cargo.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            76
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/tattered_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            77
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/tattered_cargo.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            83
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/tattered_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            84
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/tattered_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            92
+          ],
+          "role": "salvage",
+          "table": "loot_tables/ships/tattered_salvage.json"
+        },
+        {
+          "position": [
+            20,
+            5,
+            97
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/tattered_vault.json"
+        },
+        {
+          "position": [
+            28,
+            5,
+            97
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/tattered_vault.json"
+        },
+        {
+          "position": [
+            22,
+            5,
+            100
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/tattered_vault.json"
+        },
+        {
+          "position": [
+            26,
+            5,
+            100
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/tattered_vault.json"
+        },
+        {
+          "position": [
+            18,
+            10,
+            33
+          ],
+          "role": "pantry",
+          "table": "loot_tables/ships/tattered_pantry.json"
+        },
+        {
+          "position": [
+            30,
+            10,
+            33
+          ],
+          "role": "pantry",
+          "table": "loot_tables/ships/tattered_pantry.json"
+        },
+        {
+          "position": [
+            19,
+            10,
+            41
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/tattered_armory.json"
+        },
+        {
+          "position": [
+            29,
+            10,
+            49
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/tattered_armory.json"
+        },
+        {
+          "position": [
+            19,
+            10,
+            73
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/tattered_armory.json"
+        },
+        {
+          "position": [
+            20,
+            10,
+            97
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/tattered_supplies.json"
+        },
+        {
+          "position": [
+            30,
+            10,
+            97
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/tattered_supplies.json"
+        },
+        {
+          "position": [
+            17,
+            15,
+            101
+          ],
+          "role": "captain",
+          "table": "loot_tables/ships/tattered_captain.json"
+        },
+        {
+          "position": [
+            32,
+            15,
+            93
+          ],
+          "role": "navigation",
+          "table": "loot_tables/ships/tattered_navigation.json"
+        }
+      ]
     },
     "abandoned": {
-      "solid_blocks": 14858,
+      "solid_blocks": 15324,
       "actual_block_bounds": [
         [
           3,
@@ -262,7 +814,7 @@
           110
         ]
       ],
-      "palette_entries": 45,
+      "palette_entries": 97,
       "planned_pillagers": 0,
       "crew_positions": [],
       "parts": [
@@ -278,7 +830,7 @@
             76,
             58
           ],
-          "sha256": "5f030775ff9c9b8248f9ed9fa5c29334f778d1bbadb085fe0562c11abf93b9fc"
+          "sha256": "94de95ea1a442868f3525b16c864f39ad9dfa66fb20ca6758f08a907661926b8"
         },
         {
           "file": "templates/abandoned/dreadwake_abandoned_1.mcstructure",
@@ -292,19 +844,23 @@
             76,
             58
           ],
-          "sha256": "94508377754730bd19c7395ba7dbaf73682106159bd5a77cb09eeb4f6b89a9fc"
+          "sha256": "a2b631af1a22701d1de366e9261a31224b93548d0676d10fa270cbb5d4608a05"
         }
       ],
       "rooms": {
-        "unfurnished_lower_hold": [
+        "crew_quarters_and_bosun_store": [
           5,
           8
         ],
-        "unfurnished_gun_deck": [
+        "cargo_brig_and_vault": [
+          5,
+          8
+        ],
+        "galley_gun_deck_armory_and_infirmary": [
           10,
           13
         ],
-        "main_deck_empty_cabin": [
+        "captains_suite_library_and_chart_room": [
           15,
           20
         ],
@@ -312,7 +868,279 @@
           22,
           25
         ]
-      }
+      },
+      "loot": [
+        {
+          "position": [
+            20,
+            5,
+            30
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/abandoned_supplies.json"
+        },
+        {
+          "position": [
+            28,
+            5,
+            30
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/abandoned_supplies.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            38
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/abandoned_crew.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            45
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/abandoned_crew.json"
+        },
+        {
+          "position": [
+            19,
+            5,
+            52
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/abandoned_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            38
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/abandoned_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            45
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/abandoned_crew.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            52
+          ],
+          "role": "crew",
+          "table": "loot_tables/ships/abandoned_crew.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            64
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/abandoned_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            65
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/abandoned_cargo.json"
+        },
+        {
+          "position": [
+            17,
+            5,
+            71
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/abandoned_cargo.json"
+        },
+        {
+          "position": [
+            30,
+            5,
+            72
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/abandoned_cargo.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            76
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/abandoned_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            77
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/abandoned_cargo.json"
+        },
+        {
+          "position": [
+            18,
+            5,
+            83
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/abandoned_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            84
+          ],
+          "role": "cargo",
+          "table": "loot_tables/ships/abandoned_cargo.json"
+        },
+        {
+          "position": [
+            29,
+            5,
+            92
+          ],
+          "role": "salvage",
+          "table": "loot_tables/ships/abandoned_salvage.json"
+        },
+        {
+          "position": [
+            20,
+            5,
+            97
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/abandoned_vault.json"
+        },
+        {
+          "position": [
+            28,
+            5,
+            97
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/abandoned_vault.json"
+        },
+        {
+          "position": [
+            22,
+            5,
+            100
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/abandoned_vault.json"
+        },
+        {
+          "position": [
+            26,
+            5,
+            100
+          ],
+          "role": "vault",
+          "table": "loot_tables/ships/abandoned_vault.json"
+        },
+        {
+          "position": [
+            18,
+            10,
+            33
+          ],
+          "role": "pantry",
+          "table": "loot_tables/ships/abandoned_pantry.json"
+        },
+        {
+          "position": [
+            30,
+            10,
+            33
+          ],
+          "role": "pantry",
+          "table": "loot_tables/ships/abandoned_pantry.json"
+        },
+        {
+          "position": [
+            19,
+            10,
+            41
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/abandoned_armory.json"
+        },
+        {
+          "position": [
+            29,
+            10,
+            49
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/abandoned_armory.json"
+        },
+        {
+          "position": [
+            19,
+            10,
+            73
+          ],
+          "role": "armory",
+          "table": "loot_tables/ships/abandoned_armory.json"
+        },
+        {
+          "position": [
+            20,
+            10,
+            97
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/abandoned_supplies.json"
+        },
+        {
+          "position": [
+            30,
+            10,
+            97
+          ],
+          "role": "supplies",
+          "table": "loot_tables/ships/abandoned_supplies.json"
+        },
+        {
+          "position": [
+            17,
+            15,
+            101
+          ],
+          "role": "captain",
+          "table": "loot_tables/ships/abandoned_captain.json"
+        },
+        {
+          "position": [
+            32,
+            15,
+            93
+          ],
+          "role": "navigation",
+          "table": "loot_tables/ships/abandoned_navigation.json"
+        }
+      ]
     }
   }
 }

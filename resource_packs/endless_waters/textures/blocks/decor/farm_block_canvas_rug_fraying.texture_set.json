@@ -1,0 +1,11 @@
+{
+  "format_version": "1.21.30",
+  "minecraft:texture_set": {
+    "color": "farm_block_canvas_rug_fraying",
+    "metalness_emissive_roughness": [
+      0,
+      0,
+      190
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "endless:food_honey_cookie"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:cookie"
+      },
+      {
+        "item": "minecraft:honey_bottle"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:cookie"
+      }
+    ],
+    "result": {
+      "item": "endless:food_honey_cookie",
+      "count": 1
+    }
+  }
+}

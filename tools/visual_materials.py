@@ -18,7 +18,7 @@ def build(rp):
     for path in sorted((rp / 'textures').rglob('*.png')):
         mer = ([0, 0, 85] if path.stem.startswith('jellyfish_') else
                [0, 0, 180] if path.stem.startswith('seahorse_') else
-               materials[path.stem])
+               materials.get(path.stem, [0, 0, 190]))
         save(path.with_suffix('.texture_set.json'), {
             'format_version': '1.21.30',
             'minecraft:texture_set': {

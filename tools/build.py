@@ -10,12 +10,14 @@ sys.path.insert(0, str(ROOT / 'tools'))
 from nbt import structure
 from sea_life import build as build_sea_life
 from diving_buildables import build as build_diving_buildables
+from decor import build as build_decor
+from ship_loot import build as build_ship_loot
 from visual_materials import build as build_visual_materials
 
 OUT = ROOT / 'dist'
 BP = ROOT / 'behavior_packs/endless_waters'
 RP = ROOT / 'resource_packs/endless_waters'
-VERSION = [0, 5, 2]
+VERSION = [0, 6, 0]
 
 
 def save(path, data):
@@ -248,6 +250,8 @@ def main():
     })
     build_sea_life(BP, RP)
     build_diving_buildables(BP, RP)
+    build_decor(BP, RP)
+    build_ship_loot(BP)
     build_visual_materials(RP)
     # Preserve installed pack identities so imports upgrade earlier releases.
     bp_id = 'f64cd68d-5d41-4a25-b91b-36d5d8f33543'
@@ -259,8 +263,8 @@ def main():
         data = {
             'format_version': 2,
             'header': {'name': name, 'uuid': ident, 'version': VERSION,
-                       'min_engine_version': [1, 26, 50],
-                       'description': 'Ice-free oceans, sea life, craftable diving gear and ocean building blocks.'},
+                       'min_engine_version': [1, 26, 60],
+                       'description': 'Ice-free oceans, sea life, diving gear, furniture, nautical decorations and foods.'},
             'modules': [{'type': 'data' if pack == BP else 'resources',
                          'uuid': module, 'version': VERSION}]
         }

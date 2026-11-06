@@ -1,0 +1,41 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "endless:harpoon",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Harpoon"
+      },
+      "minecraft:icon": {
+        "textures": {
+          "default": "endless_harpoon"
+        }
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": 5,
+      "minecraft:use_animation": "spear",
+      "minecraft:use_modifiers": {
+        "use_duration": 1,
+        "movement_modifier": 0.7
+      },
+      "minecraft:throwable": {
+        "do_swing_animation": true,
+        "max_launch_power": 2.5,
+        "launch_power_scale": 1.5
+      },
+      "minecraft:projectile": {
+        "projectile_entity": "endless:harpoon_projectile"
+      },
+      "minecraft:cooldown": {
+        "category": "endless_harpoon",
+        "duration": 0.7
+      }
+    }
+  }
+}

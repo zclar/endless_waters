@@ -1,5 +1,5 @@
 {
-  "bedrock_version": "1.26.61.1",
+  "bedrock_version": "1.26.63.1",
   "minimum_client": [
     1,
     26,
@@ -9,65 +9,80 @@
   ],
   "checks": [
     {
-      "buildId": "7a130e2c5c29d7ebd10c6c0e47b949d85f4ea0b90f2cbddf20b34222580960d8",
+      "buildId": "c1cba9ad5bbc9e7952e8a52a93099c4a8ec3ea2d5e1a1204c61d95b9bf4c9168",
       "phase": "built",
       "passed": true,
       "variants": {
         "new": {
-          "checkedBlocks": 17342,
-          "dryHoldCells": 6988,
-          "clearInteriorCells": 16783,
+          "checkedBlocks": 17880,
+          "dryHoldCells": 6726,
+          "clearInteriorCells": 16263,
           "emptyDeckBarrels": 12,
+          "lootChests": 30,
           "pillagers": 12
         },
         "tattered": {
-          "checkedBlocks": 16721,
-          "dryHoldCells": 6988,
-          "clearInteriorCells": 16783,
+          "checkedBlocks": 17250,
+          "dryHoldCells": 6727,
+          "clearInteriorCells": 16272,
           "emptyDeckBarrels": 12,
+          "lootChests": 30,
           "pillagers": 8
         },
         "abandoned": {
-          "checkedBlocks": 14858,
-          "dryHoldCells": 6996,
-          "clearInteriorCells": 16813,
+          "checkedBlocks": 15324,
+          "dryHoldCells": 6757,
+          "clearInteriorCells": 16357,
           "emptyDeckBarrels": 10,
+          "lootChests": 30,
           "pillagers": 0
         }
       }
     },
     {
-      "buildId": "7a130e2c5c29d7ebd10c6c0e47b949d85f4ea0b90f2cbddf20b34222580960d8",
+      "buildId": "c1cba9ad5bbc9e7952e8a52a93099c4a8ec3ea2d5e1a1204c61d95b9bf4c9168",
       "phase": "reload",
       "passed": true,
       "variants": {
         "new": {
-          "checkedBlocks": 17342,
-          "dryHoldCells": 6988,
-          "clearInteriorCells": 16783,
+          "checkedBlocks": 17880,
+          "dryHoldCells": 6726,
+          "clearInteriorCells": 16263,
           "emptyDeckBarrels": 12,
+          "lootChests": 30,
           "pillagers": 12
         },
         "tattered": {
-          "checkedBlocks": 16721,
-          "dryHoldCells": 6988,
-          "clearInteriorCells": 16783,
+          "checkedBlocks": 17250,
+          "dryHoldCells": 6727,
+          "clearInteriorCells": 16272,
           "emptyDeckBarrels": 12,
+          "lootChests": 30,
           "pillagers": 8
         },
         "abandoned": {
-          "checkedBlocks": 14858,
-          "dryHoldCells": 6996,
-          "clearInteriorCells": 16813,
+          "checkedBlocks": 15324,
+          "dryHoldCells": 6757,
+          "clearInteriorCells": 16357,
           "emptyDeckBarrels": 10,
+          "lootChests": 30,
           "pillagers": 0
         }
       }
     }
   ],
-  "archive_bytes": 205518,
-  "archive_sha256": "6df835ca630d8dc332c593d0e34ec97f2ad619f611ca2bd10f6e72951659a2a1",
-  "runtime_packs_included": false,
+  "decor_checks": {
+    "passed": true,
+    "blocks": 159,
+    "items": 174,
+    "permutations": 478,
+    "interactions": 39,
+    "uniqueLootRolls": 12,
+    "harpoonRecovery": true
+  },
+  "archive_bytes": 1096929,
+  "archive_sha256": "8cb4f8b67a2273ee845f47880ee12ba509180000fdbed9d0a35abd7e25d79a68",
+  "runtime_packs_included": true,
   "world_generator": "flat",
   "game_mode": "creative"
 }

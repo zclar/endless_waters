@@ -1,0 +1,13 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "endless:decor_ocean_chiseled_prismarine_tiles_stairs"
+        }
+      ]
+    }
+  ]
+}

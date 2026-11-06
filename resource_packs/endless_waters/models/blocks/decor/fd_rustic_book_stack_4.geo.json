@@ -1,0 +1,147 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.endless.fd_rustic_book_stack_4",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "book1",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                0,
+                -4
+              ],
+              "size": [
+                6,
+                3,
+                8
+              ],
+              "uv": [
+                0,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "name": "book2",
+          "parent": "root",
+          "pivot": [
+            1.5,
+            3,
+            -0.5
+          ],
+          "rotation": [
+            0,
+            -7.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2,
+                3,
+                -5
+              ],
+              "size": [
+                7,
+                2,
+                9
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "book3",
+          "parent": "root",
+          "pivot": [
+            -4,
+            0,
+            -1.5
+          ],
+          "rotation": [
+            0,
+            0,
+            18.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                0,
+                -5
+              ],
+              "size": [
+                3,
+                8,
+                7
+              ],
+              "uv": [
+                25,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "name": "book4",
+          "parent": "root",
+          "pivot": [
+            1.5,
+            5,
+            -0.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.7,
+                5,
+                -4
+              ],
+              "size": [
+                7,
+                2,
+                9
+              ],
+              "uv": [
+                0,
+                22
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

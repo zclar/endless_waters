@@ -1,0 +1,37 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "endless:harpoon_projectile",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "projectile"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.15,
+        "height": 0.15
+      },
+      "minecraft:physics": {},
+      "minecraft:projectile": {
+        "power": 2.5,
+        "gravity": 0.025,
+        "liquid_inertia": 0.98,
+        "on_hit": {
+          "impact_damage": {
+            "damage": 7,
+            "knockback": false,
+            "destroy_on_hit": false
+          },
+          "stick_in_ground": {}
+        },
+        "uncertainty_base": 0,
+        "uncertainty_multiplier": 0
+      }
+    }
+  }
+}

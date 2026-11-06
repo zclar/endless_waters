@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "endless:food_vegetable_soup"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "minecraft:carrot"
+      },
+      {
+        "item": "minecraft:baked_potato"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:bowl"
+      }
+    ],
+    "result": {
+      "item": "endless:food_vegetable_soup",
+      "count": 1
+    }
+  }
+}

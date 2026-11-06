@@ -16,11 +16,11 @@ rp = ROOT / 'resource_packs/endless_waters'
 
 manifest = json.loads((bp / 'manifest.json').read_text())
 resource_manifest = json.loads((rp / 'manifest.json').read_text())
-assert manifest['header']['version'] == resource_manifest['header']['version'] == [0, 5, 2]
-assert json.loads((ROOT / 'package.json').read_text())['version'] == '0.5.2'
+assert manifest['header']['version'] == resource_manifest['header']['version'] == [0, 6, 0]
+assert json.loads((ROOT / 'package.json').read_text())['version'] == '0.6.0'
 assert manifest['header']['uuid'] == 'f64cd68d-5d41-4a25-b91b-36d5d8f33543'
 assert resource_manifest['header']['uuid'] == 'c2f260cf-3759-4ffd-b20d-a4fe8c0c45d3'
-assert manifest['dependencies'] == [{'uuid': resource_manifest['header']['uuid'], 'version': [0, 5, 2]},
+assert manifest['dependencies'] == [{'uuid': resource_manifest['header']['uuid'], 'version': [0, 6, 0]},
                                     {'module_name': '@minecraft/server', 'version': '2.10.0'}]
 assert len(list((bp / 'structures/endless').glob('column_*.mcstructure'))) == 84
 
@@ -97,7 +97,8 @@ with zipfile.ZipFile(out / 'Endless_Waters.mcaddon') as archive:
     assert set(archive.namelist()) == expected_entries, 'Unexpected files in release archive'
     assert not any('/probe' in name for name in archive.namelist())
     assert {n for n in archive.namelist() if '/scripts/' in n} == {
-        'Endless_Waters_BP/scripts/diving_gear.js', 'Endless_Waters_BP/scripts/starter_boat.js'}
+        'Endless_Waters_BP/scripts/diving_gear.js', 'Endless_Waters_BP/scripts/starter_boat.js',
+        'Endless_Waters_BP/scripts/decor.js', 'Endless_Waters_BP/scripts/decor_logic.js', 'Endless_Waters_BP/scripts/harpoon.js'}
 validate_sea_life()
 validate_diving()
 print('Release validation passed: cave-preserving columns, feature graph, ice-free climates and archive.')

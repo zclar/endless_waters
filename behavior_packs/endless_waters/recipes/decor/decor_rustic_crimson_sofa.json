@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "endless:decor_rustic_crimson_sofa"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "endless:driftwood_plank"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "endless:driftwood_plank"
+      }
+    ],
+    "result": {
+      "item": "endless:decor_rustic_crimson_sofa",
+      "count": 1
+    }
+  }
+}

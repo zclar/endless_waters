@@ -15,5 +15,482 @@
   },
   "endless:pearl_lantern": {
     "sound": "glass"
+  },
+  "endless:decor_carpentry_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_book": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_bottle": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_acacia_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_birch_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_crimson_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_dark_oak_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_jungle_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_oak_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_spruce_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_warped_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_ceiling_fan": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_acacia_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_birch_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_crimson_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_dark_oak_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_jungle_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_oak_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_spruce_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_warped_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_chandelier": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_clock": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_acacia_coffee_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_birch_coffee_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_crimson_coffee_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_dark_oak_coffee_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_jungle_coffee_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_oak_coffee_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_spruce_coffee_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_warped_coffee_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_curtain": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_fire_pit": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_grandfather_clock": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_lamp": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_mounted_goat_horn": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_plant_pot": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_radio": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_acacia_rocking_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_birch_rocking_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_crimson_rocking_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_dark_oak_rocking_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_jungle_rocking_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_oak_rocking_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_spruce_rocking_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_warped_rocking_chair": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_scroll": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_shelve": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_acacia_sofa": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_birch_sofa": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_crimson_sofa": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_dark_oak_sofa": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_jungle_sofa": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_oak_sofa": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_spruce_sofa": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_warped_sofa": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_step_ladder": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_acacia_stool": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_birch_stool": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_crimson_stool": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_dark_oak_stool": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_jungle_stool": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_oak_stool": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_spruce_stool": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_warped_stool": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_acacia_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_birch_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_crimson_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_dark_oak_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_jungle_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_oak_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_spruce_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_warped_table": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_television": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_trash_can": {
+    "sound": "wood"
+  },
+  "endless:decor_rustic_vase": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_anchor": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_ships_wheel": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_rope": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_tattered_sail": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_aquarium": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_abyssal_coral_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_living_abyssal_coral_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_barnacle_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_crushed_coral_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_salt_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_abyssal_pearl_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_glowing_plankton_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_abyssal_vent": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_giant_clam": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_prismarine_crystal_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_chiseled_prismarine_tiles": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_pearl_block": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_driftwood_plank_slab": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_driftwood_plank_stairs": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_driftwood_plank_wall": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_sea_glass_slab": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_sea_glass_stairs": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_polished_prismarine_bricks_slab": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_polished_prismarine_bricks_stairs": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_polished_prismarine_bricks_wall": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_chiseled_prismarine_tiles_slab": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_chiseled_prismarine_tiles_stairs": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_chiseled_prismarine_tiles_wall": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_pearl_block_slab": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_pearl_block_stairs": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_pearl_block_wall": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_driftwood_plank_fence": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_driftwood_fence_gate": {
+    "sound": "wood"
+  },
+  "endless:decor_ocean_driftwood_trapdoor": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_stove": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_cooking_pot": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_cutting_board": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_skillet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_wooden_basket": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_bamboo_basket": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_carrot_crate": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_potato_crate": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_beetroot_crate": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_rice_bag": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_straw_bale": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_canvas_rug": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_safety_net": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_rope_fence": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_rope_fence_gate": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_oak_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_spruce_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_birch_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_jungle_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_acacia_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_dark_oak_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_mangrove_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_cherry_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_bamboo_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_crimson_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_galley_warped_cabinet": {
+    "sound": "wood"
+  },
+  "endless:decor_rope_coil": {
+    "sound": "wood"
+  },
+  "endless:decor_open_crate": {
+    "sound": "wood"
+  },
+  "endless:decor_sealed_crate": {
+    "sound": "wood"
+  },
+  "endless:decor_powder_keg": {
+    "sound": "wood"
+  },
+  "endless:decor_cannonballs": {
+    "sound": "wood"
+  },
+  "endless:decor_weapon_rack": {
+    "sound": "wood"
+  },
+  "endless:decor_hammock": {
+    "sound": "wood"
+  },
+  "endless:decor_boots": {
+    "sound": "wood"
+  },
+  "endless:decor_hanging_coat": {
+    "sound": "wood"
+  },
+  "endless:decor_mug": {
+    "sound": "wood"
+  },
+  "endless:decor_inkwell": {
+    "sound": "wood"
+  },
+  "endless:decor_sextant": {
+    "sound": "wood"
+  },
+  "endless:decor_compass_stand": {
+    "sound": "wood"
+  },
+  "endless:decor_canvas_bundle": {
+    "sound": "wood"
+  },
+  "endless:decor_coin_pile": {
+    "sound": "wood"
+  },
+  "endless:decor_treasure_chest": {
+    "sound": "wood"
+  },
+  "endless:decor_porthole": {
+    "sound": "wood"
+  },
+  "endless:decor_pipe": {
+    "sound": "wood"
+  },
+  "endless:decor_valve": {
+    "sound": "wood"
+  },
+  "endless:decor_pressure_gauge": {
+    "sound": "wood"
+  },
+  "endless:decor_oxygen_cylinder": {
+    "sound": "wood"
+  },
+  "endless:decor_equipment_rack": {
+    "sound": "wood"
+  },
+  "endless:decor_control_console": {
+    "sound": "wood"
+  },
+  "endless:decor_broken_pottery": {
+    "sound": "wood"
   }
 }

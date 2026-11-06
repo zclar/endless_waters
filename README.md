@@ -2,21 +2,27 @@
 
 ## ⬇️ [Download Endless Waters for Bedrock (.mcaddon)](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Endless_Waters.mcaddon)
 
-**Version 0.5.2 — starting boat, sea life and diving gear.** On your phone, tap the link above,
+**Version 0.6.0 — furniture, nautical decorations, foods and a recoverable harpoon.** On your phone, tap the link above,
 then open **Endless_Waters.mcaddon** with Minecraft. The file contains both packs.
 
 ## ⛵ [Download the pirate-ship review world (.mcworld)](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Shipyard.mcworld)
 
-**Dreadwake Shipyard - Build Edition:** a separate flat Creative world with new,
-tattered and abandoned ships, cleared interiors for your own builds, and pillager
-crews. Includes a stern rudder, mooring posts and a deck bell. Open the file with
-Minecraft, then select **Dreadwake Shipyard - Build Edition** in your Worlds list.
-Requires Bedrock **26.60+**. No addon setup is needed.
+**Dreadwake Shipyard - Furnished Edition:** a separate flat Creative world with
+new, tattered and abandoned ships, furnished cabins, crew quarters, galley,
+cargo hold, brig and treasure vault. Each ship has 30 randomized loot chests;
+the new/tattered ships have pillager crews. Open the file with Minecraft and
+select **Dreadwake Shipyard - Furnished Edition**. Import as a new world.
+Requires Bedrock **26.60+**; the included decoration packs activate with the world.
 [World details and ship coordinates](experiments/ship_review/README.md).
+
+**174 new catalog entries:** furniture, nautical and galley props, 14 foods,
+and a throwable harpoon. Use a stonecutter with driftwood planks (or iron for
+metal fittings) to select decorations. [Catalog, recipes and controls](experiments/decor/README.md).
+Cabinets, seats and appliances are decorative; real ship storage uses vanilla chests.
 
 ## Install
 
-1. Import the download into Minecraft Bedrock **26.50 or newer**.
+1. Import the download into Minecraft Bedrock **26.60 or newer**.
 2. Open your existing v0.4.0 world, or create a **new normal/infinite world**.
 3. Enable **Endless Waters — Depths** in Behavior Packs.
 4. Enable **Endless Waters — Ocean Appearance** in Resource Packs.
@@ -46,8 +52,8 @@ it is not a confirmed fix for that disconnect. See the
 [multiplayer test notes](experiments/sea_life/multiplayer_notes.md) for verified
 checks and the next real-device comparison. The
 [structure plan](experiments/structure_plan.md) covers detailed ships, large raft
-villages, wrecks, crashed submarines, underwater bases and ancient ruins; none
-are included yet. [Research candidates](experiments/structure_candidates.md)
+villages, wrecks, crashed submarines, underwater bases and ancient ruins; only the separate pirate ship review world
+is available so far. [Research candidates](experiments/structure_candidates.md)
 are tracked separately.
 
 **Pirate ship review:** [explore the playable shipyard](experiments/ship_review/README.md),

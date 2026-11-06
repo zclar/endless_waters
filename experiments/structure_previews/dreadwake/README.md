@@ -1,10 +1,10 @@
-# The Dreadwake — pirate galleon, build edition
+# The Dreadwake — pirate galleon, furnished edition
 
 **Preview only. This ship has not been added to the Endless Waters addon or
 world generation.** Review the design before integration.
 
 **Now playable:** [download the separate flat shipyard world](https://github.com/zclar/endless_waters/raw/refs/heads/main/dist/Dreadwake_Shipyard.mcworld)
-with cleared interiors for your own builds and actual pillager crews.
+with fully furnished interiors and actual pillager crews.
 [Instructions and coordinates](../../ship_review/README.md).
 
 An original block-built galleon, **111 blocks long** including its rudder, up to **43 blocks across
@@ -24,7 +24,7 @@ an image viewer. No Minecraft import is needed for these previews.
 
 | New | Tattered | Abandoned |
 | --- | --- | --- |
-| Complete sails, bright trim, open interiors; 12 planned pillagers | Torn and patched sails, repaired rails, weathered planking; 8 planned pillagers | Broken upper masts, hanging sail remnants, breached decking, moss and broken cabin windows; no crew |
+| Complete sails, bright trim, furnished interiors; 12 planned pillagers | Torn and patched sails, repaired rails, weathered planking; 8 planned pillagers | Broken upper masts, hanging sail remnants, breached decking, moss and broken cabin windows; no crew |
 | [Full-size bow view](new.png) | [Full-size bow view](tattered.png) | [Full-size bow view](abandoned.png) |
 | [Full-size stern view](new_stern.png) | [Full-size stern view](tattered_stern.png) | [Full-size stern view](abandoned_stern.png) |
 
@@ -36,10 +36,10 @@ an image viewer. No Minecraft import is needed for these previews.
 
 ## Inside the ship
 
-- Open lower hold with structural beams and lighting, ready to furnish.
-- Open gun deck with twelve decorative cannons and stairs between decks.
+- Lower hold with crew berths, cargo, brig and treasure vault.
+- Gun deck with twelve decorative cannons, ammunition, galley and mess.
 - Main deck with a cargo grating, capstan, stowed dinghy and boarding ladders.
-- Empty captain's cabin with windows, lighting and access to the stern gallery.
+- Captain's cabin with canopy beds, chart table, instruments, books and seating.
 - Raised forecastle and quarterdeck, stern gallery, decorative wheel,
   anchors, figurehead, crow's nests and climbable mast ladders.
 - Stern rudder, mooring bitts on the raised decks, and a ringable vanilla bell.
@@ -61,8 +61,8 @@ approximate colors rather than Minecraft textures. The water plane is a visual
 reference, and the viewer's crew markers represent planned pillager positions.
 
 The cannons, rudder, wheel and rigging are decorative vanilla-block assemblies;
-the ship does not sail and cannons do not fire. Interior furniture, beds, storage,
-room fittings and loot have been removed so you can decorate. Exterior cargo
+the ship does not sail and cannons do not fire. Interior furnishings include custom furniture and clutter plus 30 native loot
+chests per ship. Custom model previews approximate cube geometry and omit bone rotations. Exterior cargo
 barrels remain empty. Standalone preview templates omit the review world's crew
 assembly. No third-party structure assets are used.
 
@@ -70,7 +70,7 @@ assembly. No third-party structure assets are used.
 
 `validation.json` records checks that each NBT piece matches its preview block
 layout, all crew positions have floor/headroom, the hull is sealed below the
-waterline in a voxel flood test, and the main addon download is unchanged.
+waterline in a voxel flood test, and loot-bearing chests have native randomized table references.
 Each variant is exported as two pieces within the 64-block horizontal limits.
 
 The playable shipyard's [engine validation](../../ship_review/validation.json)

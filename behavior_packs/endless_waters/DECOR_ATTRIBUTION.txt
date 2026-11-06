@@ -1,0 +1,2 @@
+FurniDeco by Arexon (Apache-2.0); Farmer's Delight by vectorwing (MIT); Ocean Overhaul by tinyclaw / VoX (MIT).
+Models/textures adapted for Endless Waters. Definitions, interactions and recipes rebuilt; source functionality is not reproduced in full.

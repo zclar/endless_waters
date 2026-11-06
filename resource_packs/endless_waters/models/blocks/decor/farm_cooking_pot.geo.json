@@ -1,0 +1,353 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.endless.farm_cooking_pot",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "part_0",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6,
+                0,
+                -6
+              ],
+              "size": [
+                12,
+                10,
+                12
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    2,
+                    6
+                  ],
+                  "uv_size": [
+                    12,
+                    10
+                  ],
+                  "material_instance": "farm_block_cooking_pot_side"
+                },
+                "east": {
+                  "uv": [
+                    2,
+                    6
+                  ],
+                  "uv_size": [
+                    12,
+                    10
+                  ],
+                  "material_instance": "farm_block_cooking_pot_side"
+                },
+                "south": {
+                  "uv": [
+                    2,
+                    6
+                  ],
+                  "uv_size": [
+                    12,
+                    10
+                  ],
+                  "material_instance": "farm_block_cooking_pot_side"
+                },
+                "west": {
+                  "uv": [
+                    2,
+                    6
+                  ],
+                  "uv_size": [
+                    12,
+                    10
+                  ],
+                  "material_instance": "farm_block_cooking_pot_side"
+                },
+                "up": {
+                  "uv": [
+                    2,
+                    2
+                  ],
+                  "uv_size": [
+                    12,
+                    12
+                  ],
+                  "material_instance": "farm_block_cooking_pot_top"
+                },
+                "down": {
+                  "uv": [
+                    2,
+                    2
+                  ],
+                  "uv_size": [
+                    12,
+                    12
+                  ],
+                  "material_instance": "farm_block_cooking_pot_bottom"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_1",
+          "pivot": [
+            0,
+            3,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                3,
+                -1
+              ],
+              "size": [
+                2,
+                12,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    2,
+                    2
+                  ],
+                  "uv_size": [
+                    -2,
+                    12
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "south": {
+                  "uv": [
+                    2,
+                    2
+                  ],
+                  "uv_size": [
+                    -2,
+                    12
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                }
+              }
+            }
+          ],
+          "rotation": [
+            0,
+            0,
+            -22.5
+          ]
+        },
+        {
+          "name": "part_2",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6,
+                7,
+                -3
+              ],
+              "size": [
+                2,
+                2,
+                6
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    10,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "east": {
+                  "uv": [
+                    4,
+                    2
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "south": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "up": {
+                  "uv": [
+                    4,
+                    0
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "down": {
+                  "uv": [
+                    4,
+                    2
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_3",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                7,
+                -3
+              ],
+              "size": [
+                2,
+                2,
+                6
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "south": {
+                  "uv": [
+                    10,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "west": {
+                  "uv": [
+                    4,
+                    2
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "up": {
+                  "uv": [
+                    4,
+                    0
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                },
+                "down": {
+                  "uv": [
+                    4,
+                    2
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_cooking_pot_parts"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

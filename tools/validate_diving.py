@@ -71,7 +71,7 @@ def validate():
     assert read(rp / 'manifest.json')['capabilities'] == ['pbr']
     textures = list((rp / 'textures').rglob('*.png'))
     sets = list((rp / 'textures').rglob('*.texture_set.json'))
-    assert len(textures) == len(sets) == 18
+    assert len(textures) == len(sets) and len(textures) >= 18
     for path in sets:
         value = read(path)['minecraft:texture_set']
         assert (path.parent / (value['color'] + '.png')).is_file()

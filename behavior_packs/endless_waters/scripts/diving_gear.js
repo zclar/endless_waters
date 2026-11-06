@@ -2,6 +2,7 @@
 // Small player-only poll: no terrain edits, entity scans or world-generation work.
 import {system, world, EquipmentSlot} from '@minecraft/server';
 import './starter_boat.js';
+import './decor.js';
 
 const BASE = 'endless:flippers_base';
 const BOOST = 'endless:flippers_boost';

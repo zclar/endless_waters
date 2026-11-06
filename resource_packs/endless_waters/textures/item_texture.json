@@ -10,6 +10,51 @@
     },
     "endless_flippers": {
       "textures": "textures/items/endless/flippers"
+    },
+    "endless_food_kelp_roll": {
+      "textures": "textures/items/decor/kelp_roll"
+    },
+    "endless_food_salted_cod": {
+      "textures": "textures/items/decor/salted_cod"
+    },
+    "endless_food_seafood_stew": {
+      "textures": "textures/items/decor/seafood_stew"
+    },
+    "endless_food_fish_stew": {
+      "textures": "textures/items/decor/fish_stew"
+    },
+    "endless_food_baked_cod_stew": {
+      "textures": "textures/items/decor/baked_cod_stew"
+    },
+    "endless_food_grilled_salmon": {
+      "textures": "textures/items/decor/grilled_salmon"
+    },
+    "endless_food_fruit_salad": {
+      "textures": "textures/items/decor/fruit_salad"
+    },
+    "endless_food_mixed_salad": {
+      "textures": "textures/items/decor/mixed_salad"
+    },
+    "endless_food_vegetable_soup": {
+      "textures": "textures/items/decor/vegetable_soup"
+    },
+    "endless_food_apple_cider": {
+      "textures": "textures/items/decor/apple_cider"
+    },
+    "endless_food_hot_cocoa": {
+      "textures": "textures/items/decor/hot_cocoa"
+    },
+    "endless_food_melon_juice": {
+      "textures": "textures/items/decor/melon_juice"
+    },
+    "endless_food_sweet_berry_cookie": {
+      "textures": "textures/items/decor/sweet_berry_cookie"
+    },
+    "endless_food_honey_cookie": {
+      "textures": "textures/items/decor/honey_cookie"
+    },
+    "endless_harpoon": {
+      "textures": "textures/items/decor/harpoon"
     }
   }
 }

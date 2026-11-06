@@ -1,0 +1,1199 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.endless.farm_wooden_basket",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "part_0",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                16,
+                2,
+                16
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_bottom"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_bottom"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_bottom"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_bottom"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "farm_block_wooden_basket_bottom"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ],
+                  "material_instance": "farm_block_wooden_basket_bottom"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_1",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                13,
+                -8
+              ],
+              "size": [
+                16,
+                3,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "east": {
+                  "uv": [
+                    14,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    -16,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_top"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_top"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_2",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                2,
+                11,
+                -8
+              ],
+              "size": [
+                6,
+                2,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    3
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "east": {
+                  "uv": [
+                    14,
+                    3
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "south": {
+                  "uv": [
+                    6,
+                    3
+                  ],
+                  "uv_size": [
+                    -6,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_3",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                11,
+                -8
+              ],
+              "size": [
+                6,
+                2,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    10,
+                    3
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "east": {
+                  "uv": [
+                    14,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    3
+                  ],
+                  "uv_size": [
+                    -6,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    3
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_4",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                2,
+                -8
+              ],
+              "size": [
+                16,
+                9,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    5
+                  ],
+                  "uv_size": [
+                    16,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "east": {
+                  "uv": [
+                    14,
+                    5
+                  ],
+                  "uv_size": [
+                    2,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    5
+                  ],
+                  "uv_size": [
+                    -16,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    5
+                  ],
+                  "uv_size": [
+                    2,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_5",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                13,
+                6
+              ],
+              "size": [
+                16,
+                3,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    -16,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    14,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    14
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_top"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    14
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_top"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_6",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                11,
+                6
+              ],
+              "size": [
+                6,
+                2,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    6,
+                    3
+                  ],
+                  "uv_size": [
+                    -6,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    3
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    14,
+                    3
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_7",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                2,
+                11,
+                6
+              ],
+              "size": [
+                6,
+                2,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    3
+                  ],
+                  "uv_size": [
+                    -6,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    3
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "south": {
+                  "uv": [
+                    10,
+                    3
+                  ],
+                  "uv_size": [
+                    6,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_8",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                2,
+                6
+              ],
+              "size": [
+                16,
+                9,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    5
+                  ],
+                  "uv_size": [
+                    -16,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    5
+                  ],
+                  "uv_size": [
+                    2,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    5
+                  ],
+                  "uv_size": [
+                    16,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    14,
+                    5
+                  ],
+                  "uv_size": [
+                    2,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    14
+                  ],
+                  "uv_size": [
+                    16,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_9",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                13,
+                -6
+              ],
+              "size": [
+                2,
+                3,
+                12
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    14,
+                    0
+                  ],
+                  "uv_size": [
+                    -12,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    12,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_wooden_basket_top"
+                },
+                "down": {
+                  "uv": [
+                    14,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_wooden_basket_top"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_10",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                11,
+                -6
+              ],
+              "size": [
+                2,
+                2,
+                4
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    6,
+                    3
+                  ],
+                  "uv_size": [
+                    -4,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                },
+                "west": {
+                  "uv": [
+                    2,
+                    3
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_11",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                11,
+                2
+              ],
+              "size": [
+                2,
+                2,
+                4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    14,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                },
+                "east": {
+                  "uv": [
+                    14,
+                    3
+                  ],
+                  "uv_size": [
+                    -4,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    10,
+                    3
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_12",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                2,
+                -6
+              ],
+              "size": [
+                2,
+                9,
+                12
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    14,
+                    5
+                  ],
+                  "uv_size": [
+                    -12,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    2,
+                    5
+                  ],
+                  "uv_size": [
+                    12,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_13",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6,
+                13,
+                -6
+              ],
+              "size": [
+                2,
+                3,
+                12
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    12,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    14,
+                    0
+                  ],
+                  "uv_size": [
+                    -12,
+                    3
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "up": {
+                  "uv": [
+                    14,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_wooden_basket_top"
+                },
+                "down": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_wooden_basket_top"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_14",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6,
+                11,
+                2
+              ],
+              "size": [
+                2,
+                2,
+                4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                },
+                "east": {
+                  "uv": [
+                    2,
+                    3
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    6,
+                    3
+                  ],
+                  "uv_size": [
+                    -4,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_15",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6,
+                11,
+                -6
+              ],
+              "size": [
+                2,
+                2,
+                4
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    10,
+                    3
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "south": {
+                  "uv": [
+                    14,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                },
+                "west": {
+                  "uv": [
+                    14,
+                    3
+                  ],
+                  "uv_size": [
+                    -4,
+                    2
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_16",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6,
+                2,
+                -6
+              ],
+              "size": [
+                2,
+                9,
+                12
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    2,
+                    5
+                  ],
+                  "uv_size": [
+                    12,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "west": {
+                  "uv": [
+                    14,
+                    5
+                  ],
+                  "uv_size": [
+                    -12,
+                    9
+                  ],
+                  "material_instance": "farm_block_wooden_basket_side"
+                },
+                "up": {
+                  "uv": [
+                    14,
+                    2
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_wooden_basket_handle"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

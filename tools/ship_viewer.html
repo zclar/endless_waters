@@ -18,7 +18,7 @@ const canvas=document.getElementById('view'),gl=canvas.getContext('webgl',{antia
 const fitZoom=()=>Math.max(120,135/(innerWidth/innerHeight));
 let variant='new',yaw=-.85,pitch=.45,zoom=fitZoom(),count=0;
 const B=[0,0,0,1,1,1];
-function shape(b,near){const n=b.name,s=b.states;
+function shape(b,near){if(b.boxes)return b.boxes;const n=b.name,s=b.states;
  if(n.endsWith('_slab'))return [[0,s['minecraft:vertical_half']==='top'?.5:0,0,1,s['minecraft:vertical_half']==='top'?1:.5,1]];
  if(n.endsWith('_carpet'))return [[0,0,0,1,.0625,1]];
  if(n.endsWith('_stairs')){let u=s.upside_down_bit,a=u?0:.5,c=u?.5:1;return [[0,u?.5:0,0,1,u?1:.5,1],[[.5,a,0,1,c,1],[0,a,0,.5,c,1],[0,a,.5,1,c,1],[0,a,0,1,c,.5]][s.weirdo_direction||0]]}

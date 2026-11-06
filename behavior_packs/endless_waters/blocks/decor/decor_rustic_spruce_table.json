@@ -1,0 +1,189 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "endless:decor_rustic_spruce_table",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ],
+          "y_rotation_offset": 180
+        }
+      },
+      "states": {
+        "endless:style": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.endless:decor_rustic_spruce_table.name",
+      "minecraft:geometry": "geometry.endless.fd_rustic_table",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "endless_fd_rustic_spruce_table",
+          "render_method": "alpha_test",
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 4
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:loot": "loot_tables/decor/decor_rustic_spruce_table.json",
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "endless:decor_interact": {
+        "styles": 10
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_end1"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_end2"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 3",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_end3"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 4",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_end4"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 5",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_corner1"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 6",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_corner2"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 7",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_corner3"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 8",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_corner4"
+        }
+      },
+      {
+        "condition": "q.block_state('endless:style') == 9",
+        "components": {
+          "minecraft:geometry": "geometry.endless.fd_rustic_table_center"
+        }
+      }
+    ]
+  }
+}

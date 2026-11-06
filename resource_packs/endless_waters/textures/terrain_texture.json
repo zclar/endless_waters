@@ -15,6 +15,729 @@
     },
     "endless_pearl_lantern": {
       "textures": "textures/blocks/endless/pearl_lantern"
+    },
+    "endless_fd_carpentry_table": {
+      "textures": "textures/blocks/decor/fd_carpentry_table"
+    },
+    "endless_fd_rustic_oak_table": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_table"
+    },
+    "endless_fd_rustic_spruce_table": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_table"
+    },
+    "endless_fd_rustic_birch_table": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_table"
+    },
+    "endless_fd_rustic_jungle_table": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_table"
+    },
+    "endless_fd_rustic_acacia_table": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_table"
+    },
+    "endless_fd_rustic_dark_oak_table": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_table"
+    },
+    "endless_fd_rustic_crimson_table": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_table"
+    },
+    "endless_fd_rustic_warped_table": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_table"
+    },
+    "endless_fd_rustic_oak_stool": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_stool"
+    },
+    "endless_fd_rustic_spruce_stool": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_stool"
+    },
+    "endless_fd_rustic_birch_stool": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_stool"
+    },
+    "endless_fd_rustic_jungle_stool": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_stool"
+    },
+    "endless_fd_rustic_acacia_stool": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_stool"
+    },
+    "endless_fd_rustic_dark_oak_stool": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_stool"
+    },
+    "endless_fd_rustic_crimson_stool": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_stool"
+    },
+    "endless_fd_rustic_warped_stool": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_stool"
+    },
+    "endless_fd_rustic_stool_color_0": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_0"
+    },
+    "endless_fd_rustic_stool_color_1": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_1"
+    },
+    "endless_fd_rustic_stool_color_2": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_2"
+    },
+    "endless_fd_rustic_stool_color_3": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_3"
+    },
+    "endless_fd_rustic_stool_color_4": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_4"
+    },
+    "endless_fd_rustic_stool_color_5": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_5"
+    },
+    "endless_fd_rustic_stool_color_6": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_6"
+    },
+    "endless_fd_rustic_stool_color_7": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_7"
+    },
+    "endless_fd_rustic_stool_color_8": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_8"
+    },
+    "endless_fd_rustic_stool_color_9": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_9"
+    },
+    "endless_fd_rustic_stool_color_10": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_10"
+    },
+    "endless_fd_rustic_stool_color_11": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_11"
+    },
+    "endless_fd_rustic_stool_color_12": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_12"
+    },
+    "endless_fd_rustic_stool_color_13": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_13"
+    },
+    "endless_fd_rustic_stool_color_14": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_14"
+    },
+    "endless_fd_rustic_stool_color_15": {
+      "textures": "textures/blocks/decor/fd_rustic_stool_color_15"
+    },
+    "endless_fd_rustic_book": {
+      "textures": "textures/blocks/decor/fd_rustic_book"
+    },
+    "endless_fd_rustic_radio": {
+      "textures": "textures/blocks/decor/fd_rustic_radio"
+    },
+    "endless_fd_rustic_lamp": {
+      "textures": "textures/blocks/decor/fd_rustic_lamp"
+    },
+    "endless_fd_rustic_trash_can": {
+      "textures": "textures/blocks/decor/fd_rustic_trash_can"
+    },
+    "endless_fd_rustic_clock": {
+      "textures": "textures/blocks/decor/fd_rustic_clock"
+    },
+    "endless_fd_rustic_bottle": {
+      "textures": "textures/blocks/decor/fd_rustic_bottle"
+    },
+    "endless_fd_rustic_vase_color_0": {
+      "textures": "textures/blocks/decor/fd_rustic_vase_color_0"
+    },
+    "endless_fd_rustic_vase_color_1": {
+      "textures": "textures/blocks/decor/fd_rustic_vase_color_1"
+    },
+    "endless_fd_rustic_vase_color_2": {
+      "textures": "textures/blocks/decor/fd_rustic_vase_color_2"
+    },
+    "endless_fd_rustic_vase_color_3": {
+      "textures": "textures/blocks/decor/fd_rustic_vase_color_3"
+    },
+    "endless_fd_rustic_vase_color_4": {
+      "textures": "textures/blocks/decor/fd_rustic_vase_color_4"
+    },
+    "endless_fd_rustic_vase_color_5": {
+      "textures": "textures/blocks/decor/fd_rustic_vase_color_5"
+    },
+    "endless_fd_rustic_vase_color_6": {
+      "textures": "textures/blocks/decor/fd_rustic_vase_color_6"
+    },
+    "endless_fd_rustic_vase_color_7": {
+      "textures": "textures/blocks/decor/fd_rustic_vase_color_7"
+    },
+    "endless_fd_rustic_curtain": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain"
+    },
+    "endless_fd_rustic_curtain_color_0": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_0"
+    },
+    "endless_fd_rustic_curtain_color_1": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_1"
+    },
+    "endless_fd_rustic_curtain_color_2": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_2"
+    },
+    "endless_fd_rustic_curtain_color_3": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_3"
+    },
+    "endless_fd_rustic_curtain_color_4": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_4"
+    },
+    "endless_fd_rustic_curtain_color_5": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_5"
+    },
+    "endless_fd_rustic_curtain_color_6": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_6"
+    },
+    "endless_fd_rustic_curtain_color_7": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_7"
+    },
+    "endless_fd_rustic_curtain_color_8": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_8"
+    },
+    "endless_fd_rustic_curtain_color_9": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_9"
+    },
+    "endless_fd_rustic_curtain_color_10": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_10"
+    },
+    "endless_fd_rustic_curtain_color_11": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_11"
+    },
+    "endless_fd_rustic_curtain_color_12": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_12"
+    },
+    "endless_fd_rustic_curtain_color_13": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_13"
+    },
+    "endless_fd_rustic_curtain_color_14": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_14"
+    },
+    "endless_fd_rustic_curtain_color_15": {
+      "textures": "textures/blocks/decor/fd_rustic_curtain_color_15"
+    },
+    "endless_fd_rustic_step_ladder": {
+      "textures": "textures/blocks/decor/fd_rustic_step_ladder"
+    },
+    "endless_fd_rustic_plant_pot": {
+      "textures": "textures/blocks/decor/fd_rustic_plant_pot"
+    },
+    "endless_fd_rustic_grandfather_clock": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock"
+    },
+    "endless_fd_rustic_grandfather_clock_frame_0": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock_frame_0"
+    },
+    "endless_fd_rustic_grandfather_clock_frame_1": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock_frame_1"
+    },
+    "endless_fd_rustic_grandfather_clock_frame_2": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock_frame_2"
+    },
+    "endless_fd_rustic_grandfather_clock_frame_3": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock_frame_3"
+    },
+    "endless_fd_rustic_grandfather_clock_frame_4": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock_frame_4"
+    },
+    "endless_fd_rustic_grandfather_clock_frame_5": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock_frame_5"
+    },
+    "endless_fd_rustic_grandfather_clock_frame_6": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock_frame_6"
+    },
+    "endless_fd_rustic_grandfather_clock_frame_7": {
+      "textures": "textures/blocks/decor/fd_rustic_grandfather_clock_frame_7"
+    },
+    "endless_fd_rustic_ceiling_fan": {
+      "textures": "textures/blocks/decor/fd_rustic_ceiling_fan"
+    },
+    "endless_fd_rustic_ceiling_fan_frame_0": {
+      "textures": "textures/blocks/decor/fd_rustic_ceiling_fan_frame_0"
+    },
+    "endless_fd_rustic_ceiling_fan_frame_1": {
+      "textures": "textures/blocks/decor/fd_rustic_ceiling_fan_frame_1"
+    },
+    "endless_fd_rustic_ceiling_fan_frame_2": {
+      "textures": "textures/blocks/decor/fd_rustic_ceiling_fan_frame_2"
+    },
+    "endless_fd_rustic_ceiling_fan_frame_3": {
+      "textures": "textures/blocks/decor/fd_rustic_ceiling_fan_frame_3"
+    },
+    "endless_fd_rustic_mounted_goat_horn": {
+      "textures": "textures/blocks/decor/fd_rustic_mounted_goat_horn"
+    },
+    "endless_fd_rustic_chandelier": {
+      "textures": "textures/blocks/decor/fd_rustic_chandelier"
+    },
+    "endless_fd_rustic_shelve": {
+      "textures": "textures/blocks/decor/fd_rustic_shelve"
+    },
+    "endless_fd_rustic_oak_rocking_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_rocking_chair"
+    },
+    "endless_fd_rustic_spruce_rocking_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_rocking_chair"
+    },
+    "endless_fd_rustic_birch_rocking_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_rocking_chair"
+    },
+    "endless_fd_rustic_jungle_rocking_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_rocking_chair"
+    },
+    "endless_fd_rustic_acacia_rocking_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_rocking_chair"
+    },
+    "endless_fd_rustic_dark_oak_rocking_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_rocking_chair"
+    },
+    "endless_fd_rustic_crimson_rocking_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_rocking_chair"
+    },
+    "endless_fd_rustic_warped_rocking_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_rocking_chair"
+    },
+    "endless_fd_rustic_rocking_chair_color_0": {
+      "textures": "textures/blocks/decor/fd_rustic_rocking_chair_color_0"
+    },
+    "endless_fd_rustic_rocking_chair_color_1": {
+      "textures": "textures/blocks/decor/fd_rustic_rocking_chair_color_1"
+    },
+    "endless_fd_rustic_rocking_chair_color_2": {
+      "textures": "textures/blocks/decor/fd_rustic_rocking_chair_color_2"
+    },
+    "endless_fd_rustic_rocking_chair_color_3": {
+      "textures": "textures/blocks/decor/fd_rustic_rocking_chair_color_3"
+    },
+    "endless_fd_rustic_rocking_chair_color_4": {
+      "textures": "textures/blocks/decor/fd_rustic_rocking_chair_color_4"
+    },
+    "endless_fd_rustic_rocking_chair_color_5": {
+      "textures": "textures/blocks/decor/fd_rustic_rocking_chair_color_5"
+    },
+    "endless_fd_rustic_rocking_chair_color_6": {
+      "textures": "textures/blocks/decor/fd_rustic_rocking_chair_color_6"
+    },
+    "endless_fd_rustic_rocking_chair_color_7": {
+      "textures": "textures/blocks/decor/fd_rustic_rocking_chair_color_7"
+    },
+    "endless_fd_rustic_oak_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_chair"
+    },
+    "endless_fd_rustic_spruce_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_chair"
+    },
+    "endless_fd_rustic_birch_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_chair"
+    },
+    "endless_fd_rustic_jungle_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_chair"
+    },
+    "endless_fd_rustic_acacia_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_chair"
+    },
+    "endless_fd_rustic_dark_oak_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_chair"
+    },
+    "endless_fd_rustic_crimson_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_chair"
+    },
+    "endless_fd_rustic_warped_chair": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_chair"
+    },
+    "endless_fd_rustic_television": {
+      "textures": "textures/blocks/decor/fd_rustic_television"
+    },
+    "endless_fd_rustic_oak_coffee_table": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_coffee_table"
+    },
+    "endless_fd_rustic_spruce_coffee_table": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_coffee_table"
+    },
+    "endless_fd_rustic_birch_coffee_table": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_coffee_table"
+    },
+    "endless_fd_rustic_jungle_coffee_table": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_coffee_table"
+    },
+    "endless_fd_rustic_acacia_coffee_table": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_coffee_table"
+    },
+    "endless_fd_rustic_dark_oak_coffee_table": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_coffee_table"
+    },
+    "endless_fd_rustic_crimson_coffee_table": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_coffee_table"
+    },
+    "endless_fd_rustic_warped_coffee_table": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_coffee_table"
+    },
+    "endless_fd_rustic_oak_cabinet": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_cabinet"
+    },
+    "endless_fd_rustic_oak_cabinet_left": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_cabinet_left"
+    },
+    "endless_fd_rustic_oak_cabinet_middle": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_cabinet_middle"
+    },
+    "endless_fd_rustic_oak_cabinet_right": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_cabinet_right"
+    },
+    "endless_fd_rustic_spruce_cabinet": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_cabinet"
+    },
+    "endless_fd_rustic_spruce_cabinet_left": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_cabinet_left"
+    },
+    "endless_fd_rustic_spruce_cabinet_middle": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_cabinet_middle"
+    },
+    "endless_fd_rustic_spruce_cabinet_right": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_cabinet_right"
+    },
+    "endless_fd_rustic_birch_cabinet": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_cabinet"
+    },
+    "endless_fd_rustic_birch_cabinet_left": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_cabinet_left"
+    },
+    "endless_fd_rustic_birch_cabinet_middle": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_cabinet_middle"
+    },
+    "endless_fd_rustic_birch_cabinet_right": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_cabinet_right"
+    },
+    "endless_fd_rustic_jungle_cabinet": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_cabinet"
+    },
+    "endless_fd_rustic_jungle_cabinet_left": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_cabinet_left"
+    },
+    "endless_fd_rustic_jungle_cabinet_middle": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_cabinet_middle"
+    },
+    "endless_fd_rustic_jungle_cabinet_right": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_cabinet_right"
+    },
+    "endless_fd_rustic_acacia_cabinet": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_cabinet"
+    },
+    "endless_fd_rustic_acacia_cabinet_left": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_cabinet_left"
+    },
+    "endless_fd_rustic_acacia_cabinet_middle": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_cabinet_middle"
+    },
+    "endless_fd_rustic_acacia_cabinet_right": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_cabinet_right"
+    },
+    "endless_fd_rustic_dark_oak_cabinet": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_cabinet"
+    },
+    "endless_fd_rustic_dark_oak_cabinet_left": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_cabinet_left"
+    },
+    "endless_fd_rustic_dark_oak_cabinet_middle": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_cabinet_middle"
+    },
+    "endless_fd_rustic_dark_oak_cabinet_right": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_cabinet_right"
+    },
+    "endless_fd_rustic_crimson_cabinet": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_cabinet"
+    },
+    "endless_fd_rustic_crimson_cabinet_left": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_cabinet_left"
+    },
+    "endless_fd_rustic_crimson_cabinet_middle": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_cabinet_middle"
+    },
+    "endless_fd_rustic_crimson_cabinet_right": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_cabinet_right"
+    },
+    "endless_fd_rustic_warped_cabinet": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_cabinet"
+    },
+    "endless_fd_rustic_warped_cabinet_left": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_cabinet_left"
+    },
+    "endless_fd_rustic_warped_cabinet_middle": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_cabinet_middle"
+    },
+    "endless_fd_rustic_warped_cabinet_right": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_cabinet_right"
+    },
+    "endless_fd_rustic_oak_sofa": {
+      "textures": "textures/blocks/decor/fd_rustic_oak_sofa"
+    },
+    "endless_fd_rustic_spruce_sofa": {
+      "textures": "textures/blocks/decor/fd_rustic_spruce_sofa"
+    },
+    "endless_fd_rustic_birch_sofa": {
+      "textures": "textures/blocks/decor/fd_rustic_birch_sofa"
+    },
+    "endless_fd_rustic_jungle_sofa": {
+      "textures": "textures/blocks/decor/fd_rustic_jungle_sofa"
+    },
+    "endless_fd_rustic_acacia_sofa": {
+      "textures": "textures/blocks/decor/fd_rustic_acacia_sofa"
+    },
+    "endless_fd_rustic_dark_oak_sofa": {
+      "textures": "textures/blocks/decor/fd_rustic_dark_oak_sofa"
+    },
+    "endless_fd_rustic_crimson_sofa": {
+      "textures": "textures/blocks/decor/fd_rustic_crimson_sofa"
+    },
+    "endless_fd_rustic_warped_sofa": {
+      "textures": "textures/blocks/decor/fd_rustic_warped_sofa"
+    },
+    "endless_fd_rustic_sofa_color_0": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_0"
+    },
+    "endless_fd_rustic_sofa_color_1": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_1"
+    },
+    "endless_fd_rustic_sofa_color_2": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_2"
+    },
+    "endless_fd_rustic_sofa_color_3": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_3"
+    },
+    "endless_fd_rustic_sofa_color_4": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_4"
+    },
+    "endless_fd_rustic_sofa_color_5": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_5"
+    },
+    "endless_fd_rustic_sofa_color_6": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_6"
+    },
+    "endless_fd_rustic_sofa_color_7": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_7"
+    },
+    "endless_fd_rustic_sofa_color_8": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_8"
+    },
+    "endless_fd_rustic_sofa_color_9": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_9"
+    },
+    "endless_fd_rustic_sofa_color_10": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_10"
+    },
+    "endless_fd_rustic_sofa_color_11": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_11"
+    },
+    "endless_fd_rustic_sofa_color_12": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_12"
+    },
+    "endless_fd_rustic_sofa_color_13": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_13"
+    },
+    "endless_fd_rustic_sofa_color_14": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_14"
+    },
+    "endless_fd_rustic_sofa_color_15": {
+      "textures": "textures/blocks/decor/fd_rustic_sofa_color_15"
+    },
+    "endless_fd_rustic_scroll": {
+      "textures": "textures/blocks/decor/fd_rustic_scroll"
+    },
+    "endless_fd_rustic_fire_pit": {
+      "textures": "textures/blocks/decor/fd_rustic_fire_pit"
+    },
+    "endless_ocean_block_anchor": {
+      "textures": "textures/blocks/decor/ocean_block_anchor"
+    },
+    "endless_ocean_block_ships_wheel": {
+      "textures": "textures/blocks/decor/ocean_block_ships_wheel"
+    },
+    "endless_ocean_block_rope": {
+      "textures": "textures/blocks/decor/ocean_block_rope"
+    },
+    "endless_ocean_block_tattered_sail": {
+      "textures": "textures/blocks/decor/ocean_block_tattered_sail"
+    },
+    "endless_ocean_block_aquarium": {
+      "textures": "textures/blocks/decor/ocean_block_aquarium"
+    },
+    "endless_ocean_block_abyssal_coral_block": {
+      "textures": "textures/blocks/decor/ocean_block_abyssal_coral_block"
+    },
+    "endless_ocean_block_living_abyssal_coral_block": {
+      "textures": "textures/blocks/decor/ocean_block_living_abyssal_coral_block"
+    },
+    "endless_ocean_block_barnacle_block": {
+      "textures": "textures/blocks/decor/ocean_block_barnacle_block"
+    },
+    "endless_ocean_block_crushed_coral_block": {
+      "textures": "textures/blocks/decor/ocean_block_crushed_coral_block"
+    },
+    "endless_ocean_block_salt_block": {
+      "textures": "textures/blocks/decor/ocean_block_salt_block"
+    },
+    "endless_ocean_block_abyssal_pearl_block": {
+      "textures": "textures/blocks/decor/ocean_block_abyssal_pearl_block"
+    },
+    "endless_ocean_block_glowing_plankton_block": {
+      "textures": "textures/blocks/decor/ocean_block_glowing_plankton_block"
+    },
+    "endless_ocean_block_abyssal_vent": {
+      "textures": "textures/blocks/decor/ocean_block_abyssal_vent"
+    },
+    "endless_ocean_block_giant_clam": {
+      "textures": "textures/blocks/decor/ocean_block_giant_clam"
+    },
+    "endless_ocean_block_prismarine_crystal_block": {
+      "textures": "textures/blocks/decor/ocean_block_prismarine_crystal_block"
+    },
+    "endless_ocean_block_chiseled_prismarine_tiles": {
+      "textures": "textures/blocks/decor/ocean_block_chiseled_prismarine_tiles"
+    },
+    "endless_ocean_block_pearl_block": {
+      "textures": "textures/blocks/decor/ocean_block_pearl_block"
+    },
+    "endless_ocean_block_driftwood_plank": {
+      "textures": "textures/blocks/decor/ocean_block_driftwood_plank"
+    },
+    "endless_ocean_block_sea_glass": {
+      "textures": "textures/blocks/decor/ocean_block_sea_glass"
+    },
+    "endless_ocean_block_polished_prismarine_bricks": {
+      "textures": "textures/blocks/decor/ocean_block_polished_prismarine_bricks"
+    },
+    "endless_ocean_block_driftwood_trapdoor": {
+      "textures": "textures/blocks/decor/ocean_block_driftwood_trapdoor"
+    },
+    "endless_farm_block_stove_side": {
+      "textures": "textures/blocks/decor/farm_block_stove_side"
+    },
+    "endless_farm_block_cooking_pot_side": {
+      "textures": "textures/blocks/decor/farm_block_cooking_pot_side"
+    },
+    "endless_farm_block_cooking_pot_top": {
+      "textures": "textures/blocks/decor/farm_block_cooking_pot_top"
+    },
+    "endless_farm_block_cooking_pot_bottom": {
+      "textures": "textures/blocks/decor/farm_block_cooking_pot_bottom"
+    },
+    "endless_farm_block_cooking_pot_parts": {
+      "textures": "textures/blocks/decor/farm_block_cooking_pot_parts"
+    },
+    "endless_farm_block_cutting_board": {
+      "textures": "textures/blocks/decor/farm_block_cutting_board"
+    },
+    "endless_farm_block_skillet_side": {
+      "textures": "textures/blocks/decor/farm_block_skillet_side"
+    },
+    "endless_farm_block_skillet_top": {
+      "textures": "textures/blocks/decor/farm_block_skillet_top"
+    },
+    "endless_farm_block_skillet_bottom": {
+      "textures": "textures/blocks/decor/farm_block_skillet_bottom"
+    },
+    "endless_farm_block_wooden_basket_bottom": {
+      "textures": "textures/blocks/decor/farm_block_wooden_basket_bottom"
+    },
+    "endless_farm_block_wooden_basket_side": {
+      "textures": "textures/blocks/decor/farm_block_wooden_basket_side"
+    },
+    "endless_farm_block_wooden_basket_top": {
+      "textures": "textures/blocks/decor/farm_block_wooden_basket_top"
+    },
+    "endless_farm_block_wooden_basket_handle": {
+      "textures": "textures/blocks/decor/farm_block_wooden_basket_handle"
+    },
+    "endless_farm_block_bamboo_basket_bottom": {
+      "textures": "textures/blocks/decor/farm_block_bamboo_basket_bottom"
+    },
+    "endless_farm_block_bamboo_basket_side": {
+      "textures": "textures/blocks/decor/farm_block_bamboo_basket_side"
+    },
+    "endless_farm_block_bamboo_basket_top": {
+      "textures": "textures/blocks/decor/farm_block_bamboo_basket_top"
+    },
+    "endless_farm_block_bamboo_basket_handle": {
+      "textures": "textures/blocks/decor/farm_block_bamboo_basket_handle"
+    },
+    "endless_farm_block_carrot_crate_side": {
+      "textures": "textures/blocks/decor/farm_block_carrot_crate_side"
+    },
+    "endless_farm_block_potato_crate_side": {
+      "textures": "textures/blocks/decor/farm_block_potato_crate_side"
+    },
+    "endless_farm_block_beetroot_crate_side": {
+      "textures": "textures/blocks/decor/farm_block_beetroot_crate_side"
+    },
+    "endless_farm_block_rice_bag_side_tied": {
+      "textures": "textures/blocks/decor/farm_block_rice_bag_side_tied"
+    },
+    "endless_farm_block_rice_bag_side": {
+      "textures": "textures/blocks/decor/farm_block_rice_bag_side"
+    },
+    "endless_farm_block_rice_bag_top": {
+      "textures": "textures/blocks/decor/farm_block_rice_bag_top"
+    },
+    "endless_farm_block_rice_bag_bottom": {
+      "textures": "textures/blocks/decor/farm_block_rice_bag_bottom"
+    },
+    "endless_farm_block_straw_bale_side": {
+      "textures": "textures/blocks/decor/farm_block_straw_bale_side"
+    },
+    "endless_farm_block_canvas_rug": {
+      "textures": "textures/blocks/decor/farm_block_canvas_rug"
+    },
+    "endless_farm_block_canvas_rug_fraying": {
+      "textures": "textures/blocks/decor/farm_block_canvas_rug_fraying"
+    },
+    "endless_farm_block_safety_net": {
+      "textures": "textures/blocks/decor/farm_block_safety_net"
+    },
+    "endless_farm_block_rope_fence": {
+      "textures": "textures/blocks/decor/farm_block_rope_fence"
+    },
+    "endless_farm_block_rope_fence_gate": {
+      "textures": "textures/blocks/decor/farm_block_rope_fence_gate"
+    },
+    "endless_farm_block_oak_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_oak_cabinet_side"
+    },
+    "endless_farm_block_spruce_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_spruce_cabinet_side"
+    },
+    "endless_farm_block_birch_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_birch_cabinet_side"
+    },
+    "endless_farm_block_jungle_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_jungle_cabinet_side"
+    },
+    "endless_farm_block_acacia_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_acacia_cabinet_side"
+    },
+    "endless_farm_block_dark_oak_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_dark_oak_cabinet_side"
+    },
+    "endless_farm_block_mangrove_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_mangrove_cabinet_side"
+    },
+    "endless_farm_block_cherry_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_cherry_cabinet_side"
+    },
+    "endless_farm_block_bamboo_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_bamboo_cabinet_side"
+    },
+    "endless_farm_block_crimson_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_crimson_cabinet_side"
+    },
+    "endless_farm_block_warped_cabinet_side": {
+      "textures": "textures/blocks/decor/farm_block_warped_cabinet_side"
+    },
+    "endless_original_wood": {
+      "textures": "textures/blocks/decor/original_wood"
+    },
+    "endless_original_metal": {
+      "textures": "textures/blocks/decor/original_metal"
+    },
+    "endless_original_cloth": {
+      "textures": "textures/blocks/decor/original_cloth"
+    },
+    "endless_original_rope": {
+      "textures": "textures/blocks/decor/original_rope"
+    },
+    "endless_original_gold": {
+      "textures": "textures/blocks/decor/original_gold"
     }
   }
 }

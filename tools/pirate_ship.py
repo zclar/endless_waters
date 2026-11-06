@@ -10,6 +10,11 @@ import json
 import math
 import random
 import struct
+import sys
+
+# Furnishing helpers must share this module's Block class when run as a script.
+if __name__ == "__main__":
+    sys.modules["pirate_ship"] = sys.modules[__name__]
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'experiments/structure_previews/dreadwake'
@@ -55,6 +60,7 @@ class Ship:
         self.blocks = {}
         self.zones = {}
         self.crew = []
+        self.loot = []
 
     def put(self, x, y, z, block):
         pos = (round(x), round(y), round(z))
@@ -299,7 +305,7 @@ def deck_structure(s):
                 s.put(x, 16, z, stair('oak', 0 if x < 32 else 1))
         if z in [67, 70, 72]:
             s.box(31, 16, z, 33, 16, z, slab('oak'))
-    s.zones = {'unfurnished_lower_hold': [5, 8], 'unfurnished_gun_deck': [10, 13],
+    s.zones = {'crew_cargo_brig_vault': [5, 8], 'galley_mess_armory': [10, 13],
                'main_deck_empty_cabin': [15, 20], 'quarterdeck': [22, 25]}
 
 
@@ -468,6 +474,8 @@ def build_ship(variant):
     rig(s)
     ship_hardware(s)
     age(s)
+    from ship_furnishings import furnish
+    furnish(s)
     secure_attachments(s)
     positions = [(20, 15, 42), (28, 15, 44), (21, 15, 71), (27, 15, 76),
                  (20, 19, 24), (28, 19, 25), (20, 22, 88), (27, 22, 99),
@@ -517,8 +525,8 @@ def nbt_string(value):
 
 
 def payload(kind, value):
-    if kind in [1, 3]:
-        return struct.pack('<b' if kind == 1 else '<i', value)
+    if kind in [1, 3, 4]:
+        return struct.pack({1:'<b',3:'<i',4:'<q'}[kind], value)
     if kind == 8:
         return nbt_string(value)
     if kind == 9:
@@ -542,11 +550,16 @@ def encode_piece(s, z0, z1):
             'entities': (9, (10, [])),
             'palette': (10, {'default': (10, {
                 'block_palette': (9, (10, [{
-                    'name': (8, 'minecraft:' + block.name),
+                    'name': (8, block.name if ':' in block.name else 'minecraft:' + block.name),
                     'version': (3, 18168865),
                     'states': (10, {k: (1 if isinstance(v, bool) else 3 if isinstance(v, int) else 8, v) for k, v in block.states})
                 } for block in palette])),
-                'block_position_data': (10, {})
+                'block_position_data': (10, {
+                    str((p[0]*SIZE[1]+p[1])*(z1-z0)+p[2]-z0): (10, {'block_entity_data': (10, {
+                        'id': (8, 'Chest'), 'x': (3, p[0]), 'y': (3, p[1]), 'z': (3, p[2]-z0),
+                        'isMovable': (1, True), 'LootTable': (8, loot['table']), 'LootTableSeed': (4, 0)
+                    })}) for loot in s.loot for p in [loot['position']] if z0 <= p[2] < z1
+                })
             })})
         })
     }
@@ -579,7 +592,7 @@ def write_assets():
             'actual_block_bounds': [[min(p[i] for p, b in ship.blocks.items() if b != AIR),
                                      max(p[i] for p, b in ship.blocks.items() if b != AIR)] for i in range(3)],
             'palette_entries': len(palette), 'planned_pillagers': len(ship.crew),
-            'crew_positions': ship.crew, 'parts': parts, 'rooms': ship.zones,
+            'crew_positions': ship.crew, 'parts': parts, 'rooms': ship.zones, 'loot': ship.loot,
         }
     (OUT / 'catalog.json').write_text(json.dumps(catalog, indent=2) + '\n')
     print(json.dumps({v: {k: d[k] for k in ['solid_blocks', 'palette_entries', 'planned_pillagers']} for v, d in catalog['variants'].items()}, indent=2))

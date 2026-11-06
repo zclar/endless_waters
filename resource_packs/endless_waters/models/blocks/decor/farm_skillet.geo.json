@@ -1,0 +1,462 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.endless.farm_skillet",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "part_0",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                0,
+                -7
+              ],
+              "size": [
+                14,
+                1,
+                14
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    1,
+                    3
+                  ],
+                  "uv_size": [
+                    14,
+                    1
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "east": {
+                  "uv": [
+                    1,
+                    3
+                  ],
+                  "uv_size": [
+                    14,
+                    1
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "south": {
+                  "uv": [
+                    1,
+                    3
+                  ],
+                  "uv_size": [
+                    14,
+                    1
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "west": {
+                  "uv": [
+                    1,
+                    3
+                  ],
+                  "uv_size": [
+                    14,
+                    1
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "up": {
+                  "uv": [
+                    1,
+                    1
+                  ],
+                  "uv_size": [
+                    14,
+                    14
+                  ],
+                  "material_instance": "farm_block_skillet_top"
+                },
+                "down": {
+                  "uv": [
+                    1,
+                    1
+                  ],
+                  "uv_size": [
+                    14,
+                    14
+                  ],
+                  "material_instance": "farm_block_skillet_bottom"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_1",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                1,
+                -7
+              ],
+              "size": [
+                14,
+                3,
+                1
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    1,
+                    0
+                  ],
+                  "uv_size": [
+                    14,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "east": {
+                  "uv": [
+                    14,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "south": {
+                  "uv": [
+                    1,
+                    0
+                  ],
+                  "uv_size": [
+                    14,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "west": {
+                  "uv": [
+                    1,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "up": {
+                  "uv": [
+                    1,
+                    1
+                  ],
+                  "uv_size": [
+                    14,
+                    1
+                  ],
+                  "material_instance": "farm_block_skillet_top"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_2",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                1,
+                6
+              ],
+              "size": [
+                14,
+                3,
+                1
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    1,
+                    0
+                  ],
+                  "uv_size": [
+                    14,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "east": {
+                  "uv": [
+                    14,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "south": {
+                  "uv": [
+                    1,
+                    0
+                  ],
+                  "uv_size": [
+                    14,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "west": {
+                  "uv": [
+                    1,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "up": {
+                  "uv": [
+                    1,
+                    1
+                  ],
+                  "uv_size": [
+                    14,
+                    1
+                  ],
+                  "material_instance": "farm_block_skillet_top"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_3",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                1,
+                -6
+              ],
+              "size": [
+                1,
+                3,
+                12
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    12,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "west": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    12,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "up": {
+                  "uv": [
+                    1,
+                    2
+                  ],
+                  "uv_size": [
+                    1,
+                    12
+                  ],
+                  "material_instance": "farm_block_skillet_top"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_4",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6,
+                1,
+                -6
+              ],
+              "size": [
+                1,
+                3,
+                12
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    12,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "west": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    12,
+                    3
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "up": {
+                  "uv": [
+                    1,
+                    2
+                  ],
+                  "uv_size": [
+                    1,
+                    12
+                  ],
+                  "material_instance": "farm_block_skillet_top"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "part_5",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                1,
+                7
+              ],
+              "size": [
+                2,
+                2,
+                12
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    9,
+                    4
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "south": {
+                  "uv": [
+                    3,
+                    14
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "west": {
+                  "uv": [
+                    5,
+                    4
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "up": {
+                  "uv": [
+                    7,
+                    4
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                },
+                "down": {
+                  "uv": [
+                    11,
+                    4
+                  ],
+                  "uv_size": [
+                    2,
+                    12
+                  ],
+                  "material_instance": "farm_block_skillet_side"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

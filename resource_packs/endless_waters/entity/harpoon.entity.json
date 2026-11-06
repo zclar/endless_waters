@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "endless:harpoon_projectile",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/items/decor/harpoon"
+      },
+      "geometry": {
+        "default": "geometry.endless.harpoon_projectile"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.endless.fd_rustic_sofa_left",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "lower",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7,
+                2,
+                -6
+              ],
+              "size": [
+                15,
+                2,
+                11
+              ],
+              "uv": [
+                0,
+                59
+              ]
+            }
+          ]
+        },
+        {
+          "name": "back",
+          "parent": "root",
+          "pivot": [
+            0,
+            7,
+            5
+          ],
+          "rotation": [
+            -10,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6,
+                2,
+                5
+              ],
+              "size": [
+                14,
+                14,
+                1
+              ],
+              "uv": [
+                26,
+                44
+              ]
+            }
+          ]
+        },
+        {
+          "name": "side",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                0,
+                5
+              ],
+              "size": [
+                2,
+                10,
+                2
+              ],
+              "uv": [
+                0,
+                27
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                10,
+                -8
+              ],
+              "size": [
+                2,
+                1,
+                16
+              ],
+              "uv": [
+                0,
+                27
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -7
+              ],
+              "size": [
+                2,
+                10,
+                2
+              ],
+              "uv": [
+                0,
+                27
+              ]
+            },
+            {
+              "origin": [
+                -6.5,
+                4,
+                -5
+              ],
+              "size": [
+                0,
+                6,
+                10
+              ],
+              "uv": [
+                35,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cushions",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6,
+                4,
+                -8
+              ],
+              "size": [
+                14,
+                3,
+                11
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    57,
+                    24
+                  ],
+                  "uv_size": [
+                    14,
+                    3
+                  ],
+                  "material_instance": "cushion"
+                },
+                "east": {
+                  "uv": [
+                    46,
+                    24
+                  ],
+                  "uv_size": [
+                    11,
+                    3
+                  ],
+                  "material_instance": "cushion"
+                },
+                "south": {
+                  "uv": [
+                    82,
+                    24
+                  ],
+                  "uv_size": [
+                    14,
+                    3
+                  ],
+                  "material_instance": "cushion"
+                },
+                "west": {
+                  "uv": [
+                    71,
+                    24
+                  ],
+                  "uv_size": [
+                    11,
+                    3
+                  ],
+                  "material_instance": "cushion"
+                },
+                "up": {
+                  "uv": [
+                    71,
+                    24
+                  ],
+                  "uv_size": [
+                    -14,
+                    -11
+                  ],
+                  "material_instance": "cushion"
+                },
+                "down": {
+                  "uv": [
+                    71,
+                    24
+                  ],
+                  "uv_size": [
+                    14,
+                    -11
+                  ],
+                  "material_instance": "cushion"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "upper_cushion",
+          "parent": "cushions",
+          "pivot": [
+            0,
+            7,
+            2
+          ],
+          "rotation": [
+            -10,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5.9,
+                4,
+                2
+              ],
+              "size": [
+                14,
+                15,
+                3
+              ],
+              "inflate": -0.05,
+              "uv": {
+                "north": {
+                  "uv": [
+                    88,
+                    9
+                  ],
+                  "uv_size": [
+                    14,
+                    15
+                  ],
+                  "material_instance": "cushion"
+                },
+                "east": {
+                  "uv": [
+                    85,
+                    9
+                  ],
+                  "uv_size": [
+                    3,
+                    15
+                  ],
+                  "material_instance": "cushion"
+                },
+                "south": {
+                  "uv": [
+                    105,
+                    9
+                  ],
+                  "uv_size": [
+                    14,
+                    15
+                  ],
+                  "material_instance": "cushion"
+                },
+                "west": {
+                  "uv": [
+                    102,
+                    9
+                  ],
+                  "uv_size": [
+                    3,
+                    15
+                  ],
+                  "material_instance": "cushion"
+                },
+                "up": {
+                  "uv": [
+                    102,
+                    9
+                  ],
+                  "uv_size": [
+                    -14,
+                    -3
+                  ],
+                  "material_instance": "cushion"
+                },
+                "down": {
+                  "uv": [
+                    102,
+                    9
+                  ],
+                  "uv_size": [
+                    14,
+                    -3
+                  ],
+                  "material_instance": "cushion"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
